@@ -1,0 +1,48 @@
+.about-snippets {
+	border-top: 3px solid #ddd;
+	border-bottom: 3px solid #ddd;
+	list-style: none;
+	margin: 0 0 2em;
+	padding: 2em 0 0;
+	text-align: center;
+	li {
+		display: block;
+		margin: 0 auto 2em;
+		width: 80%;
+		@include bp(44) {
+			float: left;
+			width: 31%;
+			margin-right: 3.5%;
+			&:last-child,
+			&:nth-child(3n+3) {
+				margin-right: 0;
+			}
+		}
+	}
+	img {
+		display: block;
+		max-height: 2em;
+		margin: 0 auto;
+	}
+	h3 {
+		color: $blue;
+	}
+	p {
+		font-size: 0.75em;
+		color: $text;
+		margin-bottom: 0.5em;
+	}
+	span {
+		font-size: 0.8125em;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: $blue;
+	}
+	a {
+		display: block;
+		padding: 0.25em 0.1em;
+		&:hover {
+			background: #f9f9f9;
+		}
+	}
+}

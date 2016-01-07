@@ -1,0 +1,90 @@
+.quiz {
+	background: $yellow;
+	padding: 2em 0;
+}
+.quiz-form {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	.gform_body {
+		font-size: 1.3em;
+	}
+	.gform_fields {
+		margin: 0.5em 0;
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+	.gfield {
+		display: block;
+		@include bp(44) {
+			float: left;
+			width: 65%;
+		}
+	}
+	.gfield_html {
+		display: none;
+		@include bp(44) {
+			display: block;
+			float: left;
+			width: 35%;
+			margin: -2em 0 0;
+			img {
+				display: block;
+			}
+		}
+	}
+	.gf_page_steps {
+		text-align: center;
+		@include bp(44) {
+			width: 65%;
+		}
+	}
+	.gf_step {
+		display: inline-block;
+		font-size: 0.875em;
+	}
+	.gf_step_number {
+		display: inline-block;
+		background: #fff;
+		padding: 0.75em 1em;
+		line-height: 1;
+	}
+	.gf_step_active {
+		.gf_step_number {
+			background: $blue;
+			color: #fff;
+		}
+	}
+	.gfield_radio {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		input {
+			margin-right: 0.5em;
+		}
+	}
+	.gform_page_footer {
+		text-align: center;
+		input {
+			background: $blue;
+			color: #fff;
+			padding: 0.25em 1em;
+			border: 0;
+		}
+		@include bp(44) {
+			width: 65%;
+		}
+	}
+	.validation_message {
+		background: $red;
+		color: #fff;
+		font-size: 0.8125em;
+		text-align: center;
+		padding: 0.15em 1em;
+	}
+	.validation_error {
+		display: none;
+	}
+}

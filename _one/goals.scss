@@ -1,0 +1,118 @@
+.goals {
+	background: $blue;
+	padding: 2em 0;
+	text-align: center;
+	text-transform: uppercase;
+	h2 {
+		color: $green;
+		font-weight: 600;
+		font-size: 3em;
+	}
+	h1 {
+		position: relative;
+		color: #fff;
+		font-size: 6em;
+		display: inline-block;
+	}
+	@include bp(44) {
+		padding: 4em 0;
+	}
+}
+.goal-title {
+	margin: 0 20%;
+	h1:before {
+		content: '';
+		background: url(../../../1percent/_i/star.png) no-repeat;
+		background-size: contain;
+		position: absolute;
+		left: -1.25em;
+		top: -0.25em;
+		display: block;
+		width:0.75em;
+		height: 0.75em;
+	}
+	h1:after {
+		content: '';
+		background: url(../../../1percent/_i/star.png) no-repeat;
+		background-size: contain;
+		position: absolute;
+		right: -1.25em;
+		top: -0.25em;
+		display: block;
+		width:0.75em;
+		height: 0.75em;
+	}
+}
+.goals-sub {
+	background: $teal;
+	text-align: center;
+	padding: 2em 1em;
+	h2 {
+		font-weight: normal;
+		color: #fff;
+		font-size: 1.15em;
+		text-transform: uppercase;
+	}
+	@include bp(44) {
+		padding: 2em 5%;
+		h2 {
+			font-size: 2em;
+		}
+	}
+	@include bp(50) {
+		padding: 2em 15%;
+		h2 {
+			font-size: 2.5em;
+		}
+	}
+}
+.goals-content {
+	.wrap {
+		max-width: 50em;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+.goals-list {
+	list-style: none;
+	margin: 0;
+	padding: 2em 0;
+	li {
+		display: block;
+		padding: 0.5em 1em;
+		text-align: center;
+		margin: 0 0 0.5em;
+		color: #fff;
+		position: relative;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 0.9375em;
+	}
+	span {
+		background: $blue;
+		width: 1.9em;
+		height: 1.9em;
+		line-height: 1.25em;
+		font-size: 1.5em;
+		font-weight: 700;
+		border-radius: 50%;
+		border: 0.25em solid #fff;
+		position: absolute;
+		top: 0;
+		left: -1em;
+	}
+	.first {
+		background: darken($green, 10%);
+	}
+	.second {
+		background: $green;
+	}
+	.three {
+		background: lighten($green, 10%);
+	}
+	@include bp(50) {
+		li {
+			font-size: 1.25em;
+		}
+	}
+}

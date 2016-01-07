@@ -1,0 +1,210 @@
+/*!
+	Theme Name: Home Word
+	Theme URI: https://homeword.com/
+	Author: Cmd Tab
+	Author URI: https://cmdtab.co/
+	Description: Description
+	Version: 1.0
+	License: GNU General Public License
+	License URI: license.txt
+	Text Domain: homeword
+	Domain Path: /languages/
+*/
+@import "normalize";
+@import "bits";
+@import "var";
+
+html,body {
+	overflow-x:hidden;
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	color: $text;
+	background: url(_i/background.jpg);
+	background-size: 125px;
+	font:
+		0.875em/1.8
+		"lft-etica","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	@include bp(44) {
+		font-size: 1em;
+	}
+}
+
+a {
+	color: $blue;
+	text-decoration: none;
+	&:hover {
+		color: darken($blue, 10%);
+	}
+}
+.btn {
+	@include button(#f7cd23, #fff);
+}
+.btn-gray {
+	@include button(#eee, #292929);
+	text-shadow: none;
+}
+.btn-blue {
+	@include button($radio, #fff);
+}
+h1,h2,h3,h4,h5,h6 {
+	line-height: 1;
+}
+
+/*Basic Grid*/
+
+.wrap {
+	position: relative;
+	width: 100%;
+	max-width: 62.5em;
+	margin: 0 auto;
+}
+.sm-wrap {
+	position: relative;
+	width: 100%;
+	max-width: 45em;
+	margin: 0 auto;
+}
+.site-content {
+	-webkit-box-shadow: 0 0.25em 1.5em 0.5em rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 0.25em 1.5em 0.5em rgba(0,0,0,0.2);
+	box-shadow: 0 0.25em 1.5em 0.5em rgba(0,0,0,0.2);
+}
+.content-wrap {
+	padding: 2em;
+	&.full {
+		padding: 2em 0;
+	}
+	@include bp(30) {
+		&.full {
+			padding: 2em;
+		}
+	}
+
+}
+.general-content {
+	background: #fff;
+}
+.full-section {
+	position: relative;
+}
+.half {
+	margin-bottom: 2em;
+	@include bp(44) {
+		float: left;
+		width: 47.5%;
+		margin-bottom: 0;
+		&.first {
+			margin-right: 5%;
+		}
+	}
+}
+.halves {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	> li {
+		display: block;
+		margin: 0 0 1em;
+	}
+	@include bp(44) {
+		> li {
+			float: left;
+			width: 47.5%;
+			margin: 0 5% 1em 0;
+			&:nth-child(even) {
+				margin: 0 0 1em;
+			}
+		}
+	}
+}
+.two-third {
+	@include bp(44) {
+		float: left;
+		width: 65%;
+		&.first {
+			margin-right: 5%;
+		}
+	}
+}
+.third {
+	@include bp(44) {
+		float: left;
+		width: 30%;
+		&.first {
+			margin-right: 5%;
+		}
+	}
+}
+.three-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	> li {
+		display: block;
+		margin-bottom: 1em;
+
+	}
+	@include bp(44) {
+		> li {
+			float: left;
+			width: 30%;
+			margin: 0 5% 0 0;
+			&:last-child, &:nth-child(3n) {
+				margin: 0;
+			}
+		}
+	}
+}
+.two-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	> li {
+		display: block;
+		margin-bottom: 1em;
+	}
+	@include bp(44) {
+		> li {
+			float: left;
+			width: 45%;
+			margin: 0 10% 1em 0;
+			&:last-child, &:nth-child(even) {
+				margin: 0 0 1em;
+			}
+		}
+	}
+}
+.clear {
+	clear: left;
+}
+.content-section {
+	padding: 2em;
+	@include bp(50) {
+		float: left;
+		max-width: 42em;
+		width: 67.2%;
+	}
+}
+.content-block {
+	margin-bottom: 2em;
+}
+@import "fonts";
+@import "header";
+@import "carousel";
+@import "newsletter";
+@import "regular-tabs";
+@import "feature-tabs";
+@import "footer";
+@import "area-pages";
+@import "sidebar";
+@import "article";
+@import "archives";
+@import "popup";
+@import "store";
+@import "cart";
+@import "forms";
+@import "donate";
+@import "snippets";
+@import "about";
+@import "pci";

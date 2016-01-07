@@ -1,0 +1,69 @@
+.families-content {
+	h1, h3 {
+		color: $family;
+		a {
+			color: $family;
+		}
+	}
+	.current-menu-item {
+		a {
+			color: $family !important;
+		}
+	}
+}
+.church-content {
+	h1, h3 {
+		color: $church;
+		a {
+			color: $church;
+		}
+	}
+	.current-menu-item {
+		a {
+			color: $church !important;
+		}
+	}
+}
+.content-section {
+	h1 {
+		font-family: "adelle",serif;
+		font-weight: normal;
+		&:first-of-type {
+			margin-top: 0;
+		}
+	}
+	h3 {
+		font-family: "adelle",serif;
+		margin-bottom: 0.25em;
+	}
+	h5 {
+		color: #bbb;
+		text-transform: uppercase;
+		margin-top: 0;
+	}
+}
+.section-intro {
+	margin-bottom: 2em;
+}
+.radio-intro {
+	padding: 0 2em;
+	h1 {
+		color: $radio;
+	}
+}
+.metadata {
+	font-size: 0.75em;
+	text-transform: uppercase;
+}
+.entry-excerpt {
+	padding: 1.5em 0;
+	p {
+		font-size: 0.875em;
+	}
+}
+.devo-excerpt {
+	border-bottom: 1px solid #ccc;
+}
+.excerpt-group {
+	//border-bottom: 1px solid #ccc;
+}

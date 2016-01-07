@@ -1,0 +1,41 @@
+/*!
+	1percent style
+*/
+@import "normalize";
+@import "bits";
+@import "var";
+
+html,body {
+	overflow-x:hidden;
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	color: $blue;
+	background: lighten($blue, 20%);
+	font:
+		0.875em/1.8
+		"freight-sans-pro","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	@include bp(44) {
+		font-size: 1em;
+	}
+}
+
+a {
+	color: $green;
+	text-decoration: none;
+	&:hover {
+		color: darken($green, 10%);
+	}
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	line-height: 1;
+}
+@import "modules";
+@import "title";
+@import "facts";
+@import "goals";
+@import "stages";
+@import "plan";
+@import "about";

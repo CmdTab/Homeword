@@ -1,0 +1,84 @@
+.content-section.archive {
+	padding: 2em 0;
+}
+.no-results {
+	padding: 0 2em;
+}
+.archive-title {
+	padding: 0 2em;
+}
+.archive-more {
+	@include button($blue, #fff);
+}
+.families-content .archive {
+	.entry-excerpt {
+		border-color: $family;
+		&:last-of-type {
+			border: 0;
+		}
+	}
+	.archive-more {
+		@include button($family, #fff);
+	}
+	.entry-title {
+		color: $black;
+	}
+}
+.church-content .archive {
+	.entry-excerpt {
+		border-color: $church;
+		&:last-of-type {
+			border: 0;
+		}
+	}
+	.archive-more {
+		@include button($church, #fff);
+	}
+}
+.archive {
+	.entry-excerpt {
+		padding: 2em 0;
+		border-bottom: 0.25em solid $blue;
+		&.half {
+			border: 0 !important;
+		}
+	}
+	.entry-author {
+		font-size: 0.75em;
+	}
+	.entry-title, .entry-title a {
+		color: $black;
+	}
+}
+.archive-grouping {
+	border-bottom: 0.25em solid $blue;
+	.entry-excerpt {
+		padding: 0 0 2em;
+	}
+	.half {
+		@include bp(44) {
+			width: 50%;
+		}
+		&:nth-child(odd) {
+			clear:left;
+		}
+	}
+}
+.families-content {
+	.archive-grouping {
+		border-color: $family
+	}
+}
+.church-content {
+	.archive-grouping {
+		border-color: $church;
+	}
+}
+.search-results {
+	article {
+		margin-bottom: 2em;
+	}
+}
+.paging-navigation {
+	clear: both;
+}

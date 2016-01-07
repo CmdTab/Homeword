@@ -1,0 +1,171 @@
+.sidebar-section {
+	background: $sidebar;
+	h5 {
+		text-transform: uppercase;
+		color: #aaa;
+	}
+	@include bp(50) {
+		float: left;
+		max-width: 20.5em;
+		width: 32.8%;
+	}
+}
+.sidebar-nav {
+	list-style: none;
+	margin: 0;
+	padding: 1em 0;
+	> li {
+		border-bottom: 1px solid #ddd;
+	}
+	a {
+		display: block;
+		padding: 1em;
+		color: #999;
+		font-family: "adelle",serif;
+		&:hover {
+			background: lighten($sidebar, 2%);
+		}
+	}
+	.current-menu-item,
+	.current-page-ancestor {
+		a {
+			color: $blue;
+			&:before {
+				content: '\27A4';
+				margin-right: 0.5em;
+			}
+		}
+	}
+}
+.sub-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 2em;
+	a {
+		padding: 0.5em 1em;
+		font-size: 0.875em;
+	}
+}
+.sidebar-content {
+	padding: 0 1em;
+}
+.store-sidebar {
+	padding: 2em;
+	h3 {
+		font-size: 1em;
+		margin-bottom: 0.25em;
+		&:first-of-type {
+			margin-top: 0;
+		}
+	}
+	ul {
+		list-style: none;
+		margin: 0 0 2em;
+		padding: 0;
+		a {
+			color: #87837d;
+			font-size: 0.875em;
+		}
+	}
+}
+.product-search {
+	position: relative;
+	font-size: 0.75em;
+	margin-bottom: 2em;
+}
+.product-search-label {
+	font-weight: bold;
+}
+.product-search-input {
+	background: none;
+	border: 1px solid $tan;
+	padding: 0.5em 0.5em 0.5em 1.75em;
+	color: $tan;
+	display: block;
+	width: 100%;
+}
+.product-search-submit {
+	position: absolute;
+	left: 0.5em;
+	top: 0.75em;
+	background: none;
+	border: 0;
+	text-indent: -999px;
+	display: block;
+	width: 0.875em;
+	height: 0.875em;
+	background: url(_i/search.png) center center no-repeat;
+	background-size: 0.8125em;
+}
+.widget {
+	margin-bottom: 2.5em;
+}
+.widgettitle {
+	font-size: 0.75em;
+	color: #bbb;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 0.25em;
+}
+.widget_sp_image {
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+	&:nth-child(even) {
+		margin-right: 0;
+	}
+	h2 {
+		text-align: center;
+	}
+	img {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+	@include bp(50) {
+		float: none;
+		width: 100%;
+		text-align: center;
+		img {
+			margin: 0 auto;
+		}
+		h2 {
+			text-align: center;
+		}
+	}
+}
+.widget_categories {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		margin: 0 0.5em 0.5em 0;
+	}
+	a {
+		display: block;
+		background: #fff;
+		padding: 0.25em 0.5em;
+		&:hover {
+			color: $text;
+		}
+	}
+}
+.families-content {
+	.widget_categories a {
+		color: $family
+	}
+}
+.church-content {
+	.widget_categories a {
+		color: $church
+	}
+}
+.page-template-page-families-php,
+.page-template-page-church-php {
+	.widget_categories {
+		display: none;
+	}
+}

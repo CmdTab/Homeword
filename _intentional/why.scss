@@ -1,0 +1,92 @@
+.map-section {
+	background: $dark-gray url(_i/intent-map.jpg) right center no-repeat;
+	background-size: cover;
+	
+	.med-wrap {
+		padding: 2em 0 1em;
+	}
+	.section-header {
+		svg {
+			fill: $blue;
+		}
+		h2 {
+			color: #fff;
+		}
+	}
+	/* entire container, keeps perspective */
+	.flip-container {
+		perspective: 1000;
+	}
+		/* flip the pane when hovered */
+		.flip-container:hover .flipper, .flip-container.hover .flipper {
+			transform: rotateY(180deg);
+		}
+
+	.flip-container, .front, .back {
+		/*width: 320px;*/
+		height: 20em;
+	}
+
+	/* flip speed goes here */
+	.flipper {
+		transition: 0.6s;
+		transform-style: preserve-3d;
+		position: relative;
+	}
+
+	/* hide back of pane during swap */
+	.front, .back {
+		backface-visibility: hidden;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	/* front pane, placed above back */
+	.front {
+		z-index: 2;
+		/* for firefox 31 */
+		transform: rotateY(0deg);
+	}
+
+	/* back, initially hidden pane */
+	.back {
+		transform: rotateY(180deg);
+	}
+}
+.info-card {
+	text-align: center;
+	color: #fff;
+	max-width: 18.75em;
+	margin: 0 auto;
+	p {
+		line-height: 1.4;
+	}
+	h3, h4 {
+		text-transform: uppercase;
+	}
+	.front {
+		img {
+			max-width: 9em;
+		}
+		h3 {
+			margin-top: 0.25em;
+		}
+	}
+	.back {
+		background: $red;
+		padding: 1.5em;
+		h4 {
+			margin: 0.5em 0;
+		}
+		img {
+			max-width: 4.5em;
+		}
+		p {
+			text-align: left;
+			font-size: 0.8125em;
+			margin: 0.5em 0;
+		}
+	}
+}

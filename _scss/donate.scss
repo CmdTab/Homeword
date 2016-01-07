@@ -1,0 +1,288 @@
+.donate-form {
+	.gform_heading {
+		display: none;
+	}
+	.ginput_price {
+		display: none;
+	}
+	.gfield_label {
+		font-size: 1em;
+		@include bp(30) {
+			width: 25%;
+		}
+	}
+	.ginput_container {
+		@include bp(30) {
+			width: 75%;
+		}
+	}
+	.amount {
+		display: none;
+	}
+}
+
+.donate-icon {
+	background: $blue-back;
+	color: #fff;
+	font-size: 2em;
+	text-align: center;
+	display: block;
+	line-height: 1;
+	padding-top: 1em;
+	margin: 0;
+}
+.donate-frequency {
+	//background: $blue-back;
+	padding: 0 0 2em;
+	//color: #fff;
+	margin: 1em 0 0;
+	.gfield_label {
+		display:block;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 0.5em;
+		text-align: center;
+		padding-right: 0;
+		float: none;
+		width: auto;
+		color: $black;
+		.gfield_required {
+			display: none;
+		}
+	}
+	ul {
+		display: block;
+		list-style: none;
+		margin: 0 auto;
+		padding: 0;
+		//max-width: 37.5em;
+		text-align: center;
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+	li {
+		display: inline-block;
+		padding: 0 1em;
+		margin-bottom: 1em;
+		@include bp(44) {
+			margin: 0;
+		}
+	}
+	input[type="radio"] {
+		position: absolute;
+		left: -9999px;
+	}
+	.ginput_container {
+		width: 100%;
+		label {
+			position: static;
+			display: inline-block;
+			width: auto;
+			margin: 0 auto;
+			background: $tab-gray;
+			padding: 0.75em 1em;
+			border-radius: 0.25em;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1;
+			font-size: 1.15em;
+			&:hover {
+				background: darken($tab-gray, 10%);
+				cursor: pointer
+			}
+		}
+	}
+	input[type="radio"]:checked + label {
+		background: #5cb85c;
+		color: #fff;
+	}
+}
+.stock-link {
+	text-align: center;
+}
+.donate-amounts {
+	background: $blue-back;
+	color: #fff;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	.gfield_label {
+		float: none;
+		display: block;
+		width: auto;
+	}
+	.ginput_container {
+		float: none;
+		width: auto;
+	}
+	> label {
+		display:block;
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 0.5em;
+		padding-right: 0;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	li {
+		display: inline-block;
+		margin: 1em 0;
+		width: 45%;
+	}
+	input[type="radio"] {
+		position: absolute;
+		left: -9999px;
+	}
+	.gfield_radio {
+		label {
+			display: block;
+			width: 80%;
+			margin: 0 auto;
+			background: $blue;
+			color: #fff;
+			padding: 0.75em 1em;
+			border-radius: 0.25em;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1;
+			position: static;
+			font-size: 1.15em;
+			&:hover {
+				background: #fff;
+				color: $blue-back;
+				cursor: pointer
+			}
+		}
+
+		input[type="radio"]:checked + label {
+			background: #fff;
+			color: $blue-back;
+		}
+	}
+	@include bp(30) {
+		li {
+			display: inline-block;
+			margin: 1em;
+			width: auto;
+		}
+		.gfield_radio {
+			label {
+				display: inline-block;
+				width: auto;
+			}
+		}
+	}
+	@include bp(50) {
+		li {
+			&:last-child {
+				width: auto;
+			}
+		}
+	}
+}
+
+.donate-amount-input,
+.recurring-amount {
+	background: $blue-back;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 1em;
+	.gfield_label {
+		float: none;
+		display: block;
+		width: auto;
+	}
+	.ginput_container {
+		float: none;
+		width: auto;
+	}
+	label {
+		display:block;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 0.5em;
+		text-align: center;
+		padding-right: 0;
+	}
+	input {
+		padding:  0.5em 1em;
+		border: 0;
+		border-radius: 0.25em;
+		max-width: 15em;
+		display: inline-block;
+	}
+}
+.donate-recurring {
+	display: none !important;
+}
+.donate-divider,
+.donate-name,
+.donate-email,
+.donate-address,
+.donate-payment,
+.gform_footer,
+.donate-newsletter,
+.donate-email-options,
+.donation-total {
+	max-width: 45em;
+	margin: 0 auto 1em;
+	width: 96%;
+}
+.donate-divider {
+	text-align: center;
+	color: $blue;
+	border-bottom: 3px solid #ddd;
+}
+.donate-newsletter {
+	> label {
+		display: none;
+	}
+	@include bp(30) {
+		.ginput_container {
+			margin-left: 25%;
+		}
+	}
+}
+.other-amount {
+	background: $blue-back;
+	color: #fff;
+	margin: 0;
+	padding-bottom: 1.5em;
+	text-align: center;
+	label {
+		float: none;
+		width: 100% !important;
+		padding: 0 !important;
+		text-align: center !important;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 0.5em;
+	}
+	.ginput_container {
+		float: none;
+		width: 100%;
+		text-align: center;
+		input {
+			display: inline-block !important;
+			max-width: 10em;
+		}
+	}
+}
+.donation-total {
+	background: $tab-gray;
+	padding: 1em 2em;
+	text-align: center;
+	.gfield_label,
+	.ginput_container {
+		float: none !important;
+		width: auto !important;
+		display: inline-block !important;
+	}
+}

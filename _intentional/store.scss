@@ -1,0 +1,308 @@
+.intent-store {
+	.wrap {
+		width: 100%;
+	}
+	.med-wrap {
+		width: 92%;
+		margin: 0 auto;
+		@include bp(44) {
+			background: url(_i/intent-back.gif) top center no-repeat;
+			background-size: 100% auto;
+			padding: 0 4em 4em;
+			width: 100%;
+			max-width: 68em;
+		}
+	}
+}
+.product-options {
+	padding: 1em 0 0;
+	> div {
+		margin-bottom: 2em;
+		position: relative;
+		h2 {
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 1.75em;
+		}
+		@include bp(50) {
+			float: left;
+			width: 25%;
+			margin: 0;
+			padding: 0 1em;
+			clear: none;
+		}
+	}
+	.btn {
+		display: block;
+		width: 100%;
+		clear: both;
+	}
+}
+.option-main {
+	h3 {
+		text-transform: uppercase;
+	}
+	img {
+		display: block;
+	}
+}
+.option-details {
+	background: $text;
+	color: #fff;
+	padding: 1em;
+	font-size: 0.8125em;
+	hr {
+		background: lighten($dark-gray, 20%);
+	}
+	h4 {
+		text-transform: uppercase;
+		margin: 0 0 0.25em;
+	}
+	p {
+		margin: 0;
+	}
+	
+		
+}
+@include bp(50) {
+	.option-details {
+		background: $text url(_i/intent-mountain.jpg) no-repeat;
+	}
+	.option-free {
+		.option-details {
+			background-position: 5% 80%;
+			background-size: 400%;
+		}
+	}
+	.option-individual {
+		.option-details {
+			background-position: 35% 80%;
+			background-size: 400%;
+		}
+	}
+	.option-bundle {
+		.option-details {
+			background-position: 65% 80%;
+			background-size: 400%;
+		}
+	}
+	.option-church {
+		.option-details {
+			background-position: 85% 80%;
+			background-size: 400%;
+		}
+	}
+}
+.pricing {
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	margin: 0 0 1em;
+	span {
+		&:first-of-type {
+			margin-right: 1em;
+		}
+	}
+	@include bp(50) {
+		margin: 0.7em 0;
+		font-size: 1.4em;
+	}
+}
+/**Individual**/
+.option-individual,
+.option-bundle,
+.option-church,
+.option-free {
+	.option-main {
+		float: left;
+		width: 35%;
+		padding: 0 1em 0 0;
+		@include bp(50) {
+			float: none;
+			width: 100%;
+		}
+	}
+	.option-details {
+		float: right;
+		width: 65%;
+		margin: 0 0 1em;
+		
+		@include bp(50) {
+			float: none;
+			width: 100%;
+			//display: none;
+		}
+	}
+	.pricing {
+		float: left;
+		width: 35%;
+		padding: 0 1em 0 0;
+		clear: left;
+		
+		@include bp(50) {
+			float: none;
+			width: 100%;
+			padding: 0;
+			
+		}
+	}
+}
+/*Free Option*/
+.option-free {
+	> p {
+		font-size: 0.8125em;
+		clear: both;
+	}
+	form {
+		position: relative;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		label {
+			position: absolute;
+			color: #aaa;
+			top: 0.25em;
+			left: 0.5em;
+		}
+		input {
+			&[type="email"],
+			&[type="text"] {
+				display: block;
+				width: 100%;
+				border: 1px solid $red;
+				padding: 0.35em 0.5em 0.5em;
+				line-height: 1;
+			}
+			
+		}
+	}
+	input {
+		&[type="submit"] {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			background: $red;
+			color: #fff;
+			border: 0;
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+			&:hover {
+				background: darken($red, 10%);
+			}
+		}
+	}
+}
+
+/**Dropdown**/
+.option-dropdown {
+	display: none;
+	
+	background: transparentize(#fff, 0.1);
+	padding: 0.5em 0.5em 0;
+	border: 1px solid #bfbebe;
+	@include bp(50) {
+		position: absolute;
+		top: 100%;
+		left: 1em;
+		right: 1em;
+		z-index: 1000;
+		perspective: none;
+	}
+	h3 {
+		text-transform: uppercase;
+		display: inline-block;
+		margin: 0 0 0.25em;
+	}
+	.product-price {
+		float: right;
+		font-size: 0.9375em;
+	}
+	.quantity {
+		margin: 0 0 0.5em;
+		padding: 0;
+		input[type="button"] {
+			@include button(#aaa, #fff);
+			display: block;
+			width: 25%;
+			float: left;
+			padding: 0 0.25em;
+			font-size: 2em;
+			line-height: 1;
+		}
+		input[type="number"] {
+			float: left;
+			display: block;
+			width: 44%;
+			margin: 0 3%;
+			font-size: 1.25em;
+			text-align: center;
+			padding: 0.15em 0.5em;
+			border: 1px solid #aaa;
+			line-height: 1;
+		}
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+	button {
+		@include button($blue, #fff);
+		border: 0;
+		display: block;
+		width: 100%;
+		margin: 0 0 1.5em;
+	}
+}
+/**Flipper**/
+.intent-store {
+	@include bp(50) {
+		/* entire container, keeps perspective */
+		.flip-container {
+			perspective: 1000;
+		}
+			/* flip the pane when hovered */
+			.flip-container:hover .flipper, .flip-container.hover .flipper {
+				transform: rotateY(180deg);
+			}
+
+		.flip-container, .front, .back {
+			/*width: 320px;
+			height: 480px;*/
+		}
+
+		/* flip speed goes here */
+		.flipper {
+			transition: 0.6s;
+			transform-style: preserve-3d;
+			position: relative;
+			padding-bottom: 16em;
+		}
+
+		/* hide back of pane during swap */
+		.front, .back {
+			backface-visibility: hidden;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		/* front pane, placed above back */
+		.front {
+			z-index: 2;
+			/* for firefox 31 */
+			transform: rotateY(0deg);
+		}
+
+		/* back, initially hidden pane */
+		.back {
+			transform: rotateY(180deg);
+			bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,106 @@
+.facts {
+	padding: 4em 0;
+	.group {
+		margin-bottom: 2em;
+	}
+	@include bp(50) {
+		padding: 4em;
+	}
+}
+.map-legend {
+	list-style: none;
+	margin: 0;
+	padding: 2em 0;
+	li {
+		display: block;
+		padding: 0.5em 2em;
+		text-align: center;
+		margin: 0 0 0.5em;
+		color: #fff;
+		position: relative;
+	}
+	span {
+		background: $maroon;
+		width: 1.9em;
+		height: 1.9em;
+		line-height: 1.25em;
+		font-size: 1.5em;
+		font-weight: 700;
+		border-radius: 50%;
+		border: 0.25em solid #fff;
+		position: absolute;
+		top: 0;
+		left: -1em;
+	}
+	.first {
+		background: $blue;
+	}
+	.second {
+		background: $teal;
+	}
+	.three {
+		background: $green;
+	}
+	@include bp(50) {
+		li {
+			font-size: 1.25em;
+		}
+	}
+}
+.fact {
+	text-align: center;
+	h3 {
+		text-transform: uppercase;
+		font-weight: 600;
+		border-bottom: 1px solid $green;
+		margin: 0 0 1em;
+		text-align: left;
+		padding-bottom: 0.25em;
+	}
+	img {
+		float: left;
+		width: 25%;
+		margin-right: 5%;
+	}
+	&.full {
+
+	}
+	@include bp(44) {
+		&.full {
+			padding: 0 5%;
+			img {
+				width: 20%;
+				padding: 0 2em;
+			}
+			.fact-content {
+				font-size: 1.75em;
+				width: 75%;
+				letter-spacing: 4px;
+			}
+		}
+	}
+}
+.fact-content {
+	float: left;
+	width: 70%;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	line-height: 1;
+	h1,
+	h2,
+	h3 {
+		color: $teal;
+	}
+	span {
+		display: block;
+	}
+	@include bp(50) {
+		font-size: 1.5em;
+	}
+}
+.infidelity {
+	h1 {
+		font-size: 2.5em;
+		letter-spacing: 0.1em;
+	}
+}

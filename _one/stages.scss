@@ -1,0 +1,101 @@
+.stages-title {
+	background: $teal;
+	padding: 2em 0;
+	text-align: center;
+	h3 {
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+	h1 {
+		color: #fff;
+		text-transform: uppercase;
+	}
+	@include bp(44) {
+		font-size: 2em;
+	}
+}
+.cake {
+	background: $blue;
+	padding: 2em;
+	text-align: center;
+	.wrap {
+		max-width: 37.5em;
+		margin: 0 auto;
+		padding: 0;
+	}
+	a {
+		display: block;
+	}
+	@include bp(44) {
+		padding: 2em 0;
+	}
+}
+.cake-top {
+	max-width: 8em;
+	width: 21.3333333%;
+}
+.cake-one {
+	img {
+		max-width: 16em;
+		width: 42.66666667%;
+	}
+}
+.cake-two {
+	img {
+		max-width: 24em;
+		width: 64%;
+	}
+}
+.cake-three {
+	img {
+		max-width: 32em;
+		width: 85.33333333%;
+	}
+}
+.cake-bottom {
+	max-width: 37.5em;
+	width: 100%;
+}
+.stage {
+	padding: 2em 0;
+	font-size: 1.15em;
+	.wrap {
+		max-width: 45em;
+		margin: 0 auto;
+		padding: 0 2em;
+	}
+	h3 {
+		text-align: center;
+		text-transform: uppercase;
+		color: $green;
+		font-size: 1.5em;
+	}
+	p {
+		margin: 0.5em 0 1em;
+	}
+	.third {
+		text-align: center;
+	}
+	img {
+		max-width: 6em;
+	}
+	@include bp(44) {
+		h3 {
+			text-align: left;
+		}
+		img {
+			max-width: 100%;
+		}
+	}
+	@include bp(50) {
+		.wrap {
+			padding: 0;
+		}
+	}
+}
+#early {
+	background: $teal;
+	h3 {
+		color: #fff;
+	}
+}

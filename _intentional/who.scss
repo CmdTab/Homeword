@@ -1,0 +1,23 @@
+.who-section {
+	background: $dark-gray url(_i/intent-who.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 2em 0;
+	color: #fff;
+	.section-header {
+		svg {
+			fill: $red;
+		}
+		h2 {
+			color: #fff;
+		}
+	}
+}
+.who-list {
+	text-align: center;
+}
+.quote-section {
+	padding: 1em 0;
+	ul {
+		margin: 0;
+	}
+}

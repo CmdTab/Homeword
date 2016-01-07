@@ -1,0 +1,370 @@
+/*Home Tabs*/
+.feature-tabs {
+	margin-bottom: 2em;
+}
+.feature-tab-nav {
+	> li {
+		position: relative;
+		display: block;
+		float: left;
+		width: 33.3333%;
+		text-align: center;
+		border-right: 1px solid darken($tab-gray, 20%);
+		&:last-of-type {
+			border-right: 0;
+		}
+		a {
+			background: $tab-gray;
+			color: #a3a29e;
+			text-transform: lowercase;
+			letter-spacing: 1px;
+			padding: 1em 0;
+		}
+	}
+	.active {
+		border-right: 0;
+		a {
+			color: #fff;
+		}
+		.radio-tab {
+			background: $radio;
+			&:after {
+				content:'';
+				height: 0;
+				width: 0;
+				border-left: 0.75em solid transparent;
+				border-right: 0.75em solid transparent;
+				border-top: 0.75em solid $radio;
+				position: absolute;
+				bottom: -0.8em;
+				left: 50%;
+				margin-left: -0.75em;
+			}
+		}
+		.family-tab {
+			background: $devo;
+			&:after {
+				content:'';
+				height: 0;
+				width: 0;
+				border-left: 0.75em solid transparent;
+				border-right: 0.75em solid transparent;
+				border-top: 0.75em solid $devo;
+				position: absolute;
+				bottom: -0.8em;
+				left: 50%;
+				margin-left: -0.75em;
+			}
+		}
+		.church-tab {
+			background: $culture;
+			&:after {
+				content:'';
+				height: 0;
+				width: 0;
+				border-left: 0.75em solid transparent;
+				border-right: 0.75em solid transparent;
+				border-top: 0.75em solid $culture;
+				position: absolute;
+				bottom: -0.8em;
+				left: 50%;
+				margin-left: -0.75em;
+			}
+		}
+	}
+	[data-icon], [class^="icon-"] {
+		display: block;
+		text-transform: none;
+		font-size: 1.5em;
+		margin-bottom: 0.25em;
+		@include bp(44) {
+			font-size: 1.25em;
+		}
+	}
+	.tab-label {
+		font-size: 0.6em;
+		@include bp(44) {
+			display: block;
+			font-size: 1em;
+		}
+	}
+}
+.radio-tab {
+	&:hover {
+		background: $radio;
+		color: #fff;
+	}
+}
+.family-tab {
+	&:hover {
+		background: $devo;
+		color: #fff;
+	}
+}
+.church-tab {
+	&:hover {
+		background: $culture;
+		color: #fff;
+	}
+}
+.tab-column {
+	padding: 1em 0 0;
+	@include bp(44) {
+		float: left;
+		width: 50%;
+		padding: 1em 1em 0 0;
+	}
+	@include bp(50) {
+		width: 33.3333%;
+	}
+	&.double {
+		width: 100%;
+		@include bp(50) {
+			width: 66.6666%;
+		}
+
+	}
+	&.image {
+		display: none;
+		padding: 0;
+		@include bp(50) {
+			display: block;
+		}
+	}
+	&.right-tab {
+		@include bp(44) {
+			padding: 1em 0 0 1em;
+		}
+	}
+}
+.active {
+	&.radio-pane {
+		border-top: 3px solid $radio;
+	}
+	&.family-pane {
+		border-top: 3px solid $devo;
+	}
+	&.church-pane {
+		border-top: 3px solid $culture;
+	}
+}
+.tab-article {
+	margin-bottom: 1em;
+}
+.radio-pane {
+	h1, h2, h3, h4, h5, h6 {
+		color: $radio;
+	}
+	.button {
+		@include button($radio, #fff);
+	}
+}
+.family-pane {
+	h1, h2, h3, h4, h5, a {
+		color: $devo;
+	}
+	h3 {
+		margin: 0 0 0.15em;
+	}
+	h6 {
+		font-size: 0.65em;
+		margin: 0 0 0.5em;
+		color: $gray-text;
+		font-weight: normal;
+	}
+	p {
+		margin: 0.5em 0;
+		line-height: 1.6;
+	}
+	.button {
+		@include button($devo, #fff);
+	}
+}
+.church-pane {
+	h1, h2, h3, h4, h5, a {
+		color: $culture;
+	}
+	h3 {
+		margin: 0 0 0.15em;
+	}
+	h6 {
+		font-size: 0.65em;
+		margin: 0 0 0.5em;
+		color: $gray-text;
+		font-weight: normal;
+	}
+	p {
+		margin: 0.5em 0;
+		line-height: 1.6;
+	}
+	.button {
+		@include button($culture, #fff);
+	}
+}
+.seminars {
+	h4 {
+		color: $gray-text;
+		font-weight: normal;
+		text-transform: none;
+		margin-bottom: 0.1em;
+		
+	}
+	h2 {
+		font-family: "adelle",serif;
+		font-weight: normal;
+		margin-bottom: 0.25em;
+	}
+	h5 {
+		margin: 0 0 2em;
+		color: $blue-back;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		//@include bp(30) {
+			display: inline-block;
+			margin-bottom: 2em;
+		//}
+		@include bp(44) {
+			font-size: 0.8125em;
+		}
+	}
+	p {
+		font-size: 0.875em;
+	}
+}
+.up-seminar-list {
+	margin-top: 1em;
+	&:before {
+		content:'';
+		display: block;
+		height: 1px;
+		width: 60%;
+		margin: 0 auto 1em;
+		background: #ddd;
+	}
+}
+.seminar-preview {
+	h4 {
+		color: $gray-text;
+		font-weight: normal;
+		text-transform: none;
+		margin: 0 0 0.5em;
+		font-size: 0.75em;
+	}
+	h3 {
+		margin: 0 0 0.15em;
+		font-family: "adelle",serif;
+		font-weight: normal;
+	}
+	.event-address {
+		font-size: 0.75em;
+	}
+}
+.radio-archives,
+.more-upcoming {
+	color: $gray-text;
+	font-size: 0.8125em;
+	float: right;
+	margin: 0.25em 0 0 0;
+}
+.article-preview {
+	img {
+		max-width: 80%;
+	}
+	h3 {
+		font-family: "adelle",serif;
+		font-weight: normal;
+	}
+	p {
+		font-size: 0.875em;
+	}
+	.read-more {
+		color: $gray-text;
+		font-size: 0.875em;
+	}
+}
+.link-list {
+	h5 {
+		margin: 0 0 1em;
+		color: $blue-back;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		border-bottom: 1px solid #ccc;
+	}
+	a {
+		display: block;
+		padding: 0.75em 0;
+		font-family: "adelle",serif;
+		&:hover {
+			background: transparentize(#ccc, 0.9);
+		}
+	}
+}
+.tab-signup {
+	margin: 2em 0 0;
+	form {
+		position: relative;
+	}
+	h5 {
+		margin-bottom: 0;
+	}
+	p {
+		font-size: 0.75em;
+		color: $gray-text;
+		margin: 0.25em 0 0.75em;
+		line-height: 1.4;
+	}
+	input[type=email] {
+		border: 1px solid $tab-gray;
+		width: 100%;
+		padding: 0.5em;
+	}
+	label {
+		position: absolute;
+		top: 0.5em;
+		left: 0.5em;
+		color: $gray-text;
+	}
+	input[type=checkbox] {
+		display: none;
+	}
+	input[type=submit] {
+		background: transparent url(_i/go.png) center center no-repeat;
+		background-size: 1em;
+		text-indent: -999px;
+		display: block;
+		width: 1em;
+		height: 1em;
+		position: absolute;
+		right: 0.75em;
+		top: 0.75em;
+		border: 0;
+		padding: 0;
+		float: none;
+		font-size: 1em;
+		&:hover {
+			background: transparent url(_i/go.png) center center no-repeat;
+			background-size: 1.1em;
+		}
+	}
+}
+/*Only Two Tabs*/
+.only-two {
+	margin-top: 2em;
+	.feature-tab-nav {
+		> li {
+			width: 50%;
+		}
+	}
+	.tab-column {
+		@include bp(50) {
+			width: 50%;
+		}
+	}
+}

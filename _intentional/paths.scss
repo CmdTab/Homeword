@@ -1,0 +1,50 @@
+.path {
+	position: absolute;
+	z-index: 2;
+	max-width: none;
+	top: 0;
+	bottom: 0;
+	@include bp(50) {
+		top: auto;
+		bottom: auto;
+		left: auto;
+		max-width: 100%;
+	}
+}
+.path-content {
+	position: relative;
+	overflow: hidden;
+	.med-wrap,
+	.sm-wrap,
+	.wrap {
+		position: relative;
+		z-index: 3;
+	}
+}
+.intent-store {
+	.med-wrap {
+		z-index: 4;
+	}
+}
+
+/*.intent-store {
+	position: relative;
+	background: url(_i/path-1.png) 2em bottom no-repeat;
+}
+.one {
+	bottom: 0;
+	left: 2em;
+	width: 30em;
+	z-index: 2;
+}
+.quiz {
+	background: $yellow url(_i/path-2.png) right top no-repeat;
+}
+.videos {
+	//background: $dark-gray url(_i/path-3.png) right top no-repeat;
+}
+.map-section {
+	.med-wrap {
+		background: url(_i/path-4.png) center top no-repeat
+	}
+}*/

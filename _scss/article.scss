@@ -1,0 +1,292 @@
+.content-section.single,
+.content-section.page {
+	padding: 2em 0;
+}
+.families-content {
+	.entry-footer {
+		border-color: $family;
+	}
+	.entry-meta {
+		a {
+			color: $family;
+			&:hover {
+				color: darken($family, 10%);
+			}
+		}
+	}
+	.related-posts,
+	.post-navigation {
+		a {
+			color: $family;
+			&:hover {
+				color: darken($family, 10%);
+			}
+		}
+	}
+}
+.church-content {
+	.entry-footer {
+		border-color: $church;
+	}
+	.entry-meta {
+		a {
+			color: $church;
+			&:hover {
+				color: darken($church, 10%);
+			}
+		}
+	}
+	.related-posts,
+	.post-navigation {
+		a {
+			color: $church;
+			&:hover {
+				color: darken($church, 10%);
+			}
+		}
+	}
+}
+.entry-title {
+	font-size: 2.5em;
+	color: $black;
+	margin-bottom: 0.5em;
+	a {
+		color: $black;
+	}
+}
+.entry-header {
+	font-family: "adelle",serif;
+	padding: 0 2em;
+}
+.entry-author {
+	font-size: 1.125em;
+	margin-bottom: 0.25em;
+	a {
+		font-weight: bold;
+	}
+}
+.entry-cats {
+	font-size: 0.875em;
+	border-top: 2px solid #ddd;
+	padding: 0.5em 0 1em;
+	font-style: italic;
+}
+.edit-link {
+	float: right;
+}
+.caption {
+	font-size: 0.875em;
+	color: #bbb;
+	font-style: italic;
+}
+/*Content Defaults*/
+.entry-content {
+	padding: 0 2em;
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "lft-etica","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: bold;
+		color: $black;
+		text-transform: uppercase;
+	}
+	h1 {
+		font-size: 1.25em;
+	}
+	h2, h3, h4, h5, h6 {
+		font-size: 1em;
+	}
+	em {
+		font-family: "adelle",serif;
+		font-style: italic;
+	}
+	blockquote {
+		font-family: "adelle",serif;
+		font-size: 1.25em;
+		color: lighten($black, 30%);
+		position: relative;
+		text-align: center;
+	}
+	.btn,
+	.btn-gray {
+		margin-right: 1em;
+	}
+}
+.entry-social {
+	padding: 2em;
+}
+.social-buttons {
+	float: left;
+}
+.to-top {
+	float: right;
+	color: #aaa;
+	font-size: 0.875em;
+	span {
+		font-size: 0.5em;
+		margin-right: 1em;
+		position: relative;
+		top: -0.25em;
+	}
+}
+.entry-footer {
+	padding: 2em;
+	border-top: 0.25em solid $blue;
+	img {
+		margin-bottom: 1em;
+	}
+	.author-info {
+
+	}
+	h4 {
+		margin: 0 0 0.5em;
+		font-family: "adelle",serif;
+	}
+	p {
+		margin: 0;
+	}
+	@include bp(44) {
+		img {
+			float: left;
+			width: 20%;
+			margin-right: 5%;
+		}
+		.author-info {
+			float: left;
+			width: 75%;
+			margin: 0;
+		}
+	}
+}
+.powerpress_link_pinw {
+	@include button($radio, #fff);
+}
+.nav-links {
+	padding: 0 2em;
+}
+.nav-previous {
+	float: left;
+}
+.nav-next {
+	float: right;
+}
+/***404***/
+.error-404 {
+	.search-form {
+		label {
+			span {
+				top: 0.5em;
+			}
+		}
+	}
+}
+.categories-404 {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		margin: 0 0.5em 0.5em 0;
+	}
+	a {
+		display: block;
+		background: #eee;
+		padding: 0.25em 0.5em;
+		&:hover {
+			color: $text;
+		}
+	}
+}
+.social-links {
+	a {
+		font-size: 2em;
+		margin-right: 0.25em;
+		color: #ddd;
+	}
+}
+.related-posts {
+	padding: 0 2em;
+	h4 {
+		color: #aaa;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 0.75em;
+	}
+	a {
+		display: block;
+		line-height: 1.4;
+		font-family: "adelle",serif;
+		font-size: 0.8125em;
+	}
+}
+.single {
+	.post-navigation {
+		padding: 1em 2em;
+		margin-bottom: 2em;
+		border-top: 2px solid #aaa;
+		border-bottom: 2px solid #aaa;
+		&:after {
+			content:'';
+			display: table;
+			clear: both;
+		}
+		a {
+			display: block;
+			float: left;
+			width: 40%;
+			position: relative;
+			font-weight: bold;
+		}
+		a[rel="prev"] {
+			margin-right: 20%;
+			padding-left: 2em;
+			span {
+				position: absolute;
+				left: 0;
+				top: 1em;
+			}
+		}
+		a[rel="next"] {
+			text-align: right;
+			padding-right: 2em;
+			span {
+				position: absolute;
+				right: 0;
+				top: 1em;
+			}
+
+		}
+
+	}
+}
+/*Product Shortcode*/
+div.woocommerce:not(.columns-4) {
+	.products {
+		li {
+			@include bp(44) {
+				float: none;
+				width: 100%;
+				margin: 0 0 2em;
+				text-align: center;
+			}
+		}
+	}
+}
+div.woocommerce:not(.columns-4) {
+	.cross-sells {
+		.products {
+			li {
+				display: block;
+				margin-bottom: 1em;
+				@include bp(44) {
+					float: left;
+					width: 30%;
+					margin: 0 5% 3em 0;
+					&:nth-child(3n) {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}

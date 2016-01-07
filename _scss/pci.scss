@@ -1,0 +1,18 @@
+.mijireh-header {
+	padding: 1em;
+	* {
+		line-height: 1;
+	}
+	.site-title {
+		@include bp(50) {
+			text-align: center;
+			float: none;
+		}
+	}
+	@include bp(62.5) {
+		padding: 2em 0;
+	}
+}
+.payment_method_mijireh_checkout {
+	padding: 0.5em 1.25em;
+}
