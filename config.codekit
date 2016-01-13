@@ -495,6 +495,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_i\/KTA-banner.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3454,
+		"inputAbbreviatedPath": "\/_i\/KTA-banner.png",
+		"outputAbbreviatedPath": "\/_i\/KTA-banner.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_i\/mastercard.png": {
 		"fileType": 32768,
 		"ignore": 0,

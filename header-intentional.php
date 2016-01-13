@@ -28,9 +28,11 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
-		<div class="med-wrap group">
-			
+		<div class="med-wrap intent-wrap group">
+			<a class="kta-banner" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src ="<?php bloginfo('template_directory'); ?>/_i/kta-banner.png"></a>
+
 			<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src ="<?php bloginfo('template_directory'); ?>/_i/intentional-logo.png"></a>
+
 			<a href = "#" id="toggle-nav">
 				Menu
 			</a>
@@ -40,7 +42,7 @@
 				<a class="intent-cart" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
 					<?php if($woocommerce->cart->cart_contents_count > 0): ?>
 					<span class="cart-count">
-						<?php echo sprintf(_n('%d item', '%d', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?>
+						<?php echo sprintf(_n('%d', '%d', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?>
 					</span>
 					<?php endif; ?>
 				</a>
