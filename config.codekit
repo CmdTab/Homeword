@@ -561,6 +561,248 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_i\/path-dot-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_i\/path-dot-1.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot-10.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 96457,
+		"inputAbbreviatedPath": "\/_i\/path-dot-10.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-10.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot-11.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 96145,
+		"inputAbbreviatedPath": "\/_i\/path-dot-11.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-11.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot-12.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_i\/path-dot-12.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-12.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot-13.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_i\/path-dot-13.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-13.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot-14.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_i\/path-dot-14.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-14.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot-15.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_i\/path-dot-15.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-15.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot-16.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 94844,
+		"inputAbbreviatedPath": "\/_i\/path-dot-16.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-16.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_i\/path-dot-2.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_i\/path-dot-3.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot-4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_i\/path-dot-4.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot-5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_i\/path-dot-5.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot-6.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_i\/path-dot-6.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-6.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot-7.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 94820,
+		"inputAbbreviatedPath": "\/_i\/path-dot-7.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-7.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot-8.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 96367,
+		"inputAbbreviatedPath": "\/_i\/path-dot-8.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-8.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot-9.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_i\/path-dot-9.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot-9.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-dot.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 93755,
+		"inputAbbreviatedPath": "\/_i\/path-dot.png",
+		"outputAbbreviatedPath": "\/_i\/path-dot.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-intent-store.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 93896,
+		"inputAbbreviatedPath": "\/_i\/path-intent-store.png",
+		"outputAbbreviatedPath": "\/_i\/path-intent-store.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-quiz.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 93379,
+		"inputAbbreviatedPath": "\/_i\/path-quiz.png",
+		"outputAbbreviatedPath": "\/_i\/path-quiz.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-videos.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 96387,
+		"inputAbbreviatedPath": "\/_i\/path-videos.png",
+		"outputAbbreviatedPath": "\/_i\/path-videos.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-who.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 95284,
+		"inputAbbreviatedPath": "\/_i\/path-who.png",
+		"outputAbbreviatedPath": "\/_i\/path-who.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/path-why.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/_i\/path-why.png",
+		"outputAbbreviatedPath": "\/_i\/path-why.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_i\/path.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -796,6 +1038,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_intentional\/jquery.fitvids.js",
 		"outputAbbreviatedPath": "\/_intentional\/min\/jquery.fitvids-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_intentional\/jquery.matchHeight.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_intentional\/jquery.matchHeight.js",
+		"outputAbbreviatedPath": "\/_intentional\/min\/jquery.matchHeight-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_intentional\/jquery.waypoints.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_intentional\/jquery.waypoints.js",
+		"outputAbbreviatedPath": "\/_intentional\/min\/jquery.waypoints-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -2765,6 +3029,18 @@
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/_intentional\/jquery.fitvids.js",
 			"position": 1,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_intentional\/jquery.matchHeight.js",
+			"position": 2,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_intentional\/jquery.waypoints.js",
+			"position": 3,
 			"type": 0
 			}
 		],

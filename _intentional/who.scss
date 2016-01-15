@@ -11,6 +11,25 @@
 			color: #fff;
 		}
 	}
+	.three-list {
+		li {
+			width: 65%;
+			margin: 0 auto;
+			padding: 1.5em 0;
+			@include bp(44) {
+				float: left;
+				width: 30%;
+				margin: 0 5% 1em 0;
+				padding: 0;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+			img {
+				padding-bottom: 1em;
+			}
+		}
+	}
 }
 .who-list {
 	text-align: center;

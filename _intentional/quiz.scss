@@ -1,6 +1,14 @@
 .quiz {
 	background: $yellow;
 	padding: 2em 0;
+	.section-header {
+		h2 {
+			font-size: 2em;
+			@include bp(44) {
+				font-size: 3em;
+			}
+		}
+	}
 }
 .quiz-form {
 	font-family: 'Open Sans Condensed', sans-serif;

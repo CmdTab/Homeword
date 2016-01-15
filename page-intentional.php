@@ -15,6 +15,11 @@ get_header('intentional'); ?>
 	<div class="main-content">
 		<div class="path-content">
 			<img src = "<?php bloginfo('template_directory'); ?>/_i/path.png" class="path">
+			<!-- <img src = "<?php // bloginfo('template_directory'); ?>/_i/path-intent-store.png" class="path path-intent-store">
+			<img src = "<?php // bloginfo('template_directory'); ?>/_i/path-quiz.png" class="path path-intent-quiz">
+			<img src = "<?php // bloginfo('template_directory'); ?>/_i/path-videos.png" class="path path-intent-video">
+			<img src = "<?php // bloginfo('template_directory'); ?>/_i/path-why.png" class="path path-intent-why">
+			<img src = "<?php // bloginfo('template_directory'); ?>/_i/path-who.png" class="path path-intent-who"> -->
 			<div class="intent-store">
 				<div class="wrap group">
 					<a href = "#" data-video="<?php the_field('intent_video'); ?>">
@@ -27,7 +32,7 @@ get_header('intentional'); ?>
 				</div>
 				<div class="med-wrap group">
 					<div class="product-options group" id="store">
-						<div class="option-free">
+						<div class="option-free option-height">
 							<div class="flip-container">
 								<h2><?php the_field('free_title'); ?></h2>
 								<div class="flipper">
@@ -46,7 +51,7 @@ get_header('intentional'); ?>
 							<p><?php the_field('free_summary'); ?></p>
 							<?php gravity_form( get_field('free_form'), false, false, false, '', false ); ?>
 						</div>
-						<div class="option-individual">
+						<div class="option-individual option-height">
 							<div class="flip-container">
 								<h2><?php the_field('indiv_title'); ?></h2>
 								<div class="flipper">
@@ -84,7 +89,7 @@ get_header('intentional'); ?>
 								?>
 							</div>
 						</div>
-						<div class="option-bundle">
+						<div class="option-bundle option-height">
 							<div class="flip-container">
 								<h2><?php the_field('bundle_title'); ?></h2>
 								<div class="flipper">
@@ -120,7 +125,7 @@ get_header('intentional'); ?>
 								?>
 							</div>
 						</div>
-						<div class="option-church">
+						<div class="option-church option-height">
 							<div class="flip-container">
 								<h2><?php the_field('church_title'); ?></h2>
 								<div class="flipper">
@@ -244,7 +249,7 @@ get_header('intentional'); ?>
 						<li>
 							<div class="info-card flip-container">
 								<div class="flipper">
-									<div class="front">
+									<div class="front card-height">
 										<?php 
 											$card_image = get_field('card_one_icon');
 											if( !empty($card_image) ): ?>
@@ -253,7 +258,7 @@ get_header('intentional'); ?>
 										<h3><?php the_field('card_one_title'); ?></h3>
 										<p><?php the_field('card_one_text'); ?></p>
 									</div>
-									<div class="back">
+									<div class="back card-height">
 										<?php 
 											$back_card_image = get_field('card_one_back_image');
 											if( !empty($back_card_image) ): ?>
@@ -262,8 +267,10 @@ get_header('intentional'); ?>
 										<h4><?php the_field('card_one_back_title'); ?></h4>
 										<?php the_field('card_one_back_text'); ?>
 									</div>
+									<a href="#" class="btn turn-btn">Turn Card</a>
 								</div>
 							</div>
+							
 						</li>
 						<li>
 							<div class="info-card flip-container">
@@ -286,6 +293,7 @@ get_header('intentional'); ?>
 										<h4><?php the_field('card_two_back_title'); ?></h4>
 										<?php the_field('card_two_back_text'); ?>
 									</div>
+									<a href="#" class="btn turn-btn">Turn Card</a>
 								</div>
 							</div>
 						</li>
@@ -310,6 +318,7 @@ get_header('intentional'); ?>
 										<h4><?php the_field('card_three_back_title'); ?></h4>
 										<?php the_field('card_three_back_text'); ?>
 									</div>
+									<a href="#" class="btn turn-btn">Turn Card</a>
 								</div>
 							</div>
 						</li>

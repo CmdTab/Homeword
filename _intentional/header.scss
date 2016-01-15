@@ -42,7 +42,10 @@
 	ul {
 		list-style: none;
 		margin: 0;
-		padding: 1em 0 0;
+		padding: 2.5em 0 0;
+		@include bp(55) {
+			padding: 1em 0 0;
+		}
 	}
 	li {
 		display: block;
