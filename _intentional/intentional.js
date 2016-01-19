@@ -108,7 +108,7 @@ function wayPoint() {
 	      var src = jQuery( '.path' ).attr("src").replace("path-dot.png", "path.png");
          jQuery( '.path' ).attr("src", src);
 	   }
-	}, { offset: 0 });
+	}, { offset: 20 });
 
 	jQuery('.intent-store').waypoint(function(direction) {
 
@@ -141,7 +141,7 @@ function wayPoint() {
 	      var src = jQuery( '.path' ).attr("src").replace("path-dot-3.png", "path-dot-2.png");
          jQuery( '.path' ).attr("src", src);
 	   }
-	}, { offset: -600 });
+	}, { offset: -500 });
 
 	jQuery('.quiz').waypoint(function(direction) {
 
@@ -152,7 +152,7 @@ function wayPoint() {
 	      var src = jQuery( '.path' ).attr("src").replace("path-dot-4.png", "path-dot-3.png");
          jQuery( '.path' ).attr("src", src);
 	   }
-	}, { offset: 0 });
+	}, { offset: 100 });
 
 	jQuery('.quiz').waypoint(function(direction) {
 
@@ -163,7 +163,7 @@ function wayPoint() {
 	      var src = jQuery( '.path' ).attr("src").replace("path-dot-5.png", "path-dot-4.png");
          jQuery( '.path' ).attr("src", src);
 	   }
-	}, { offset: -50 });
+	}, { offset: 0 });
 
 	jQuery('.quiz').waypoint(function(direction) {
 
@@ -174,7 +174,7 @@ function wayPoint() {
 	      var src = jQuery( '.path' ).attr("src").replace("path-dot-6.png", "path-dot-5.png");
          jQuery( '.path' ).attr("src", src);
 	   }
-	}, { offset: -100 });
+	}, { offset: -50 });
 
 	jQuery('.quiz').waypoint(function(direction) {
 
@@ -207,7 +207,7 @@ function wayPoint() {
 	      var src = jQuery( '.path' ).attr("src").replace("path-dot-9.png", "path-dot-8.png");
          jQuery( '.path' ).attr("src", src);
 	   }
-	}, { offset: 40 });
+	}, { offset: 100 });
 
 	jQuery('.map-section').waypoint(function(direction) {
 
@@ -218,7 +218,7 @@ function wayPoint() {
 	      var src = jQuery( '.path' ).attr("src").replace("path-dot-10.png", "path-dot-9.png");
          jQuery( '.path' ).attr("src", src);
 	   }
-	}, { offset: -150 });
+	}, { offset: 0 });
 
 	jQuery('.map-section').waypoint(function(direction) {
 
@@ -229,7 +229,7 @@ function wayPoint() {
 	      var src = jQuery( '.path' ).attr("src").replace("path-dot-11.png", "path-dot-10.png");
          jQuery( '.path' ).attr("src", src);
 	   }
-	}, { offset: -250 });
+	}, { offset: -200 });
 
 	jQuery('.map-section').waypoint(function(direction) {
 
@@ -251,7 +251,7 @@ function wayPoint() {
 	      var src = jQuery( '.path' ).attr("src").replace("path-dot-13.png", "path-dot-12.png");
          jQuery( '.path' ).attr("src", src);
 	   }
-	}, { offset: 0 });
+	}, { offset: 100 });
 
 	jQuery('.who-section').waypoint(function(direction) {
 
@@ -262,7 +262,7 @@ function wayPoint() {
 	      var src = jQuery( '.path' ).attr("src").replace("path-dot-14.png", "path-dot-13.png");
          jQuery( '.path' ).attr("src", src);
 	   }
-	}, { offset: -50 });
+	}, { offset: 0 });
 
 	jQuery('.who-section').waypoint(function(direction) {
 
@@ -273,7 +273,7 @@ function wayPoint() {
 	      var src = jQuery( '.path' ).attr("src").replace("path-dot-15.png", "path-dot-14.png");
          jQuery( '.path' ).attr("src", src);
 	   }
-	}, { offset: -80 });
+	}, { offset: -50 });
 
 	jQuery('.who-section').waypoint(function(direction) {
 
@@ -284,7 +284,7 @@ function wayPoint() {
 	      var src = jQuery( '.path' ).attr("src").replace("path-dot-16.png", "path-dot-15.png");
          jQuery( '.path' ).attr("src", src);
 	   }
-	}, { offset: -120 });
+	}, { offset: -100 });
 
 	/*jQuery('.intent-store').waypoint(function(direction) {
 
