@@ -3016,7 +3016,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Tristan Swire",
+"lastSavedByUser": "Josh Rives",
 "manualImportLinks": {
 	"\/_intentional\/intentional.js": [
 		{
@@ -3061,8 +3061,8 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "homeword",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "homeword-git",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "globe_blue"
 	},
 "projectSettings": {
