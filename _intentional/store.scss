@@ -99,7 +99,7 @@
 	}
 }
 .pricing {
-	text-align: left;
+	text-align: center;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 700;
 	margin: 0 0 1em;
@@ -111,7 +111,6 @@
 		}
 	}
 	@include bp(50) {
-		text-align: center;
 		margin: 0.7em 0;
 		font-size: 1.4em;
 	}
@@ -224,11 +223,13 @@
 /**Dropdown**/
 .option-dropdown {
 	display: none;
-	
-	background: transparentize(#fff, 0.1);
+	background: white;
 	padding: 0.5em 0.5em 0;
 	border: 1px solid #bfbebe;
+	position: relative;
+	z-index: 1;
 	@include bp(50) {
+		background: transparentize(#fff, 0.1);
 		position: absolute;
 		top: 100%;
 		left: 1em;

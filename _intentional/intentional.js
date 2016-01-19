@@ -55,6 +55,7 @@ function sameHeight() {
   	// Set each height to the max height
   	jQuery('.option-height').height(maxHeight);
 }
+
 function optionDetail() {
 	// Get an array of all element heights
   	var elementHeights = jQuery('.option-details').map(function() {
@@ -68,6 +69,7 @@ function optionDetail() {
   	// Set each height to the max height
   	jQuery('.option-details').height(maxHeight);
 }
+
 function cardHeight() {
 	// Get an array of all element heights
   	var elementHeights = jQuery('.card-height').map(function() {
@@ -81,6 +83,7 @@ function cardHeight() {
   	// Set each height to the max height
   	jQuery('.card-height').height(maxHeight);
 }
+
 function turnCard() {
 	jQuery('.turn-btn').click(function() {
 		if(jQuery( this ).hasClass( 'expanded' )) {
@@ -341,16 +344,14 @@ jQuery(document).ready(function() {
 			auto: true
 		});
 	}
-
 	if (vw < 800) {
 		optionDetail();
 		sameHeight();
 		turnCard();
-		cardHeight();
 		jQuery('.video-slider').bxSlider({
 			ticker: false,
-			minSlides: 1,
-			maxSlides: 1,
+			minSlides: 2,
+			maxSlides: 2,
 			slideWidth: 300,
 			slideMargin: 16,
 			tickerHover: true,
@@ -359,7 +360,7 @@ jQuery(document).ready(function() {
 			auto: true
 		});
 	}
-
+	cardHeight();
 	wayPoint();
 	modalVideo();
 	closeModal();
@@ -376,5 +377,4 @@ jQuery(document).ready(function() {
 		startSlide: 1,
 		autoDirection: 'prev'
 	});
-	
 });

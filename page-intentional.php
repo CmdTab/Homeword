@@ -275,7 +275,7 @@ get_header('intentional'); ?>
 						<li>
 							<div class="info-card flip-container">
 								<div class="flipper">
-									<div class="front">
+									<div class="front card-height">
 										<?php 
 											$card_image = get_field('card_two_icon');
 											if( !empty($card_image) ): ?>
@@ -284,7 +284,7 @@ get_header('intentional'); ?>
 										<h3><?php the_field('card_two_title'); ?></h3>
 										<p><?php the_field('card_two_text'); ?></p>
 									</div>
-									<div class="back">
+									<div class="back card-height">
 										<?php 
 											$back_card_image = get_field('card_two_back_image');
 											if( !empty($back_card_image) ): ?>
@@ -300,7 +300,7 @@ get_header('intentional'); ?>
 						<li>
 							<div class="info-card flip-container">
 								<div class="flipper">
-									<div class="front">
+									<div class="front card-height">
 										<?php 
 											$card_image = get_field('card_three_icon');
 											if( !empty($card_image) ): ?>
@@ -309,7 +309,7 @@ get_header('intentional'); ?>
 										<h3><?php the_field('card_three_title'); ?></h3>
 										<p><?php the_field('card_three_text'); ?></p>
 									</div>
-									<div class="back">
+									<div class="back card-height">
 										<?php 
 											$back_card_image = get_field('card_three_back_image');
 											if( !empty($back_card_image) ): ?>
