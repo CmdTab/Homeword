@@ -3,6 +3,8 @@
 	color: #fff;
 	padding: 2em 0;
 	text-align: center;
+	position: relative;
+	z-index: 101;
 	* {
 		vertical-align: middle;
 	}
@@ -25,9 +27,14 @@
 	text-align: center;
 	color: #fff;
 	padding: 2em 0;
+	position: relative;
+	z-index: 101;
 	img {
 		max-width: 15em;
 		margin: 0 0 1em;
+		&:first-of-type {
+			margin-right: 5em;
+		}
 	}
 }
 .copyright {

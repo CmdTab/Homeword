@@ -133,6 +133,14 @@ function homeword_scripts() {
 		wp_dequeue_style('homeword-style');
 		wp_enqueue_style( 'intentional-style', get_template_directory_uri() . '/intentional.css' );
 	}
+	if(is_page_template( 'page-download-free.php' ) ) {
+		wp_dequeue_style('homeword-style');
+		wp_enqueue_style( 'intentional-style', get_template_directory_uri() . '/intentional.css' );
+	}
+	if(is_page_template( 'page-download-now.php' ) ) {
+		wp_dequeue_style('homeword-style');
+		wp_enqueue_style( 'intentional-style', get_template_directory_uri() . '/intentional.css' );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'homeword_scripts' );
 
@@ -538,6 +546,7 @@ function featured_image_in_rss($content)
     }
     return $content;
 }
+
 //Add the filter for RSS feeds Excerpt
 add_filter('the_excerpt_rss', 'featured_image_in_rss');
 //Add the filter for RSS feed content

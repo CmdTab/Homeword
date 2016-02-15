@@ -9,6 +9,7 @@
 ?>
 
 		<footer class="intent-footer" role="contentinfo">
+			<img src = "<?php bloginfo('template_directory'); ?>/_i/homeword-logo-white.png">
 			<img src = "<?php bloginfo('template_directory'); ?>/_i/kt-logo.png">
 			<div class="copyright">
 				&copy; KitchenTable Academy. All Rights Reserved.

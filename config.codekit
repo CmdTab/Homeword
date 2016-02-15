@@ -176,6 +176,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_i\/download-btn.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15395,
+		"inputAbbreviatedPath": "\/_i\/download-btn.png",
+		"outputAbbreviatedPath": "\/_i\/download-btn.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/download-lock.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13431,
+		"inputAbbreviatedPath": "\/_i\/download-lock.png",
+		"outputAbbreviatedPath": "\/_i\/download-lock.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_i\/family-image.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -205,6 +227,28 @@
 		"initialSize": 1617,
 		"inputAbbreviatedPath": "\/_i\/favicon.png",
 		"outputAbbreviatedPath": "\/_i\/favicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/free-ch-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10045,
+		"inputAbbreviatedPath": "\/_i\/free-ch-icon.png",
+		"outputAbbreviatedPath": "\/_i\/free-ch-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/free-download.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 72251,
+		"inputAbbreviatedPath": "\/_i\/free-download.jpg",
+		"outputAbbreviatedPath": "\/_i\/free-download.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -924,6 +968,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_i\/small-group.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8395,
+		"inputAbbreviatedPath": "\/_i\/small-group.png",
+		"outputAbbreviatedPath": "\/_i\/small-group.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/summary-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8964,
+		"inputAbbreviatedPath": "\/_i\/summary-icon.png",
+		"outputAbbreviatedPath": "\/_i\/summary-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_i\/visa.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -960,6 +1026,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_intentional\/bits.scss",
 		"outputAbbreviatedPath": "\/css\/bits.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_intentional\/download.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_intentional\/download.scss",
+		"outputAbbreviatedPath": "\/css\/download.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1990,6 +2072,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/download.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/download.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/footer-intentional.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2243,11 +2334,20 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/page-download.php": {
+	"\/page-download-free.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/page-download.php",
+		"inputAbbreviatedPath": "\/page-download-free.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/page-download-now.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/page-download-now.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

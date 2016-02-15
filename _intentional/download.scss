@@ -1,0 +1,115 @@
+.free-download {
+	background: url(_i/free-download.jpg) top center no-repeat;
+	background-size: cover;
+	padding: 6em 0;
+	width: 100%;
+	max-width: 160em;
+	text-align: center;
+	color: white;
+	margin-bottom: 1.5em;
+	svg {
+		max-width: 3em;
+		fill: white;
+	}
+	h1 {
+		font-size: 3em;
+		text-transform: uppercase;
+		margin: -0.25em auto 0;
+	}
+	p {
+		margin: 0 auto 2em;
+	}
+	.option-free {
+		.gform_wrapper {
+			position: relative;
+			max-width: 25em;
+			margin: 0 auto;
+			label {
+				color: white;
+			}
+			input[type="email"] {
+				width: 18em;
+				background: transparent;
+				color: white;
+			}
+			input[type=submit] {
+				max-width: 6em;
+				width: 100%;
+				max-height: 1.875em;
+				font-size: 1.25em;
+			}
+		}
+		.gform_footer {
+			img {
+				display: none !important;
+			}
+		}
+	}
+	.thank-you {
+		display: none;
+	}
+}
+.download-content {
+	background-color: $blue;
+	color: white;
+	text-align: center;
+	padding: 6em 0;
+	margin-bottom: 1.5em;
+	.three-list {
+		margin: 0 auto;
+	}
+	a {
+		color: white;
+		text-decoration: none;
+		&:hover {
+			color: lighten( $yellow , 10% );
+			text-decoration: none;
+			p {
+				color: white;
+			}
+		}
+	}
+	h1 {
+		line-height: 1.2;
+		margin-bottom: 0;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 0.9em;
+	}
+	img {
+		display: block;
+		max-width: 12em;
+		margin: 1em auto;
+	}
+	li {
+		position: relative;
+		.locked {
+			display: block;
+		}
+		.unlocked {
+			display: none;
+		}
+	}
+}
+.free-unlocked {
+	h1,
+	p {
+		display: none;
+	}
+	.thank-you {
+		display: block;
+		h1,
+		p {
+			display: block;
+		}
+	}
+}
+.download-unlocked li a {
+	.locked {
+		display: none;
+	}
+	.unlocked {
+		display: block;
+	}
+}

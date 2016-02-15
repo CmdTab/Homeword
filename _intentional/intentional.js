@@ -56,6 +56,20 @@ function sameHeight() {
   	jQuery('.option-height').height(maxHeight);
 }
 
+function freeDownload() {
+	// Get an array of all element heights
+  	var elementHeights = jQuery('.download-content h1').map(function() {
+   	return jQuery(this).height();
+  	}).get();
+
+  	// Math.max takes a variable number of arguments
+  	// `apply` is equivalent to passing each height as an argument
+  	var maxHeight = Math.max.apply(null, elementHeights);
+
+  	// Set each height to the max height
+  	jQuery('.download-content h1').height(maxHeight);
+}
+
 function optionDetail() {
 	// Get an array of all element heights
   	var elementHeights = jQuery('.option-details').map(function() {
@@ -300,10 +314,20 @@ function inputOverlay() {
 	});
 }
 
+function confirmDownload() {
+	jQuery(document).bind('gform_confirmation_loaded', function(){
+   	jQuery( '.free-download' ).addClass( 'free-unlocked' );
+   	jQuery( '.download-content' ).addClass( 'download-unlocked' );
+   	jQuery( '.download-content a' ).attr('onclick', '');
+	});
+}
+
+
 jQuery(document).ready(function() {
 	var vw = jQuery(window).width();
 	if (vw > 800) {
 		cardHeight();
+		freeDownload();
 		jQuery('.video-slider').bxSlider({
 			ticker: false,
 			minSlides: 3,
@@ -313,7 +337,7 @@ jQuery(document).ready(function() {
 			tickerHover: true,
 			pager: false,
 			moveSlides: 1,
-			auto: true
+			auto: true,
 		});
 	}
 	if (vw < 800) {
@@ -329,9 +353,10 @@ jQuery(document).ready(function() {
 			tickerHover: true,
 			pager: false,
 			moveSlides: 1,
-			auto: true
+			auto: true,
 		});
 	}
+	confirmDownload();
 	inputOverlay();
 	wayPoint();
 	modalVideo();
@@ -347,6 +372,7 @@ jQuery(document).ready(function() {
 		pager: false,
 		auto: true,
 		startSlide: 1,
-		autoDirection: 'prev'
+		autoDirection: 'prev',
+		pause: 10000
 	});
 });

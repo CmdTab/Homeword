@@ -15,11 +15,6 @@ get_header('intentional'); ?>
 	<div class="main-content">
 		<div class="path-content">
 			<img src = "<?php bloginfo('template_directory'); ?>/_i/path.png" class="path">
-			<!-- <img src = "<?php // bloginfo('template_directory'); ?>/_i/path-intent-store.png" class="path path-intent-store">
-			<img src = "<?php // bloginfo('template_directory'); ?>/_i/path-quiz.png" class="path path-intent-quiz">
-			<img src = "<?php // bloginfo('template_directory'); ?>/_i/path-videos.png" class="path path-intent-video">
-			<img src = "<?php // bloginfo('template_directory'); ?>/_i/path-why.png" class="path path-intent-why">
-			<img src = "<?php // bloginfo('template_directory'); ?>/_i/path-who.png" class="path path-intent-who"> -->
 			<div class="intent-store">
 				<div class="wrap group">
 					<a href = "#" data-video="<?php the_field('intent_video'); ?>">
