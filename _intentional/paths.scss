@@ -5,10 +5,13 @@
 	top: 0;
 	bottom: 0;
 	@include bp(50) {
-		top: auto;
+		top: 20%;
 		bottom: auto;
 		left: auto;
 		max-width: 100%;
+	}
+	@include bp(62.5) {
+		top: auto;
 	}
 }
 .path-content {

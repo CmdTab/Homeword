@@ -11,14 +11,20 @@
 }
 .site-title {
 	display: block;
-	margin-left: 5em;
-	img {
-		display: block;
-		max-width: 12em;
-	}
+	margin-left: 3.5em;
 	@include bp(44) {
 		float: left;
-		margin-left: 8em;
+		margin-left: 4.5em;
+	}
+	@include bp(62.5) {
+		margin-left: 7em;
+	}
+	img {
+		display: block;
+		max-width: 10em;
+		@include bp(44) {
+			max-width: 12em;
+		}
 	}
 }
 .kta-banner {
@@ -26,9 +32,11 @@
 	left: 0;
 	top: -1.4em;
 	z-index: 10;
-	
 	img {
-		max-width: 4em;
+		max-width: 3em;
+		@include bp(44) {
+			max-width: 4em;
+		}
 		@include bp(62.5) {
 			max-width: 6em;
 		}

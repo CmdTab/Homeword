@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: Intentional
+ * Template name: Download
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -10,7 +10,7 @@
  * @package Home Word
  */
 
-get_header('intentional'); ?>
+get_header('download'); ?>
 
 	<div class="main-content">
 		<div class="path-content">

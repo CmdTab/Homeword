@@ -86,14 +86,10 @@ function cardHeight() {
 
 function turnCard() {
 	jQuery('.turn-btn').click(function() {
-		if(jQuery( this ).hasClass( 'expanded' )) {
-			jQuery( this ).removeClass( 'expanded' );
-			jQuery( this ).siblings( '.front' ).css( 'display' , 'block');
-			jQuery( this ).siblings( '.back' ).css( 'display' , 'none');
+		if(jQuery( this ).parent( '.front , .back' ).parent( '.flipper' ).parent( '.flip-container' ).hasClass( 'hover' )) {
+			jQuery( this ).parent( '.front , .back' ).parent( '.flipper' ).parent( '.flip-container' ).removeClass( 'hover');
 		} else {
-			jQuery( this ).addClass( 'expanded' );
-			jQuery( this ).siblings( '.back' ).css( 'display' , 'block');
-			jQuery( this ).siblings( '.front' ).css( 'display' , 'none');
+			jQuery( this ).parent( '.front , .back' ).parent( '.flipper' ).parent( '.flip-container' ).addClass( 'hover');
 		}
 		return false;
 	});
@@ -286,52 +282,28 @@ function wayPoint() {
 	   }
 	}, { offset: -100 });
 
-	/*jQuery('.intent-store').waypoint(function(direction) {
+}
 
-	    if (direction == 'down') {
-	    		jQuery('.path-content').addClass('path-store');
-	    } else {
-	        jQuery('.path-content').removeClass('path-store');
-	    }
-	}, { offset: 0 });
-
-	jQuery('.quiz').waypoint(function(direction) {
-
-	    if (direction == 'down') { jQuery('.path-content').addClass('path-quiz');
-	    } else {
-	        jQuery('.path-content').removeClass('path-quiz');
-	    }
-	}, { offset: 200 });
-
-	jQuery('.videos').waypoint(function(direction) {
-
-	    if (direction == 'down') { jQuery('.path-content').addClass('path-video');
-	    } else {
-	        jQuery('.path-content').removeClass('path-video');
-	    }
-	}, { offset: 200 });
-
-	jQuery('.map-section').waypoint(function(direction) {
-
-	    if (direction == 'down') { jQuery('.path-content').addClass('path-why');
-	    } else {
-	        jQuery('.path-content').removeClass('path-why');
-	    }
-	}, { offset: 0 });
-
-	jQuery('.who-section').waypoint(function(direction) {
-
-	    if (direction == 'down') { jQuery('.path-content').addClass('path-who');
-	    } else {
-	        jQuery('.path-content').removeClass('path-who');
-	    }
-	}, { offset: 200 });*/
-
+function inputOverlay() {
+	jQuery('.gform_fields .gfield .medium').keydown(function() {
+		jQuery('.gfield label').css('display', 'none');
+	});
+	jQuery('.gform_fields .gfield .medium').blur(function() {
+		if(!jQuery( this ).val()) {
+			jQuery('.gfield label').css('display', 'inline');
+		}
+	});
+	jQuery('.gform_fields .gfield .medium').each(function() {
+		if(jQuery( this ).val() !='') {
+			jQuery('.gfield label').css('display', 'none');
+		}
+	});
 }
 
 jQuery(document).ready(function() {
 	var vw = jQuery(window).width();
 	if (vw > 800) {
+		cardHeight();
 		jQuery('.video-slider').bxSlider({
 			ticker: false,
 			minSlides: 3,
@@ -360,7 +332,7 @@ jQuery(document).ready(function() {
 			auto: true
 		});
 	}
-	cardHeight();
+	inputOverlay();
 	wayPoint();
 	modalVideo();
 	closeModal();
