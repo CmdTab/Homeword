@@ -299,17 +299,17 @@ function wayPoint() {
 }
 
 function inputOverlay() {
-	jQuery('.gform_fields .gfield .medium').keydown(function() {
-		jQuery('.gfield label').css('display', 'none');
+	jQuery('.option-free .gform_fields .gfield .medium').keydown(function() {
+		jQuery('.option-free .gfield label').css('display', 'none');
 	});
-	jQuery('.gform_fields .gfield .medium').blur(function() {
+	jQuery('.option-free .gform_fields .gfield .medium').blur(function() {
 		if(!jQuery( this ).val()) {
-			jQuery('.gfield label').css('display', 'inline');
+			jQuery('.option-free .gfield label').css('display', 'inline');
 		}
 	});
-	jQuery('.gform_fields .gfield .medium').each(function() {
+	jQuery('.option-free .gform_fields .gfield .medium').each(function() {
 		if(jQuery( this ).val() !='') {
-			jQuery('.gfield label').css('display', 'none');
+			jQuery('.option-free .gfield label').css('display', 'none');
 		}
 	});
 }
@@ -319,6 +319,17 @@ function confirmDownload() {
    	jQuery( '.free-download' ).addClass( 'free-unlocked' );
    	jQuery( '.download-content' ).addClass( 'download-unlocked' );
    	jQuery( '.download-content a' ).attr('onclick', '');
+	});
+}
+
+function churchForm() {
+	jQuery( '.bulk-details, .bulk-details-close' ).click(function() {
+		if(jQuery( '.bulk-details-form' ).hasClass( 'visible' )) {
+			jQuery( '.bulk-details-form' ).removeClass( 'visible');
+		} else {
+			jQuery( '.bulk-details-form' ).addClass( 'visible');
+		}
+		return false;
 	});
 }
 
@@ -356,6 +367,7 @@ jQuery(document).ready(function() {
 			auto: true,
 		});
 	}
+	churchForm();
 	confirmDownload();
 	inputOverlay();
 	wayPoint();

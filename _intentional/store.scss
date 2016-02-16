@@ -14,6 +14,126 @@
 		}
 	}
 }
+.bulk-details-form {
+	position: fixed;
+	background: rgba( 50, 50, 50, 0.9);
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 500ms ease-in-out;
+	&.visible {
+		z-index: 101;
+		visibility: visible;
+		opacity: 1;
+	}
+	.hide-me {
+		.ginput_container {
+			display: none;
+		}
+		.gfield_description {
+			margin-bottom: 1em;
+			font-size: 0.875em;
+			font-weight: bold;
+			@include bp(32) {
+				font-size: 1em;
+			}
+			@include bp(50) {
+				font-size: 1.25em;
+			}
+		}
+	}
+	.gform_wrapper,
+	.gforms_confirmation_message {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 90%;
+		margin: 0 auto;
+		transform: translate(-50%, -50%);
+		color: $dark-gray;
+		background: white;
+		padding: 2em;
+		@include bp(44) {
+			width: 50%;
+		}
+		.bulk-details-close,
+		.bulk-close {
+			cursor: pointer;
+			color: white;
+			padding: 0.25em 0.75em;
+			background: $red;
+			position: absolute;
+			right: 0;
+			top: -2em;
+			font-size: 0.75em;
+		}
+	}
+	.gform_confirmation_wrapper {
+		background: $blue;
+		color: white;
+		text-align: center;
+		padding: 1em;
+		margin: 1em auto;
+	}
+	.gform_fields {
+		margin: 0;
+		padding: 0;
+		li {
+			list-style: none;
+			input,
+			textarea {
+			   width: 100%;
+				padding: 0.5em;
+				font-size: 0.9em;
+				outline: none;
+				margin: 0.5em auto;
+				border-radius: 0 !important;
+				border: 1px solid lighten($dark-gray,25%);
+			}
+			.name_first input,
+			.name_last input {
+				width: 47.5%;
+				float: left;
+			}
+			.name_first input {
+				margin-right: 5%;
+			}
+		}
+	}
+	.gfield_label {
+		display: none !important;
+	}
+	.ginput_complex {
+		label {
+		   display: none !important;
+		}
+	}
+	.gform_button {
+		display: block !important;
+		margin: 1.5em auto 0;
+		background-color: $blue;
+		border: 1px solid $blue;
+		color: white;
+		width: 10em;
+		padding: 0.75em 0;
+		font-size: 0.875em;
+		transition: all 500ms ease-in-out;
+		&:hover {
+			background-color: darken( $blue , 10% );
+			border-color: darken( $blue , 10% );
+		}
+	}
+	.gform_footer {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+}
 .product-options {
 	padding: 1em 0 0;
 	> div {
@@ -146,6 +266,10 @@
 			float: none;
 			width: 100%;
 			//display: none;
+		}
+		span {
+			color: $blue;
+			cursor: pointer;
 		}
 	}
 	.pricing {

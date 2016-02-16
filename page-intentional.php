@@ -11,7 +11,6 @@
  */
 
 get_header('intentional'); ?>
-
 	<div class="main-content">
 		<div class="path-content">
 			<img src = "<?php bloginfo('template_directory'); ?>/_i/path.png" class="path">
@@ -121,6 +120,12 @@ get_header('intentional'); ?>
 							</div>
 						</div>
 						<div class="option-church option-height">
+							<div class="bulk-details-form">
+								<?php
+									$var = '16'; 
+								?>
+								<?php gravity_form( $var, false, false, false, '', true ); ?>
+							</div>
 							<div class="flip-container">
 								<h2><?php the_field('church_title'); ?></h2>
 								<div class="flipper">

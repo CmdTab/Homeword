@@ -13,7 +13,6 @@
 get_header('download'); ?>
 
 	<div class="main-content">
-		
 		<div class="free-download">
 			<div class="med-wrap option-free">
 				<svg viewBox="0 0 252.9 367.3">
