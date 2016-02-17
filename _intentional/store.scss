@@ -69,8 +69,8 @@
 			padding: 0.25em 0.75em;
 			background: $red;
 			position: absolute;
-			right: 0;
-			top: -2em;
+			right: -1.5em;
+			top: -1.5em;
 			font-size: 0.75em;
 		}
 	}
@@ -85,6 +85,7 @@
 		margin: 0;
 		padding: 0;
 		li {
+			position: relative;
 			list-style: none;
 			input,
 			textarea {
@@ -130,6 +131,7 @@
 		}
 	}
 	.gform_footer {
+		position: relative;
 		padding: 0 !important;
 		margin: 0 !important;
 	}

@@ -314,14 +314,6 @@ function inputOverlay() {
 	});
 }
 
-function confirmDownload() {
-	jQuery(document).bind('gform_confirmation_loaded', function(){
-   	jQuery( '.free-download' ).addClass( 'free-unlocked' );
-   	jQuery( '.download-content' ).addClass( 'download-unlocked' );
-   	jQuery( '.download-content a' ).attr('onclick', '');
-	});
-}
-
 function churchForm() {
 	jQuery( '.bulk-details, .bulk-details-close' ).click(function() {
 		if(jQuery( '.bulk-details-form' ).hasClass( 'visible' )) {
@@ -333,6 +325,27 @@ function churchForm() {
 	});
 }
 
+function confirmDownload() {
+	jQuery(document).bind('gform_confirmation_loaded', function(){
+   	jQuery( '.free-download' ).addClass( 'free-unlocked' );
+   	jQuery( '.download-content' ).addClass( 'download-unlocked' );
+   	jQuery( '.download-content a' ).attr('onclick', '');
+   	jQuery( '.free-download-success' ).css( 'display' , 'block' );
+	});
+}
+
+function submitForm() {
+	jQuery(document).ready(function(){
+		if(jQuery( '.thank-you' ).is( ':visible' )) {
+			jQuery( '.gform_footer input[type=submit]' ).css( 'display' , 'none' );
+			jQuery( '.free-download' ).addClass( 'free-unlocked' );
+	   	jQuery( '.download-content' ).addClass( 'download-unlocked' );
+	   	jQuery( '.download-content a' ).attr('onclick', '');
+		} else {
+			return false;
+		}
+	});
+}
 
 jQuery(document).ready(function() {
 	var vw = jQuery(window).width();
@@ -367,6 +380,7 @@ jQuery(document).ready(function() {
 			auto: true,
 		});
 	}
+	submitForm();
 	churchForm();
 	confirmDownload();
 	inputOverlay();

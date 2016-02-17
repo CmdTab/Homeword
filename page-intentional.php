@@ -121,10 +121,7 @@ get_header('intentional'); ?>
 						</div>
 						<div class="option-church option-height">
 							<div class="bulk-details-form">
-								<?php
-									$var = '16'; 
-								?>
-								<?php gravity_form( $var, false, false, false, '', true ); ?>
+								<?php gravity_form( get_field('church_option_form'), false, false, false, '', true ); ?>
 							</div>
 							<div class="flip-container">
 								<h2><?php the_field('church_title'); ?></h2>

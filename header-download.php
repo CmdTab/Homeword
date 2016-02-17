@@ -39,7 +39,7 @@
 		<div class="med-wrap intent-wrap group">
 			<a class="kta-banner" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src ="<?php bloginfo('template_directory'); ?>/_i/kta-banner.png"></a>
 
-			<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src ="<?php bloginfo('template_directory'); ?>/_i/intentional-logo.png"></a>
+			<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>intentional" rel="home"><img src ="<?php bloginfo('template_directory'); ?>/_i/intentional-logo.png"></a>
 
 			<a href = "#" id="toggle-nav">
 				Menu

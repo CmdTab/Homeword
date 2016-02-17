@@ -15,19 +15,10 @@ get_header('download'); ?>
 	<div class="main-content">
 		<div class="free-download">
 			<div class="med-wrap option-free">
-				<svg viewBox="0 0 252.9 367.3">
-					<path class="st0" d="M126.4,181.3c-30.8,0-55.8-25-55.8-55.8c0-30.8,25-55.8,55.8-55.8c30.8,0,55.8,25,55.8,55.8
-						C182.2,156.3,157.2,181.3,126.4,181.3z M126.4,0C56.6,0,0,56.6,0,126.4c0,69.8,114.4,240.8,126.4,240.8s126.4-171,126.4-240.8
-						C252.9,56.6,196.3,0,126.4,0z"/>
-				</svg>
-				<h1>Free Downloads</h1>
-				<p>To unlock any of these free downloads, please enter your email address below.</p>
-
 				<?php gravity_form( get_field('free_form'), false, false, false, '', true ); ?>
-
-				<div class="thank-you">
-					<h1>Thank you for signing up!</h1>
-					<p>Click on the links below to download your free content</p>
+				<div class="free-download-success">
+					<h1>THANK YOU FOR SIGNING UP!</h1>
+					<p>Click on the links below to download your free content.</p>
 				</div>
 			</div>
 		</div>
