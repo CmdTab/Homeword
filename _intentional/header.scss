@@ -1,6 +1,13 @@
 .site-header {
 	background: $blue;
 	padding: 1em 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 100;
+	transition: all 500ms ease-in-out;
 	a {
 		display: inline-block;
 		color: #fff;
@@ -8,7 +15,15 @@
 		text-transform: uppercase;
 		font-size: 1.1em;
 	}
+	&.sticky-nav {
+		border-bottom: 1px solid white;
+		.kta-banner img {
+			max-width: 4em;
+			transition: all 500ms ease-in-out;
+		}
+	}
 }
+
 .site-title {
 	display: block;
 	margin-left: 3.5em;
@@ -34,6 +49,7 @@
 	z-index: 10;
 	img {
 		max-width: 3em;
+		transition: all 500ms ease-in-out;
 		@include bp(44) {
 			max-width: 4em;
 		}

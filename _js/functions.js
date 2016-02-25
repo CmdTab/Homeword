@@ -118,6 +118,7 @@ function otherAmount() {
 	});
 }
 
+
 jQuery(document).ready(function() {
 	//var vw = jQuery(window).width();
 	navDropdown();
@@ -131,10 +132,11 @@ jQuery(document).ready(function() {
 	tabLabels();
 	//stockGift();
 	otherAmount();
+
 });
 jQuery(window).load(function() {
 	var vw = jQuery(window).width();
-	if (vw >800) {
+	if (vw > 800) {
 		sidebarHeight();
 		//cartHeights();
 	}

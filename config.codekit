@@ -176,6 +176,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_i\/download-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41072,
+		"inputAbbreviatedPath": "\/_i\/download-bg.jpg",
+		"outputAbbreviatedPath": "\/_i\/download-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_i\/download-btn.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -194,6 +205,17 @@
 		"initialSize": 13431,
 		"inputAbbreviatedPath": "\/_i\/download-lock.png",
 		"outputAbbreviatedPath": "\/_i\/download-lock.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/download.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15135,
+		"inputAbbreviatedPath": "\/_i\/download.png",
+		"outputAbbreviatedPath": "\/_i\/download.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -535,6 +557,17 @@
 		"initialSize": 4054,
 		"inputAbbreviatedPath": "\/_i\/kt-logo.png",
 		"outputAbbreviatedPath": "\/_i\/kt-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_i\/kta-banner-color.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6674,
+		"inputAbbreviatedPath": "\/_i\/kta-banner-color.png",
+		"outputAbbreviatedPath": "\/_i\/kta-banner-color.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

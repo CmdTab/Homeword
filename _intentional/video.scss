@@ -142,13 +142,23 @@
 	right: 10px;
 	background: url(_i/right.svg) no-repeat;
 }
+.quote-section {
+	.bx-wrapper .bx-prev {
+		left: 10px;
+		background: url(_i/left-grey.svg) no-repeat;
+	}
 
+	.bx-wrapper .bx-next {
+		right: 10px;
+		background: url(_i/right-grey.svg) no-repeat;
+	}
+}
 .bx-wrapper .bx-prev:hover {
 	background-position: 0 0;
 }
 
 .bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
+	background-position: 0 0;
 }
 
 .bx-wrapper .bx-controls-direction a {

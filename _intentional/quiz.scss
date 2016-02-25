@@ -18,6 +18,7 @@
 	font-weight: 700;
 	.gform_body {
 		font-size: 1.3em;
+		padding-top: 0.875em;
 	}
 	.gform_fields {
 		margin: 0.5em 0;
@@ -43,6 +44,7 @@
 			margin: -2em 0 0;
 			img {
 				display: block;
+				padding-top: 2em;
 			}
 		}
 	}
@@ -72,6 +74,7 @@
 		list-style: none;
 		margin: 0;
 		padding: 0;
+		font-size: 0.8em;
 		input {
 			margin-right: 0.5em;
 		}
@@ -98,4 +101,8 @@
 	.validation_error {
 		display: none;
 	}
+}
+.gform_anchor {
+	position: absolute;
+	top: -115%;
 }

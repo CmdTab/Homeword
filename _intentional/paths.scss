@@ -1,3 +1,13 @@
+.site-content {
+	margin-top: 3.25em;
+	overflow: hidden;
+	z-index: 25;
+}
+.main-content {
+	overflow: hidden;
+	z-index: 25;
+	position: relative;
+}
 .path {
 	position: absolute;
 	z-index: 2;
@@ -16,7 +26,6 @@
 }
 .path-content {
 	position: relative;
-	/* overflow: hidden; */
 	.med-wrap,
 	.sm-wrap,
 	.wrap {

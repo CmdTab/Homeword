@@ -178,6 +178,7 @@
 	color: #fff;
 	padding: 1em;
 	font-size: 0.8125em;
+	font-weight: bold;
 	hr {
 		background: lighten($dark-gray, 20%);
 	}
@@ -201,7 +202,8 @@
 			background-size: 400%;
 		}
 		b {
-			font-size: 1.15em;
+			font-size: 1.1em;
+			font-family: 'Open Sans Condensed', sans-serif;
 		}
 	}
 	.option-individual {
@@ -299,6 +301,14 @@
 		outline: none;
 	}
 }
+.option-individual .option-cart {
+	.variations {
+	   display: none;
+	}
+	.single_variation .price {
+		display: none;
+	}
+}
 /*Free Option*/
 .option-free {
 	> p {
@@ -306,7 +316,8 @@
 		clear: both;
 		width: 85%;
 		margin: 0 auto;
-		padding: 1.25em 0 0.75em;
+		padding: 0.8em 0;
+		text-align: center;
 	}
 	form {
 		position: relative;

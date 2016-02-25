@@ -1,7 +1,7 @@
 function modalVideo() {
 	var beginEmbed = '<div class="fitvids"><iframe src="https://player.vimeo.com/video/';
 	var endEmbed = '?&amp;autoplay=1" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>';
-	jQuery('a[data-video]').click(function () {
+	jQuery('a[data-video]').on('click',function () {
 		var videoID = jQuery(this).data('video');
 		var videoEmbed = beginEmbed + videoID + endEmbed;
 		jQuery('.modalContent').html(videoEmbed);
@@ -56,20 +56,6 @@ function sameHeight() {
   	jQuery('.option-height').height(maxHeight);
 }
 
-function freeDownload() {
-	// Get an array of all element heights
-  	var elementHeights = jQuery('.download-content h1').map(function() {
-   	return jQuery(this).height();
-  	}).get();
-
-  	// Math.max takes a variable number of arguments
-  	// `apply` is equivalent to passing each height as an argument
-  	var maxHeight = Math.max.apply(null, elementHeights);
-
-  	// Set each height to the max height
-  	jQuery('.download-content h1').height(maxHeight);
-}
-
 function optionDetail() {
 	// Get an array of all element heights
   	var elementHeights = jQuery('.option-details').map(function() {
@@ -109,7 +95,7 @@ function turnCard() {
 	});
 }
 function wayPoint() {
-	jQuery('.intent-store').waypoint(function(direction) {
+	/*	jQuery('.intent-store').waypoint(function(direction) {
 
 	   if (direction == 'down') {
 	    	var src = jQuery( '.path' ).attr("src").replace("path.png", "path-dot.png");
@@ -294,7 +280,7 @@ function wayPoint() {
 	      var src = jQuery( '.path' ).attr("src").replace("path-dot-16.png", "path-dot-15.png");
          jQuery( '.path' ).attr("src", src);
 	   }
-	}, { offset: -100 });
+	}, { offset: -100 }); */
 
 }
 
@@ -329,6 +315,7 @@ function confirmDownload() {
 	jQuery(document).bind('gform_confirmation_loaded', function(){
    	jQuery( '.free-download' ).addClass( 'free-unlocked' );
    	jQuery( '.download-content' ).addClass( 'download-unlocked' );
+   	jQuery( '.download-block' ).addClass( 'download-block-unlocked' );
    	jQuery( '.download-content a' ).attr('onclick', '');
    	jQuery( '.free-download-success' ).css( 'display' , 'block' );
 	});
@@ -339,6 +326,7 @@ function submitForm() {
 		if(jQuery( '.thank-you' ).is( ':visible' )) {
 			jQuery( '.gform_footer input[type=submit]' ).css( 'display' , 'none' );
 			jQuery( '.free-download' ).addClass( 'free-unlocked' );
+	   	jQuery( '.download-block' ).addClass( 'download-block-unlocked' );
 	   	jQuery( '.download-content' ).addClass( 'download-unlocked' );
 	   	jQuery( '.download-content a' ).attr('onclick', '');
 		} else {
@@ -347,11 +335,53 @@ function submitForm() {
 	});
 }
 
+function stickyNav() {
+	jQuery('.site').waypoint(function(direction) {
+	   if (direction == 'down') {
+	   	jQuery('.site-header').addClass('sticky-nav');
+	   } else {
+	   	jQuery('.site-header').removeClass('sticky-nav');
+	   }
+	}, { offset: -100 });
+}
+
+function scrollDown() {
+	jQuery('#menu-intentional-nav a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var jQuerytarget = jQuery(target);
+
+	    jQuery('html, body').stop().animate({
+	        'scrollTop': jQuerytarget.offset().top - 50
+	    }, 1500, function () {
+	        window.location.hash = target;
+	    });
+	});
+}
+
+function smoothScroll() {
+	jQuery(".scroll-trigger").click(function() {
+	    jQuery('html, body').animate({
+	        scrollTop: jQuery(".intent-store .med-wrap").offset().top - 40
+	    }, 1500);
+	    return false;
+	});
+}
+
+
+function closeMobile() {
+	jQuery('#intentional-nav a').click(function() {
+		jQuery('#intentional-nav').slideToggle();
+		return false;
+	});
+}
+
 jQuery(document).ready(function() {
 	var vw = jQuery(window).width();
 	if (vw > 800) {
 		cardHeight();
-		freeDownload();
+		stickyNav();
 		jQuery('.video-slider').bxSlider({
 			ticker: false,
 			minSlides: 3,
@@ -368,6 +398,7 @@ jQuery(document).ready(function() {
 		optionDetail();
 		sameHeight();
 		turnCard();
+		closeMobile();
 		jQuery('.video-slider').bxSlider({
 			ticker: false,
 			minSlides: 2,
@@ -380,6 +411,8 @@ jQuery(document).ready(function() {
 			auto: true,
 		});
 	}
+	smoothScroll();
+	scrollDown();
 	submitForm();
 	churchForm();
 	confirmDownload();

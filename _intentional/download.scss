@@ -1,7 +1,7 @@
 .free-download {
-	background: url(_i/free-download.jpg) top center no-repeat;
+	background: url(_i/download-bg.jpg) top center no-repeat;
 	background-size: cover;
-	padding: 6em 0;
+	padding: 8em 0 6em;
 	width: 100%;
 	max-width: 160em;
 	text-align: center;
@@ -51,49 +51,6 @@
 		}
 	}
 }
-.download-content {
-	background-color: $blue;
-	color: white;
-	text-align: center;
-	padding: 6em 0;
-	margin-bottom: 1.5em;
-	.three-list {
-		margin: 0 auto;
-	}
-	a {
-		color: white;
-		text-decoration: none;
-		&:hover {
-			color: lighten( $yellow , 10% );
-			text-decoration: none;
-			p {
-				color: white;
-			}
-		}
-	}
-	h1 {
-		line-height: 1.2;
-		margin-bottom: 0;
-		text-transform: uppercase;
-	}
-	p {
-		font-size: 0.9em;
-	}
-	img {
-		display: block;
-		max-width: 12em;
-		margin: 1em auto;
-	}
-	li {
-		position: relative;
-		.locked {
-			display: block;
-		}
-		.unlocked {
-			display: none;
-		}
-	}
-}
 .free-unlocked {
 	h1,
 	p {
@@ -113,6 +70,76 @@
 	}
 	.unlocked {
 		display: block;
+	}
+	.unlocked.download-me {
+		display: none;
+	}
+}
+.download-content {
+	background-color: $blue;
+	color: white;
+	text-align: center;
+	padding: 6em 0;
+	margin-bottom: 1.5em;
+	.three-list {
+		margin: 0 auto;
+	}
+	a {
+		color: white;
+		text-decoration: none;
+	}
+	h1 {
+		line-height: 1.2;
+		margin-bottom: 0.75em;
+		text-transform: uppercase;
+		font-size: 1.5em;
+		@include bp(50) {
+			font-size: 2em;
+		}
+	}
+	p {
+		font-size: 0.9em;
+		font-weight: 700;
+	}
+	img {
+		display: block;
+		max-width: 12em;
+		margin: 1em auto;
+	}
+	li {
+		position: relative;
+		margin-bottom: 5em;
+		@include bp(44) {
+			margin-bottom: 0;
+		}
+		.locked {
+			display: block;
+		}
+		.unlocked {
+			display: none;
+		}
+	}
+}
+.download-images {
+	position: relative;
+}
+.download-me {
+	position: absolute;
+	top: -1em;
+	right: 0;
+	left: 0;
+	display: none;
+}
+.download-block-unlocked {
+	&:hover {
+		color: lighten( $yellow , 10% );
+		text-decoration: none;
+		p {
+			color: white;
+		}
+		.unlocked.download-me {
+		   display: block;
+		}
 	}
 }
 .free-download-success {

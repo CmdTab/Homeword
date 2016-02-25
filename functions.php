@@ -52,6 +52,7 @@ function homeword_setup() {
 		'blog' => __( 'Blog Menu', 'homeword' ),
 		'seminar' => __( 'Seminar Menu', 'homeword' ),
 		'intentional' => __( 'Intentional Nav', 'homeword' ),
+		'download' => __( 'Download Nav', 'homeword' ),
 	) );
 	//Get variable at end of menu
 	add_filter( 'wp_nav_menu_objects', 'add_var', 10, 2 );

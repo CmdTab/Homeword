@@ -9,8 +9,12 @@
 ?>
 
 		<footer class="intent-footer" role="contentinfo">
-			<img src = "<?php bloginfo('template_directory'); ?>/_i/homeword-logo-white.png">
-			<img src = "<?php bloginfo('template_directory'); ?>/_i/kt-logo.png">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<img src = "<?php bloginfo('template_directory'); ?>/_i/homeword-logo-white.png">
+			</a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>intentional">
+				<img src = "<?php bloginfo('template_directory'); ?>/_i/kt-logo.png">
+			</a>
 			<div class="copyright">
 				&copy; KitchenTable Academy. All Rights Reserved.
 			</div>

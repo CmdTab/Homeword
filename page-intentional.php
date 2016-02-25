@@ -169,8 +169,8 @@ get_header('intentional'); ?>
 								C182.2,156.3,157.2,181.3,126.4,181.3z M126.4,0C56.6,0,0,56.6,0,126.4c0,69.8,114.4,240.8,126.4,240.8s126.4-171,126.4-240.8
 								C252.9,56.6,196.3,0,126.4,0z"/>
 						</svg>
-						<h2>Take the Quick Fix Parent Challenge</h2>
-						<p>Lorem ipsum dolor sit amet, vim tibique lobortis ea, in oblique honestatis mei. Te laoreet vituperata qui. Oratio sententiae eu mea. Te sit velit assum torquatos, id zril epicurei mea. Quo munere oblique gubergren et, no sit causae euismod, ne qualisque percipitur vim</p>
+						<h2><?php the_field('quiz_title'); ?></h2>
+						<p><?php the_field('quiz_description'); ?></p>
 					</header>
 				</div>
 				<div class="sm-wrap group">
@@ -178,7 +178,7 @@ get_header('intentional'); ?>
 						<?php
 							$gravity = get_field('gravity_form_id');
 						?>
-						<?php gravity_form( $gravity, false, false, false, '', false ); ?>
+						<?php gravity_form( $gravity, false, false, false, '', true ); ?>
 					</div>
 				</div><!--sm-wrap-->
 			</div><!--quiz-->
@@ -231,7 +231,7 @@ get_header('intentional'); ?>
 					</ul> -->
 				</div>
 			</div>
-			<div class="map-section">
+			<div id="about" class="map-section">
 				<div class="med-wrap group">
 					<header class="section-header">
 						<svg viewBox="0 0 252.9 367.3">
@@ -260,7 +260,7 @@ get_header('intentional'); ?>
 									</div>
 									<div class="back card-height">
 										<?php 
-											$back_card_image = get_field('card_one_back_image');
+											$back_card_image = get_field('card_one_back_icon');
 											if( !empty($back_card_image) ): ?>
 												<img src="<?php echo $back_card_image['url']; ?>" alt="<?php echo $back_card_image['alt']; ?>" />
 										<?php endif; ?>
@@ -292,7 +292,7 @@ get_header('intentional'); ?>
 									</div>
 									<div class="back card-height">
 										<?php 
-											$back_card_image = get_field('card_two_back_image');
+											$back_card_image = get_field('card_two_back_icon');
 											if( !empty($back_card_image) ): ?>
 												<img src="<?php echo $back_card_image['url']; ?>" alt="<?php echo $back_card_image['alt']; ?>" />
 										<?php endif; ?>
@@ -322,7 +322,7 @@ get_header('intentional'); ?>
 									</div>
 									<div class="back card-height">
 										<?php 
-											$back_card_image = get_field('card_three_back_image');
+											$back_card_image = get_field('card_three_back_icon');
 											if( !empty($back_card_image) ): ?>
 												<img src="<?php echo $back_card_image['url']; ?>" alt="<?php echo $back_card_image['alt']; ?>" />
 										<?php endif; ?>
@@ -363,7 +363,7 @@ get_header('intentional'); ?>
 
 				</div>
 			</div><!--quote-section-->
-			<div class="who-section">
+			<div id="groups" class="who-section">
 				<div class="med-wrap group">
 					<header class="section-header">
 						<svg viewBox="0 0 252.9 367.3">
@@ -407,7 +407,7 @@ get_header('intentional'); ?>
 		</div><!--path-content-->
 		<div class="cta-section">
 			<div class="med-wrap group">
-				<h1><?php the_field('cta_header'); ?></h1><a href = "#" class="btn"><?php the_field('cta_button'); ?></a>
+				<h1><?php the_field('cta_header'); ?></h1><a href = "#" class="btn scroll-trigger"><?php the_field('cta_button'); ?></a>
 			</div>
 		</div><!--cta-section-->
 		<?php while ( have_posts() ) : the_post(); ?>

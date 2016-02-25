@@ -45,7 +45,7 @@
 				Menu
 			</a>
 			<nav id="intentional-nav">
-				<?php wp_nav_menu( array( 'theme_location' => 'intentional', 'container' => false) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'download', 'container' => false) ); ?>
 				<?php global $woocommerce; ?>
 				<a class="intent-cart" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
 					<?php if($woocommerce->cart->cart_contents_count > 0): ?>

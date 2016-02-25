@@ -4,7 +4,9 @@
 	max-width: 110em;
 	margin: 0 auto;
 	box-shadow:	0 2px 4px rgba(0,0,0,0.3);
-
+	overflow: hidden;
+	z-index: 150;
+	position: relative;
 }
 .wrap {
 	width: 92%;
