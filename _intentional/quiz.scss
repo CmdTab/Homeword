@@ -106,3 +106,43 @@
 	position: absolute;
 	top: -115%;
 }
+.quiz-confirmation {
+	text-align: center;
+	padding-bottom: 2em;
+	br {
+		display: none;
+	}
+	img {
+		max-width: 14em;
+	}
+	.first-header {
+		padding-bottom: 0.25em;
+	} 
+	h2 {
+		text-transform: uppercase;
+		font-size: 2em;
+		margin: 0;
+	}
+	span {
+		color: white;
+	}
+	p {
+		margin: 0;
+		font-family: 'Raleway', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	}
+	.share-social {
+		font-family: 'Open Sans Condensed', sans-serif;
+		display: inline-block;
+		padding-right: 0.5em;
+		padding-top: 1em;
+	}
+	a {
+		padding-right: 0.5em;
+	}
+}
+.fb_iframe_widget {
+	position: absolute !important;
+	right: 19%;
+	bottom: 2.35em;
+	display: none !important;
+}

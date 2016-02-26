@@ -178,7 +178,9 @@ get_header('intentional'); ?>
 						<?php
 							$gravity = get_field('gravity_form_id');
 						?>
+						<div class="fb-share-button" data-href="https://homeword.com/intentional/" data-layout="button"></div>
 						<?php gravity_form( $gravity, false, false, false, '', true ); ?>
+
 					</div>
 				</div><!--sm-wrap-->
 			</div><!--quiz-->

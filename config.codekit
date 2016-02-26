@@ -1023,6 +1023,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_i\/trophy.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13075,
+		"inputAbbreviatedPath": "\/_i\/trophy.png",
+		"outputAbbreviatedPath": "\/_i\/trophy.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_i\/visa.png": {
 		"fileType": 32768,
 		"ignore": 0,
