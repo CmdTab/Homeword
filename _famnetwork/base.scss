@@ -1,0 +1,109 @@
+/*!
+	Intentional Parenting Stylesheet
+*/
+@import "normalize";
+@import "bits";
+@import "var";
+
+html,body {
+	overflow-x:hidden;
+	-webkit-font-smoothing: antialiased;
+}
+html {
+	background: #fff;
+}
+body {
+	color: $text;
+	font:
+		300 0.875em/1.6
+		'Raleway', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	@include bp(44) {
+		font-size: 0.9375em;
+	}
+}
+
+a {
+	color: $blue;
+	text-decoration: none;
+	&:hover {
+		color: darken($blue, 10%);
+		text-decoration: underline;
+	}
+}
+.btn {
+	@include button($red, #fff);
+}
+.clear-btn {
+	@include button(transparent, #fff);
+	border: 1px solid #fff;
+	&:hover {
+		background-color: $purple;
+		color: white;
+		border-color: $purple;
+	}
+}
+.white-btn {
+	@include button(#fff, $dark-gray);
+	border: 1px solid #fff;
+	&:hover {
+		background-color: $purple;
+		color: white;
+		border-color: $purple;
+	}
+}
+.purple-btn {
+	@include button($purple, #fff);
+	border: 1px solid $purple;
+	&:hover {
+		background-color: $orange;
+		color: #fff;
+		border-color: $orange;
+	}
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	line-height: 1.4;
+	margin-top: 0;
+	font-weight: 700;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 2em;
+	@include bp(44) {
+		font-size: 3.25em;
+	}
+}
+
+h4 {
+	font-style: italic;
+	font-family: 'Droid Serif', serif;
+	font-weight: 400;
+	font-size: 1.25em;
+	@include bp(44) {
+		font-size: 1.75em;
+	}
+}
+
+
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* =======================================================================================
+Example showing how to change the color/size of the icons:
+.icon-name {
+	font-size: 32px; // works because "width" & "height" were set using em units
+	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
+}
+======================================================================================== */
+
+
+@import "modules";
+@import "header";
+@import "get-connected";
+@import "footer";

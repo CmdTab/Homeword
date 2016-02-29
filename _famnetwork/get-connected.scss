@@ -1,0 +1,56 @@
+.get-connected {
+	background-color: white;
+	padding: 5em 0;
+	h1 {
+		color: $purple;
+		text-align: center;
+		padding-bottom: 0.5em;
+	}
+	.clear-btn {
+		border-color: $orange;
+		color: $purple;
+		background: transparent;
+		&:hover {
+			background-color: $orange;
+			color: #fff;
+			border-color: $orange;
+		}
+	}
+	.three-list {
+		max-width: 62.5em;
+		margin: 0 auto;
+		li {
+			position: relative;
+			border-left: 2px solid $orange;
+			padding: 0 2em;
+			&:first-of-type:before,
+			&:nth-of-type(2n):before,
+			&:last-of-type:before {
+				content: '1';
+				font-size: 4em;
+				position: absolute;
+				top: 0;
+				line-height: 1;
+				left: -0.875em;
+				color: $purple;
+				font-weight: 700;
+			}
+			&:nth-of-type(2n):before {
+				content: '2';
+			}
+			&:last-of-type:before {
+				content: '3';
+				font-size: 3.35em;
+			}
+			@include bp(44) {
+				margin: 0 2.5% 1em 2.5%;
+				&:last-child {
+					margin: 0 0 1em;
+				}
+			}
+		}
+		p {
+			font-size: 0.875em;
+		}
+	}
+}

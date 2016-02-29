@@ -1,0 +1,53 @@
+.cta-section {
+	background: $blue;
+	color: #fff;
+	padding: 2em 0;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	* {
+		vertical-align: middle;
+	}
+	h1 {
+		margin: 0 0 0.25em;
+		text-transform: uppercase;
+		@include bp(44) {
+			margin: 0 1em 0 0;
+			display: inline-block;
+
+		}
+	}
+	a {
+		font-size: 1.2em;
+		line-height: 1;
+	}
+}
+.intent-footer {
+	background: $dark-gray;
+	text-align: center;
+	color: #fff;
+	padding: 2em 0;
+	position: relative;
+	z-index: 2;
+	a {
+		max-width: 10em;
+		margin: 0 auto 1.5em;
+		width: 50%;
+		display: block;
+		@include bp(44) {
+			display: inline-block;
+			width: 100%;
+			margin: 0 0 1em;
+			&:first-of-type {
+				margin-right: 5em;
+			}
+		}
+	}
+	img {
+		display: block;
+		width: 100%;
+	}
+}
+.copyright {
+	font-size: 0.875em;
+}

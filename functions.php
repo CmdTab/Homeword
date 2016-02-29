@@ -53,6 +53,7 @@ function homeword_setup() {
 		'seminar' => __( 'Seminar Menu', 'homeword' ),
 		'intentional' => __( 'Intentional Nav', 'homeword' ),
 		'download' => __( 'Download Nav', 'homeword' ),
+		'famnetwork' => __( 'Fam Network Nav', 'homeword' ),
 	) );
 	//Get variable at end of menu
 	add_filter( 'wp_nav_menu_objects', 'add_var', 10, 2 );
@@ -141,6 +142,10 @@ function homeword_scripts() {
 	if(is_page_template( 'page-download-now.php' ) ) {
 		wp_dequeue_style('homeword-style');
 		wp_enqueue_style( 'intentional-style', get_template_directory_uri() . '/intentional.css' );
+	}
+	if(is_page_template( 'page-famnetwork.php' ) ) {
+		wp_dequeue_style('homeword-style');
+		wp_enqueue_style( 'famnetwork-style', get_template_directory_uri() . '/famnetwork.css' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'homeword_scripts' );
