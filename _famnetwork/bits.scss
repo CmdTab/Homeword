@@ -2,6 +2,9 @@
 	@if $point == 80 {
 		@media (min-width: 80em) { @content; }
 	}
+	@else if $point == 67.5 {
+		@media (min-width: 67.5em) { @content; }
+	}
 	@else if $point == 62.5 {
 		@media (min-width: 62.5em) { @content; }
 	}
@@ -74,8 +77,9 @@ img {
 	background: $back-color;
 	color: $text-color;
 	border: 0;
+	letter-spacing: 1px;
 	position: relative;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
 	transition: all 250ms ease-in-out;

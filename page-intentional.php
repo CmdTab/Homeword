@@ -259,6 +259,9 @@ get_header('intentional'); ?>
 										<a href="#" class="turn-btn">
 											<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
 										</a>
+										<a href="#" class="ie-turn-btn">
+											<img src="<?php bloginfo('template_directory'); ?>/_i/redo2.png"  />
+										</a>
 									</div>
 									<div class="back card-height">
 										<?php 
@@ -268,8 +271,11 @@ get_header('intentional'); ?>
 										<?php endif; ?>
 										<h4><?php the_field('card_one_back_title'); ?></h4>
 										<?php the_field('card_one_back_text'); ?>
-										<a href="#" class="turn-btn inside">
+										<a href="#" class="turn-btn">
 											<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+										</a>
+										<a href="#" class="ie-turn-btn inside">
+											<img src="<?php bloginfo('template_directory'); ?>/_i/redo2.png"  />
 										</a>
 									</div>
 									
@@ -291,6 +297,9 @@ get_header('intentional'); ?>
 										<a href="#" class="turn-btn">
 											<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
 										</a>
+										<a href="#" class="ie-turn-btn">
+											<img src="<?php bloginfo('template_directory'); ?>/_i/redo2.png"  />
+										</a>
 									</div>
 									<div class="back card-height">
 										<?php 
@@ -302,6 +311,9 @@ get_header('intentional'); ?>
 										<?php the_field('card_two_back_text'); ?>
 										<a href="#" class="turn-btn">
 											<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+										</a>
+										<a href="#" class="ie-turn-btn inside">
+											<img src="<?php bloginfo('template_directory'); ?>/_i/redo2.png"  />
 										</a>
 									</div>
 								</div>
@@ -321,6 +333,9 @@ get_header('intentional'); ?>
 										<a href="#" class="turn-btn">
 											<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
 										</a>
+										<a href="#" class="ie-turn-btn">
+											<img src="<?php bloginfo('template_directory'); ?>/_i/redo2.png"  />
+										</a>
 									</div>
 									<div class="back card-height">
 										<?php 
@@ -332,6 +347,9 @@ get_header('intentional'); ?>
 										<?php the_field('card_three_back_text'); ?>
 										<a href="#" class="turn-btn">
 											<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+										</a>
+										<a href="#" class="ie-turn-btn inside">
+											<img src="<?php bloginfo('template_directory'); ?>/_i/redo2.png"  />
 										</a>
 									</div>
 								</div>

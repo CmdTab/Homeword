@@ -1,0 +1,147 @@
+.join-free {
+	.half {
+		width: 100%;
+		margin: 0;
+		@include bp(50) {
+			width: 50%;
+		}
+		&.full-box {
+			background: url(_i/join-free-bg.jpg);
+		}
+		&.group {
+			background: url(_i/join-free-right-bg.jpg);
+		}
+		hr {
+			content: '';
+			height: 0.25em;
+			width: 3em;
+			background-color: $orange;
+			margin: 0 auto;
+		}
+	}
+	.full-box-bg {
+		background-color: rgba(93, 53, 105, 0.85);
+		padding: 4em 2em;
+		@include bp(50) {
+			padding: 5.8em 5em;
+			min-height: 45em;
+			background-color: rgba(93, 53, 105, 0.75);
+		}
+		hr {
+			margin: 1em 0;
+		}
+		.orange-btn {
+			margin-bottom: 0.5em;
+			&:hover {
+				background-color: white;
+				border-color: white;
+				color: $orange;
+			}
+			@include bp(50) {
+				margin-bottom: 0;
+			}
+		}
+		.clear-btn {
+			&:hover {
+				background-color: white;
+				border-color: white;
+				color: $purple;
+			}
+		}
+	}
+}
+.full-box {
+	min-height: 40em;
+	margin: 0;
+	@include bp(50) {
+		min-height: 45em;
+	}
+	h1 {
+		position: relative;
+		color: white;
+		margin-bottom: 0;
+	}
+	h4 {
+		color: white;
+		font-size: 1.15em;
+	}
+	hr {
+		margin: 1em 0;
+	}
+	.btn {
+		padding: 0.15em 1em;
+		font-size: 1.25em;
+	}
+	ul {
+		padding-top: 1em;
+		padding-bottom: 2em;
+	}
+	li {
+		padding-bottom: 0.5em;
+		color: white;
+	}
+}
+.mini-box {
+	height: 22.5em;
+	background: rgba(175,75,103,0.85);
+	padding: 3em;
+	position: relative;
+	&:first-of-type {
+		border-right: 1px solid rgba(255,147,30,0.75);
+		background-color: rgba(255,147,30,0.85);
+		@include bp(50) {
+			background-color: rgba(255,147,30,0.75);
+		}
+		h2 {
+			&:after {
+				background-color: $purple;
+			}
+		}
+	}
+	@include bp(50) {
+		background: rgba(175,75,103,0.75);
+	}
+	h2 {
+		color: white;
+		text-align: center;
+		position: relative;
+	}
+	svg {
+		margin: 0.5em auto;
+		display: none;
+		font-size: 5em;
+		@include bp(50) {
+			display: block;
+		}
+	}
+}
+.mini-box.full {
+	clear: both;
+	background-color: rgba(51,25,64,0.9);
+	@include bp(50) {
+		background-color: rgba(51,25,64,0.75);
+	}
+}
+.join-free {
+	.flip-container {
+		margin: 0;
+	}
+}
+.mobile-no-flip {
+	display: block;
+	@include bp(50) {
+		display: none;
+	}
+}
+.mobile-icon {
+	display: block;
+	@include bp(50) {
+		display: none;
+	}
+}
+.desktop-icon {
+	display: none;
+	@include bp(50) {
+		display: block;
+	}
+}

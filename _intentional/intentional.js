@@ -377,6 +377,32 @@ function closeMobile() {
 	});
 }
 
+
+
+function ieturnBtn() {
+	jQuery( '.ie-turn-btn' ).click(function() {
+		if(jQuery(this).parent( '.front' ).hasClass( 'turned' )) {
+			jQuery(this).parent( '.front' ).removeClass( 'turned' );
+			jQuery(this).parent( '.front' ).siblings( '.back' ).removeClass( 'turned' );
+		} else {
+			jQuery(this).parent( '.front' ).addClass( 'turned' );
+			jQuery(this).parent( '.front' ).siblings( '.back' ).addClass( 'turned' );
+		}
+		return false;
+	});
+	jQuery( '.ie-turn-btn.inside' ).click(function() {
+		if(jQuery(this).parent( '.back' ).hasClass( 'turned' )) {
+			jQuery(this).parent( '.back' ).removeClass( 'turned' );
+			jQuery(this).parent( '.back' ).siblings( '.front' ).removeClass( 'turned' );
+		} else {
+			jQuery(this).parent( '.back' ).addClass( 'turned' );
+			jQuery(this).parent( '.back' ).siblings( '.front' ).addClass( 'turned' );
+		}
+		return false;
+	});
+}
+	
+
 jQuery(document).ready(function() {
 	var vw = jQuery(window).width();
 	if (vw > 800) {
@@ -411,6 +437,7 @@ jQuery(document).ready(function() {
 			auto: true,
 		});
 	}
+	ieturnBtn();
 	smoothScroll();
 	scrollDown();
 	submitForm();

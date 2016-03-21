@@ -1,0 +1,124 @@
+.what-we-believe {
+	text-align: center;
+	margin: 0 auto;
+	padding: 4em 2em;
+	h1 {
+		color: $purple;
+		margin-bottom: 0.25em;
+	}
+	h4 {
+		margin: 0 auto;
+		color: $teal;
+		font-size: 1em;
+		@include bp(44) {
+			font-size: 1.15em;
+		}
+	}
+	.four-list {
+		padding: 4em 0 0;
+		max-width: 80em;
+		width: 90%;
+		margin: 0 auto;
+		@include bp(80) {
+			width: 100%;
+		}
+		> li {
+			position: relative;
+			float: left;
+			width: 100%;
+			@include bp(30) {
+				float: left;
+				width: 46%;
+				margin: 0 8% 1em 0;
+				&:nth-child(2n+2) {
+					margin-right: 0;
+				}
+			}
+			@include bp(62.5) {
+			    width: 23.5%;
+			    margin: 0 2% 1em 0;
+			    &:last-child {
+			    	margin-right: 0;
+			   }
+			}
+			.front,
+			.back {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+			}
+			&.strong-marriage {
+				.front {
+					background: url(_i/strong-marriages-box.jpg) center center no-repeat;
+					background-size: cover;
+				}
+				.back {
+					background: url(_i/strong-marriages-box.jpg) center center no-repeat;
+					background-size: cover;
+				}
+			}
+			&.empowered-kids {
+				.front {
+					background: url(_i/empowered-kids-box.jpg) center center no-repeat;
+					background-size: cover;
+				}
+				.back {
+					background: url(_i/empowered-kids-box.jpg) center center no-repeat;
+					background-size: cover;
+				}
+			}
+			&.confident-parents {
+				.front {
+					background: url(_i/confident-parents-box.jpg) center center no-repeat;
+					background-size: cover;
+				}
+				.back {
+					background: url(_i/confident-parents-box.jpg) center center no-repeat;
+					background-size: cover;
+				}
+			}
+			&.healthy-leaders {
+				.front {
+					background: url(_i/healthy-leaders-box.jpg) center center no-repeat;
+					background-size: cover;
+				}
+				.back {
+					background: url(_i/healthy-leaders-box.jpg) center center no-repeat;
+					background-size: cover;
+				}
+			}
+		}
+		.boxed-info {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			padding: 1em;
+			width: 100%;
+			color: white;
+			h3 {
+				text-transform: uppercase;
+				padding-top: 1em;
+			}
+			hr {
+				height: 0.25em;
+				background-color: white;
+				width: 3em;
+			}
+			p {
+				font-size: 0.65em;
+				@include bp(62.5) {
+					font-size: 0.8em;
+				}
+			}
+		}
+		.back {
+			.boxed-info {
+				h3 {
+					padding-top: 0.5em;
+				}
+			}
+		}
+	}
+}

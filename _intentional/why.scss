@@ -160,7 +160,8 @@
 	}
 }
 .turn-btn,
-.turn-btn-inside {
+.turn-btn-inside,
+.ie-turn-btn {
 	display: block;
 	margin: 0 auto;
 	padding: 0;
@@ -179,4 +180,7 @@
 			color: $dark-gray;
 		}
 	}
+}
+.ie-turn-btn {
+	display: none;
 }

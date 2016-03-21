@@ -9,20 +9,27 @@
 ?>
 
 		<footer class="intent-footer" role="contentinfo">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<img src = "<?php bloginfo('template_directory'); ?>/_i/homeword-logo-white.png">
-			</a>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>intentional">
-				<img src = "<?php bloginfo('template_directory'); ?>/_i/kt-logo.png">
-			</a>
-			<div class="copyright">
-				&copy; KitchenTable Academy. All Rights Reserved.
-			</div>
+			<ul class="three-list group">
+				<li>
+					<a href="#">Footer Link #1</a>
+					<a href="#">Footer Link #2</a>
+					<a href="#">Footer Link #3</a>
+				</li>
+				<li>
+					<?php gravity_form( 17, false, false, false, '', false ); ?>
+				</li>
+				<li>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo">
+						<img src = "<?php bloginfo('template_directory'); ?>/_i/homeword-logo-white.png">
+					</a>
+				</li>
+			</ul>
 		</footer><!-- #colophon -->
 	</div><!-- site-content -->
 </div><!--site-->
 <div class="modalVideo"><div class="modalContent"></div><a href = "#" class="hideModal">Close</a></div>
 <?php wp_footer(); ?>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/_famnetwork/famnetwork-min.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

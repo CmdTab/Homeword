@@ -118,7 +118,6 @@ function otherAmount() {
 	});
 }
 
-
 jQuery(document).ready(function() {
 	//var vw = jQuery(window).width();
 	navDropdown();

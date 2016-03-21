@@ -18,7 +18,7 @@
       type="image/png"
       href="<?php bloginfo('template_directory'); ?>/_i/favicon.png">
 <?php wp_head(); ?>
-<link href='https://fonts.googleapis.com/css?family=Raleway:300|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
 <!--[if lt IE 9]>
 	<script src="<?php bloginfo('template_directory'); ?>/_js/html5shiv.js"></script>

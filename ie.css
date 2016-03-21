@@ -24,9 +24,12 @@
 
     .three-list > li {
       float: left;
-      width: 30%;
-      margin: 0 5% 0 0; }
-      .three-list > li:last-child, .three-list > li:nth-child(3n) {
+      width: 33.333%;
+      margin: 0;
+      padding: 0 1em; }
+      .three-list > li:last-child {
+        margin: 0; }
+      .three-list > li:nth-child(3n) {
         margin: 0; }
 
     .content-section {
@@ -552,3 +555,21 @@
     .event-contact li {
       float: left;
       width: 50%; }
+
+.ie-turn-btn {
+  display: block;
+}
+.info-card .back {
+  display: none;
+  backface-visibility: visible;
+  transform: none;
+}
+.info-card .front {
+  display: block;
+}
+.info-card .back.turned {
+  display: block;
+}
+.info-card .front.turned {
+  display: none;
+}

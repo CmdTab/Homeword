@@ -16,7 +16,7 @@ body {
 	color: $text;
 	font:
 		300 0.875em/1.6
-		'Raleway', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		'Droid Serif', serif;
 	@include bp(44) {
 		font-size: 0.9375em;
 	}
@@ -31,7 +31,8 @@ a {
 	}
 }
 .btn {
-	@include button($red, #fff);
+	@include button($orange, #fff);
+	border: 1px solid $orange;
 }
 .clear-btn {
 	@include button(transparent, #fff);
@@ -62,10 +63,11 @@ a {
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	line-height: 1.4;
 	margin-top: 0;
 	font-weight: 700;
+	letter-spacing: 1px;
 }
 
 h1 {
@@ -81,6 +83,7 @@ h4 {
 	font-family: 'Droid Serif', serif;
 	font-weight: 400;
 	font-size: 1.25em;
+	letter-spacing: 0;
 	@include bp(44) {
 		font-size: 1.75em;
 	}
@@ -105,5 +108,10 @@ Example showing how to change the color/size of the icons:
 
 @import "modules";
 @import "header";
+@import "tabs";
+@import "flip-card";
 @import "get-connected";
+@import "join-free";
+@import "we-believe";
+@import "upgrade-premium";
 @import "footer";

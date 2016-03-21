@@ -1,14 +1,21 @@
 .get-connected {
 	background-color: white;
-	padding: 5em 0;
+	padding: 2.5em 0;
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	@include bp(44) {
+		width: 100%;
+		padding: 5em 0;
+	}
 	h1 {
 		color: $purple;
 		text-align: center;
-		padding-bottom: 0.5em;
+		padding-bottom: 1em;
 	}
 	.clear-btn {
 		border-color: $orange;
-		color: $purple;
+		color: $orange;
 		background: transparent;
 		&:hover {
 			background-color: $orange;
@@ -16,13 +23,55 @@
 			border-color: $orange;
 		}
 	}
+	.purple-btn {
+		margin-bottom: 0.5em;
+		&:hover {
+			background-color: #fff;
+			color: $purple;
+			border-color: $purple;
+		}
+	}
+	.btn {
+		width: 8.5em;
+		font-size: 0.875em;
+		padding: 0.25em 0;
+	}
+	.upgrade-icon {
+		position: absolute;
+		right: -7.5%;
+		bottom: 2em;
+		max-width: 18em;
+		display: none;
+		@include bp(30) {
+			display: block;
+		}
+		@include bp(44) {
+			right: 0;
+			bottom: 2em;
+			max-width: 22em;
+		}
+		@include bp(62.5) {
+			right: 4em;
+		}
+		@include bp(67.5) {
+			display: none;
+		}
+	}
 	.three-list {
-		max-width: 62.5em;
+		max-width: 67.5em;
 		margin: 0 auto;
+		margin-left: 5em;
+		width: 90%;
+		@include bp(67.5) {
+			margin-left: auto;
+			width: 100%;
+			padding-left: 5em;
+		}
 		li {
 			position: relative;
 			border-left: 2px solid $orange;
 			padding: 0 2em;
+			margin-bottom: 3em;
 			&:first-of-type:before,
 			&:nth-of-type(2n):before,
 			&:last-of-type:before {
@@ -38,19 +87,55 @@
 			&:nth-of-type(2n):before {
 				content: '2';
 			}
-			&:last-of-type:before {
-				content: '3';
-				font-size: 3.35em;
+			&:last-of-type {
+				.purple-btn {
+					width: 10em;
+				}
+				&:before {
+					content: '3';
+				}
 			}
-			@include bp(44) {
-				margin: 0 2.5% 1em 2.5%;
-				&:last-child {
-					margin: 0 0 1em;
+			@include bp(30) {
+				padding: 0 2em 0 1em;
+				margin-bottom: 0;
+				&:first-of-type,
+				&:nth-of-type(2n) {
+					float: left;
+					width: 47.5%;
+					margin: 0 5% 2em 0;
+				}
+				&:nth-of-type(2n) {
+					margin-right: 0;
+				}
+				&:last-of-type {
+					float: none;
+					width: 50%;
+					clear: both;
+					padding-right: 0;
+				}
+			}
+			@include bp(67.5) {
+				&:first-of-type,
+				&:nth-of-type(2n) {
+					width: 30%;
+					margin: 0 5% 2em 0;
+				}
+				&:nth-of-type(2n) {
+					margin-right: 5%;
+				}
+				&:last-of-type {
+					float: left;
+					width: 30%;
+					margin-right: 0;
+					clear: none;
 				}
 			}
 		}
 		p {
 			font-size: 0.875em;
+			@include bp(44) {
+				padding: 0 0 1em 0;
+			}
 		}
 	}
 }

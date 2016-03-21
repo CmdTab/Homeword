@@ -20,6 +20,7 @@
 <?php wp_head(); ?>
 <link href='https://fonts.googleapis.com/css?family=Raleway:300|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 <!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/ie.css" />
 	<script src="<?php bloginfo('template_directory'); ?>/_js/html5shiv.js"></script>
 <![endif]-->
 </head>
@@ -46,7 +47,7 @@
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="med-wrap intent-wrap group">
-			<a class="kta-banner" href="<?php echo esc_url( home_url( '/' ) ); ?>intentional" rel="home"><img src ="<?php bloginfo('template_directory'); ?>/_i/kta-banner-color.png"></a>
+			<a class="kta-banner" href="<?php echo esc_url( home_url( '/' ) ); ?>intentional" rel="home"><img src ="<?php bloginfo('template_directory'); ?>/_i/kta-banner.png"></a>
 
 			<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>intentional" rel="home"><img src ="<?php bloginfo('template_directory'); ?>/_i/intentional-logo.png"></a>
 

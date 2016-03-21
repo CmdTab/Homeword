@@ -1,51 +1,97 @@
-.cta-section {
-	background: $blue;
-	color: #fff;
-	padding: 2em 0;
+.intent-footer {
+	background: $purple;
 	text-align: center;
+	color: #fff;
+	padding: 0;
 	position: relative;
 	z-index: 2;
-	* {
-		vertical-align: middle;
+	@include bp(44) {
+		padding: 4em 0;
 	}
-	h1 {
-		margin: 0 0 0.25em;
-		text-transform: uppercase;
-		@include bp(44) {
-			margin: 0 1em 0 0;
-			display: inline-block;
-
+	.three-list {
+		> li {
+			padding: 2em 0;
+			border-bottom: 1px solid white;
+			&:last-child {
+				border: none;
+			}
+			@include bp(44) {
+				width: 33.333%;
+				margin: 0;
+				border-bottom: none;
+				&:nth-child(2n) {
+					border-right: 1px solid white;
+					border-left: 1px solid white;
+				}
+				&:last-child {
+					margin: 0;
+				}
+			}
+			
 		}
 	}
 	a {
-		font-size: 1.2em;
-		line-height: 1;
-	}
-}
-.intent-footer {
-	background: $dark-gray;
-	text-align: center;
-	color: #fff;
-	padding: 2em 0;
-	position: relative;
-	z-index: 2;
-	a {
-		max-width: 10em;
-		margin: 0 auto 1.5em;
-		width: 50%;
 		display: block;
+		margin: 0 auto;
+		font-size: 1.25em;
+		color: white;
+	}
+	.footer-logo {
+		max-width: 14em;
+		padding: 0 1em;
+		font-size: 1em;
 		@include bp(44) {
-			display: inline-block;
-			width: 100%;
-			margin: 0 0 1em;
-			&:first-of-type {
-				margin-right: 5em;
-			}
+			max-width: 20em;
 		}
 	}
 	img {
 		display: block;
 		width: 100%;
+	}
+	.gform_wrapper {
+		font-size: 0.5em;
+		text-align: left;
+		padding: 0 2em;
+		width: 100%;
+		max-width: 40em;
+		margin: 0 auto;
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		label {
+			display: none;
+		}
+		input,
+		textarea {
+			width: 100%;
+			margin-bottom: 1em;
+			background: transparent;
+			border: 1px solid white;
+			padding: 0.5em 1em;
+			border-radius: 0.25em;
+			color: white;
+		}
+		.ginput_container_name {
+			input {
+				float: left;
+				width: 48%;
+				margin-right: 4%;
+			}
+			span {
+				&:last-of-type input {
+					margin-right: 0;
+				}
+			}
+		}
+		.gform_button {
+			background: white;
+			width: 10em;
+			display: block;
+			padding: 0.75em;
+			color: $dark-gray;
+		}
 	}
 }
 .copyright {

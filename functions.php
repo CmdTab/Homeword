@@ -135,6 +135,10 @@ function homeword_scripts() {
 		wp_dequeue_style('homeword-style');
 		wp_enqueue_style( 'intentional-style', get_template_directory_uri() . '/intentional.css' );
 	}
+	if(is_page_template( 'page-intentional-blank.php' ) ) {
+		wp_dequeue_style('homeword-style');
+		wp_enqueue_style( 'intentional-style', get_template_directory_uri() . '/intentional.css' );
+	}
 	if(is_page_template( 'page-download-free.php' ) ) {
 		wp_dequeue_style('homeword-style');
 		wp_enqueue_style( 'intentional-style', get_template_directory_uri() . '/intentional.css' );

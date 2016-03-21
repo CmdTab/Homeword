@@ -1,0 +1,161 @@
+.upgrade-premium,
+.what-we-believe,
+.join-free {
+	.front {
+		.boxed-info {
+			top: 27.5%;
+		}
+	}
+	.back {
+		.boxed-info {
+			top: 0;
+		}
+	}
+	/* entire container, keeps perspective */
+	.flip-container {
+		perspective: 1000;
+	}
+	/* flip the pane when hovered */
+	.flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+	.flip-container.hover {
+		.front {
+			display: block;
+		}
+		.back {
+			z-index: 11;
+		}
+	}
+
+	.flip-container, .front, .back {
+		/*width: 320px;*/
+		height: 20em;
+	}
+
+	/* flip speed goes here */
+	.flipper {
+		transition: 0.6s;
+		transform-style: preserve-3d;
+		position: relative;
+	}
+
+	/* hide back of pane during swap */
+	.front, .back {
+		backface-visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	/* front pane, placed above back */
+	.front {
+		z-index: 2;
+		/* for firefox 31 */
+		transform: rotateY(0deg);
+	}
+
+	/* back, initially hidden pane */
+	.back {
+		transform: rotateY(180deg);
+	}
+	@include bp(50) {
+		.flip-container.hover {
+			.front {
+				display: none;
+			}
+		}
+
+		/* entire container, keeps perspective */
+		.flip-container {
+			perspective: 1000;
+		}
+			/* flip the pane when hovered */
+			.flip-container:hover .flipper, .flip-container.hover .flipper {
+				transform: rotateY(180deg);
+			}
+
+		.flip-container, .front, .back {
+			/*width: 320px;*/
+			height: 16.5em;
+		}
+
+		/* flip speed goes here */
+		.flipper {
+			transition: 0.6s;
+			transform-style: preserve-3d;
+			position: relative;
+		}
+
+		/* hide back of pane during swap */
+		.front, .back {
+			backface-visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+
+		/* front pane, placed above back */
+		.front {
+			z-index: 2;
+			/* for firefox 31 */
+			transform: rotateY(0deg);
+		}
+
+		/* back, initially hidden pane */
+		.back {
+			transform: rotateY(180deg);
+		}
+	}
+}
+.what-we-believe {
+	.flip-container {
+		.front,
+		.back {
+			/*width: 320px;*/
+			min-height: 18em;
+			&:after {
+				content: '';
+				width: 92.5%;
+				height: 93%;
+				border: 1px solid white;
+				position: absolute;
+				top: 3%;
+				left: 3.5%;
+			}
+		}
+	}
+}
+.join-free {
+	.flip-container, .front, .back {
+		/*width: 320px;*/
+		min-height: 22.5em;
+		p {
+			color: white;
+			text-align: center;
+		}
+		hr {
+			margin: 1em auto;
+		}
+	}
+	.front, .back {
+		position: relative;
+		@include bp(50) {
+			backface-visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+.turn-btn {
+	position: absolute;
+	top: 1.25em;
+	right: 1.5em;
+	color: white;
+	z-index: 20;
+	@include bp(50) {
+		display: none;
+	}
+}

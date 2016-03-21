@@ -15,6 +15,24 @@ function stickyNav() {
 	}, { offset: -100 });
 }
 
+function resourceTabs() {
+	jQuery('.nav-tabs a').click(function (e) {
+		e.preventDefault()
+		jQuery(this).tab('show')
+	});
+}
+
+function turnCard() {
+	jQuery('.turn-btn').click(function() {
+		if(jQuery( this ).parent( '.front , .back' ).parent( '.flipper' ).parent( '.flip-container' ).hasClass( 'hover' )) {
+			jQuery( this ).parent( '.front , .back' ).parent( '.flipper' ).parent( '.flip-container' ).removeClass( 'hover');
+		} else {
+			jQuery( this ).parent( '.front , .back' ).parent( '.flipper' ).parent( '.flip-container' ).addClass( 'hover');
+		}
+		return false;
+	});
+}
+
 jQuery(document).ready(function() {
 	var vw = jQuery(window).width();
 	if (vw > 800) {
@@ -23,5 +41,6 @@ jQuery(document).ready(function() {
 	if (vw < 800) {
 		
 	}
+	turnCard();
 	navToggle();
 });
