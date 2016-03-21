@@ -126,34 +126,6 @@
 		   width: 50%;
 		   margin: 0;
 		   position: relative;
-			float: left;
-			width: 100%;
-			&:nth-child(odd) {
-				background: rgba(255,147,30,0.8);
-				border-bottom: 0.15em solid $purple;
-				h2:after {
-					background-color: $purple;
-				}
-				@include bp(50) {
-					border: none;
-				}
-			}
-			&:nth-child(even) {
-				background: rgba(94,54,106,0.8);
-				border-bottom: 0.15em solid $orange;
-				h2:after {
-					background-color: $orange;
-				}
-				@include bp(50) {
-					border: none;
-				}
-			}
-			&:nth-child(3n) {
-				border: none;
-			}
-			&:last-child {
-				border: none;
-			}
 			@include bp(30) {
 				float: left;
 				width: 50%;
@@ -188,38 +160,72 @@
 			}
 			&.monthly-downloads {
 				.front {
-					background-color: rgba(255,147,30,0.7);
+					background-color: rgba(255,147,30,0.95); /* orange */
 				}
 				.back {
 					background: url(_i/monthly-downloads-bg.jpg) center center no-repeat;
 					background-size: cover;
 				}
+				h2:after {
+					background-color: $purple;
+				}
+				@include bp(50) {
+					border: none;
+				}
 			}
 			&.online-training {
 				.front {
-					background: rgba(94,54,106,0.7);
+					background: rgba(94,54,106,0.95); /* purple */
 				}
 				.back {
 					background: url(_i/online-training-bg.jpg) center center no-repeat;
 					background-size: cover;
 				}
+				h2:after {
+					background-color: $orange;
+				}
+				@include bp(50) {
+					border: none;
+				}
 			}
 			&.resource-discounts {
 				.front {
-					background-color: rgba(255,147,30,0.7);
+					background-color: rgba(94,54,106,0.95); /* purple */
+					@include bp(50) {
+						background-color: rgba(255,147,30,0.95); /* orange */
+					}
 				}
 				.back {
 					background: url(_i/resource-discounts-bg.jpg) center center no-repeat;
 					background-size: cover;
 				}
+				h2:after {
+					background-color: $orange;
+				}
+				@include bp(50) {
+					h2:after {
+						background-color: $purple;
+					}
+				}
 			}
 			&.premarital-app {
 				.front {
-					background: rgba(94,54,106,0.7);
+					background: rgba(255,147,30,0.95); /* orange */
+					@include bp(50) {
+						background-color: rgba(94,54,106,0.95); /* purple */
+					}
 				}
 				.back {
 					background: url(_i/premarital-app-bg.jpg) center center no-repeat;
 					background-size: cover;
+				}
+				h2:after {
+					background-color: $purple;
+				}
+				@include bp(50) {
+					h2:after {
+						background-color: $orange;
+					}
 				}
 			}
 			@include bp(50) {
@@ -231,11 +237,14 @@
 			color: white;
 			text-align: center;
 			position: relative;
-			padding-top: 25%;
-			font-size: 1.15em;
-			@include bp(50) {
+			padding-top: 4.5em;
+			font-size: 1.25em;
+			@include bp(44) {
+				padding-top: 2.5em;
+			}
+			@include bp(67.5) {
 				font-size: 1.5em;
-				padding-top: 1em;
+				padding-top: 1.5em;
 			}
 			&:after {
 				content: '';
@@ -249,9 +258,13 @@
 			}
 		}
 		.icon {
-			margin: 0.5em auto 0;
+			margin: 0.875em auto 0;
 			display: block;
-			font-size: 5em;
+			font-size: 3em;
+			@include bp(67.5) {
+				margin: 0.5em auto 0;
+				font-size: 4.5em;
+			}
 		}
 		.turn-btn {
 			position: absolute;
@@ -264,6 +277,28 @@
 			}
 			.icon {
 				font-size: 1em;
+			}
+		}
+		.turn-btn {
+			position: absolute;
+			top: -1.15em;
+			right: 0.5em;
+			z-index: 20;
+			&:after {
+				width: 0;
+				height: 0;
+				content: '';
+				position: absolute;
+				top: 1.15em;
+				right: -0.5em;
+				border-left: 5em solid transparent;
+				border-bottom: 5em solid transparent;
+				border-top: 5em solid white;
+				z-index: -1;
+			}
+			.icon {
+				font-size: 2em;
+				color: $purple;
 			}
 		}
 	}

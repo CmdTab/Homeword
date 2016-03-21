@@ -153,7 +153,7 @@ get_header('famnetwork'); ?>
 						<div class="flipper">
 							<div class="front">
 								<a href="#" class="turn-btn">
-									<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+									<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
 								</a>
 								<div class="boxed-info">
 									<h3>Strong Marriages</h3>
@@ -162,7 +162,7 @@ get_header('famnetwork'); ?>
 							</div>
 							<div class="back">
 								<a href="#" class="turn-btn">
-									<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+									<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
 								</a>
 								<div class="boxed-info">
 									<h3>Strong Marriages</h3>
@@ -178,7 +178,7 @@ get_header('famnetwork'); ?>
 						<div class="flipper">
 							<div class="front">
 								<a href="#" class="turn-btn">
-									<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+									<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
 								</a>
 								<div class="boxed-info">
 									<h3>Empowered Kids</h3>
@@ -187,7 +187,7 @@ get_header('famnetwork'); ?>
 							</div>
 							<div class="back">
 								<a href="#" class="turn-btn">
-									<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+									<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
 								</a>
 								<div class="boxed-info">
 									<h3>Empowered Kids</h3>
@@ -203,7 +203,7 @@ get_header('famnetwork'); ?>
 						<div class="flipper">
 							<div class="front">
 								<a href="#" class="turn-btn">
-									<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+									<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
 								</a>
 								<div class="boxed-info">
 									<h3>Confident Parents</h3>
@@ -212,7 +212,7 @@ get_header('famnetwork'); ?>
 							</div>
 							<div class="back">
 								<a href="#" class="turn-btn">
-									<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+									<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
 								</a>
 								<div class="boxed-info">
 									<h3>Confident Parents</h3>
@@ -228,7 +228,7 @@ get_header('famnetwork'); ?>
 						<div class="flipper">
 							<div class="front">
 								<a href="#" class="turn-btn">
-									<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+									<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
 								</a>
 								<div class="boxed-info">
 									<h3>Healthy Leaders</h3>
@@ -237,7 +237,7 @@ get_header('famnetwork'); ?>
 							</div>
 							<div class="back">
 								<a href="#" class="turn-btn">
-									<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+									<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
 								</a>
 								<div class="boxed-info">
 									<h3>Healthy Leaders</h3>
@@ -319,14 +319,14 @@ get_header('famnetwork'); ?>
 							<div class="flipper">
 								<div class="front">
 									<a href="#" class="turn-btn">
-										<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+										<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
 									</a>
 									<h2>Monthly Downloads</h2>
 									<?php	include('svg/icon-cloud.php'); ?>
 								</div>
 								<div class="back">
 									<a href="#" class="turn-btn">
-										<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+										<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
 									</a>
 									<div class="boxed-info">
 										<h3>Healthy Leaders</h3>
@@ -342,14 +342,14 @@ get_header('famnetwork'); ?>
 							<div class="flipper">
 								<div class="front">
 									<a href="#" class="turn-btn">
-										<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+										<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
 									</a>
 									<h2>Online Training</h2>
 									<?php	include('svg/icon-lightbulb.php'); ?>
 								</div>
 								<div class="back">
 									<a href="#" class="turn-btn">
-										<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+										<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
 									</a>
 									<div class="boxed-info">
 										<h3>Online Training</h3>
@@ -365,14 +365,14 @@ get_header('famnetwork'); ?>
 							<div class="flipper">
 								<div class="front">
 									<a href="#" class="turn-btn">
-										<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+										<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
 									</a>
 									<h2>Resource Discounts</h2>
 									<?php	include('svg/icon-discount.php'); ?>
 								</div>
 								<div class="back">
 									<a href="#" class="turn-btn">
-										<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+										<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
 									</a>
 									<div class="boxed-info">
 										<h3>Resource Discounts</h3>
@@ -388,14 +388,14 @@ get_header('famnetwork'); ?>
 							<div class="flipper">
 								<div class="front">
 									<a href="#" class="turn-btn">
-										<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+										<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
 									</a>
-									<h2>All Access Premarital App</h2>
+									<h2>Premarital App</h2>
 									<?php	include('svg/icon-app.php'); ?>
 								</div>
 								<div class="back">
 									<a href="#" class="turn-btn">
-										<svg class="icon icon-redo2"><use xlink:href="#icon-redo2"></use></svg>
+										<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
 									</a>
 									<div class="boxed-info">
 										<h3>Resource Discounts</h3>
@@ -417,7 +417,7 @@ get_header('famnetwork'); ?>
 		</div>
 		<div class="resources group">
 			
-		  <!-- Nav tabs -->
+		  	<!-- Nav tabs -->
 			<ul class="nav nav-tabs group" role="tablist">
 				<li role="presentation" class="active">
 					<a href="#home" aria-controls="home" role="tab" data-toggle="tab">
@@ -446,84 +446,119 @@ get_header('famnetwork'); ?>
 			</ul>
 
 			<!-- Tab panes -->
-			<div class="tab-content">
+			<div class="tab-content group">
 				<div role="tabpanel" class="tab-pane group active" id="home">
-					<ul class="half">
-						<li>
-							<?php	include('svg/icon-check.php'); ?>
-							Lorem ipsum dolor sit amet
-						</li>
-						<li>
-							<?php	include('svg/icon-check.php'); ?>
-							Strong Marriages
-						</li>
-						<li>
-							<?php	include('svg/icon-check.php'); ?>
-							Lorem ipsum dolor sit amet
-						</li>
-					</ul>
-					<div class="half">
-						<a href="#" class="white-btn btn">view resources</a>
+					<div class="resource-forty">
+						<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+							<?php include('svg/icon-leaders.php'); ?>
+							<h3>Healthy Leaders</h3>
+						</a>
+					</div>
+					<div class="resource-sixty">
+						<ul class="half">
+							<li>
+								<?php	include('svg/icon-check.php'); ?>
+								Lorem ipsum dolor sit amet
+							</li>
+							<li>
+								<?php	include('svg/icon-check.php'); ?>
+								Strong Marriages
+							</li>
+							<li>
+								<?php	include('svg/icon-check.php'); ?>
+								Lorem ipsum dolor sit amet
+							</li>
+						</ul>
+						<div class="half">
+							<a href="#" class="white-btn btn">view resources</a>
+						</div>
 					</div>
 				</div>
 				<div role="tabpanel" class="tab-pane group" id="profile">
-					<ul class="half">
-						<li>
-							<?php	include('svg/icon-check.php'); ?>
-							Lorem ipsum dolor sit amet
-						</li>
-						<li>
-							<?php	include('svg/icon-check.php'); ?>
-							Empowered Kids
-						</li>
-						<li>
-							<?php	include('svg/icon-check.php'); ?>
-							Lorem ipsum dolor sit amet
-						</li>
-					</ul>
-					<div class="half">
-						<a href="#" class="white-btn btn">view resources</a>
+					<div class="resource-forty">
+						<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+							<?php include('svg/icon-leaders.php'); ?>
+							<h3>Healthy Leaders</h3>
+						</a>
+					</div>
+					<div class="resource-sixty">
+						<ul class="half">
+							<li>
+								<?php	include('svg/icon-check.php'); ?>
+								Lorem ipsum dolor sit amet
+							</li>
+							<li>
+								<?php	include('svg/icon-check.php'); ?>
+								Empowered Kids
+							</li>
+							<li>
+								<?php	include('svg/icon-check.php'); ?>
+								Lorem ipsum dolor sit amet
+							</li>
+						</ul>
+						<div class="half">
+							<a href="#" class="white-btn btn">view resources</a>
+						</div>
 					</div>
 				</div>
 				<div role="tabpanel" class="tab-pane group" id="messages">
-					<ul class="half">
-						<li>
-							<?php	include('svg/icon-check.php'); ?>
-							Lorem ipsum dolor sit amet
-						</li>
-						<li>
-							<?php	include('svg/icon-check.php'); ?>
-							Confident Parents
-						</li>
-						<li>
-							<?php	include('svg/icon-check.php'); ?>
-							Lorem ipsum dolor sit amet
-						</li>
-					</ul>
-					<div class="half">
-						<a href="#" class="white-btn btn">view resources</a>
+					<div class="resource-forty">
+						<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+							<?php include('svg/icon-leaders.php'); ?>
+							<h3>Healthy Leaders</h3>
+						</a>
+					</div>
+					<div class="resource-sixty">
+						<ul class="half">
+							<li>
+								<?php	include('svg/icon-check.php'); ?>
+								Lorem ipsum dolor sit amet
+							</li>
+							<li>
+								<?php	include('svg/icon-check.php'); ?>
+								Confident Parents
+							</li>
+							<li>
+								<?php	include('svg/icon-check.php'); ?>
+								Lorem ipsum dolor sit amet
+							</li>
+						</ul>
+						<div class="half">
+							<a href="#" class="white-btn btn">view resources</a>
+						</div>
 					</div>
 				</div>
 				<div role="tabpanel" class="tab-pane group" id="settings">
-					<ul class="half">
-						<li>
-							<?php	include('svg/icon-check.php'); ?>
-							Lorem ipsum dolor sit amet
-						</li>
-						<li>
-							<?php	include('svg/icon-check.php'); ?>
-							Healthy Leaders
-						</li>
-						<li>
-							<?php	include('svg/icon-check.php'); ?>
-							Lorem ipsum dolor sit amet
-						</li>
-					</ul>
-					<div class="half">
-						<a href="#" class="white-btn btn">view resources</a>
+					<div class="testing">
+						<div class="resource-forty">
+							<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+								<?php include('svg/icon-leaders.php'); ?>
+								<h3>Healthy Leaders</h3>
+							</a>
+						</div>
+						<div class="resource-sixty">
+							<ul class="half">
+								<li>
+									<?php	include('svg/icon-check.php'); ?>
+									Lorem ipsum dolor sit amet
+								</li>
+								<li>
+									<?php	include('svg/icon-check.php'); ?>
+									Healthy Leaders
+								</li>
+								<li>
+									<?php	include('svg/icon-check.php'); ?>
+									Lorem ipsum dolor sit amet
+								</li>
+							</ul>
+							<div class="half">
+								<a href="#" class="white-btn btn">view resources</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+		<!-- end tabs -->
 
 		</div>
 	</div><!-- #main-content -->

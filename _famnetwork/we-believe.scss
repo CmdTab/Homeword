@@ -1,7 +1,10 @@
 .what-we-believe {
 	text-align: center;
 	margin: 0 auto;
-	padding: 4em 2em;
+	padding: 2em 1em;
+	@include bp(50) {
+		padding: 4em 2em;
+	}
 	h1 {
 		color: $purple;
 		margin-bottom: 0.25em;
@@ -17,7 +20,7 @@
 	.four-list {
 		padding: 4em 0 0;
 		max-width: 80em;
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 		@include bp(80) {
 			width: 100%;
@@ -25,14 +28,16 @@
 		> li {
 			position: relative;
 			float: left;
-			width: 100%;
+			width: 48%;
+			margin: 0 4% 1em 0;
+			min-height: 20em;
+			&:nth-child(2n+2) {
+				margin-right: 0;
+			}
 			@include bp(30) {
 				float: left;
 				width: 46%;
 				margin: 0 8% 1em 0;
-				&:nth-child(2n+2) {
-					margin-right: 0;
-				}
 			}
 			@include bp(62.5) {
 			    width: 23.5%;
@@ -40,6 +45,29 @@
 			    &:last-child {
 			    	margin-right: 0;
 			   }
+			}
+			.turn-btn {
+				top: 1.25em;
+				right: 1.25em;
+				&:after {
+					width: 0;
+					height: 0;
+					content: '';
+					position: absolute;
+					top: -0.6em;
+					right: -0.5em;
+					border-left: 5em solid transparent;
+					border-bottom: 5em solid transparent;
+					border-top: 5em solid white;
+					z-index: -1;
+				}
+				.icon {
+					font-size: 2em;
+					color: $purple;
+				}
+			}
+			.flip-container {
+				height: auto;
 			}
 			.front,
 			.back {
