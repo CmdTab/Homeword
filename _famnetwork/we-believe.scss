@@ -40,15 +40,18 @@
 				margin: 0 8% 1em 0;
 			}
 			@include bp(62.5) {
-			    width: 23.5%;
-			    margin: 0 2% 1em 0;
-			    &:last-child {
-			    	margin-right: 0;
-			   }
+				width: 23.5%;
+				margin: 0 2% 1em 0;
+				&:nth-child(2n+2) {
+					margin-right: 2%;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
 			}
 			.turn-btn {
-				top: 1.25em;
-				right: 1.25em;
+				top: 0.5em;
+				right: 0.5em;
 				&:after {
 					width: 0;
 					height: 0;
@@ -122,12 +125,14 @@
 			left: 0;
 			bottom: 0;
 			right: 0;
-			padding: 1em;
-			width: 100%;
+			top: 0;
+			margin: 5%;
+			width: 90%;
 			color: white;
+			border: 1px solid white;
 			h3 {
 				text-transform: uppercase;
-				padding-top: 1em;
+				padding-top: 35%;
 			}
 			hr {
 				height: 0.25em;
@@ -144,7 +149,7 @@
 		.back {
 			.boxed-info {
 				h3 {
-					padding-top: 0.5em;
+					padding-top: 2em;
 				}
 			}
 		}

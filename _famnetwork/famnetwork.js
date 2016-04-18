@@ -31,6 +31,14 @@ function turnCard() {
 		}
 		return false;
 	});
+	jQuery('.turn-btn').click(function() {
+		if(jQuery( this ).parent( '.boxed-info' ).parent( '.front , .back' ).parent( '.flipper' ).parent( '.flip-container' ).hasClass( 'hover' )) {
+			jQuery( this ).parent( '.boxed-info' ).parent( '.front , .back' ).parent( '.flipper' ).parent( '.flip-container' ).removeClass( 'hover');
+		} else {
+			jQuery( this ).parent( '.boxed-info' ).parent( '.front , .back' ).parent( '.flipper' ).parent( '.flip-container' ).addClass( 'hover');
+		}
+		return false;
+	});
 }
 
 jQuery(document).ready(function() {

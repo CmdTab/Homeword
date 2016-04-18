@@ -61,25 +61,20 @@ get_header('famnetwork'); ?>
 				<div class="half mini-box info-card flip-container">
 					<div class="flipper">
 						<div class="front">
-							<div class="mobile-icon">
-								<?php 
-									//get_template_part(‘icon’ , ‘plus’);
-									include('svg/icon-newsletter.php');
-								?>
-							</div>
+							<a href="#" class="turn-btn">
+								<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+							</a>
 							<h2>Parent Newsletter</h2>
 							<hr />
-							<div class="desktop-icon">
-								<?php 
-									//get_template_part(‘icon’ , ‘plus’);
-									include('svg/icon-newsletter.php');
-								?>
-							</div>
-							<div class="mobile-no-flip">
-								<p>This is the back of the card</p>
-							</div>
+							<?php 
+								//get_template_part(‘icon’ , ‘plus’);
+								include('svg/icon-newsletter.php');
+							?>
 						</div>
 						<div class="back">
+							<a href="#" class="turn-btn">
+								<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
+							</a>
 							<h2>Parent Newsletter</h2>
 							<hr />
 							<p>This is the back of the card</p>
@@ -89,25 +84,20 @@ get_header('famnetwork'); ?>
 				<div class="half mini-box info-card flip-container">
 					<div class="flipper">
 						<div class="front">
-							<div class="mobile-icon">
-								<?php 
-									//get_template_part(‘icon’ , ‘plus’);
-									include('svg/icon-podcast.php');
-								?>
-							</div>
+							<a href="#" class="turn-btn">
+								<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+							</a>
 							<h2>Weekly Podcast</h2>
 							<hr />
-							<div class="desktop-icon">
-								<?php 
-									//get_template_part(‘icon’ , ‘plus’);
-									include('svg/icon-podcast.php');
-								?>
-							</div>
-							<div class="mobile-no-flip">
-								<p>This is the back of the card</p>
-							</div>
+							<?php 
+								//get_template_part(‘icon’ , ‘plus’);
+								include('svg/icon-podcast.php');
+							?>
 						</div>
 						<div class="back">
+							<a href="#" class="turn-btn">
+								<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
+							</a>
 							<h2>Weekly Podcast</h2>
 							<hr />
 							<p>This is the back of the card</p>
@@ -117,25 +107,20 @@ get_header('famnetwork'); ?>
 				<div class="mini-box full info-card flip-container">
 					<div class="flipper">
 						<div class="front">
-							<div class="mobile-icon">
-								<?php 
-									//get_template_part(‘icon’ , ‘plus’);
-									include('svg/icon-forum.php');
-								?>
-							</div>
+							<a href="#" class="turn-btn">
+								<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+							</a>
 							<h2>Support/Idea Forum</h2>
 							<hr />
-							<div class="desktop-icon">
 								<?php 
 									//get_template_part(‘icon’ , ‘plus’);
 									include('svg/icon-forum.php');
 								?>
-							</div>
-							<div class="mobile-no-flip">
-								<p>This is the back of the card</p>
-							</div>
 						</div>
 						<div class="back">
+							<a href="#" class="turn-btn">
+								<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
+							</a>
 							<h2>Weekly Podcast</h2>
 							<hr />
 							<p>This is the back of the card</p>
@@ -152,19 +137,19 @@ get_header('famnetwork'); ?>
 					<div class="info-card flip-container">
 						<div class="flipper">
 							<div class="front">
-								<a href="#" class="turn-btn">
-									<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
-								</a>
 								<div class="boxed-info">
+									<a href="#" class="turn-btn">
+										<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+									</a>
 									<h3>Strong Marriages</h3>
 									<hr>
 								</div>
 							</div>
 							<div class="back">
-								<a href="#" class="turn-btn">
-									<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
-								</a>
 								<div class="boxed-info">
+									<a href="#" class="turn-btn">
+										<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
+									</a>
 									<h3>Strong Marriages</h3>
 									<hr>
 									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
@@ -177,19 +162,19 @@ get_header('famnetwork'); ?>
 					<div class="info-card flip-container">
 						<div class="flipper">
 							<div class="front">
-								<a href="#" class="turn-btn">
-									<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
-								</a>
 								<div class="boxed-info">
+									<a href="#" class="turn-btn">
+										<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+									</a>
 									<h3>Empowered Kids</h3>
 									<hr>
 								</div>
 							</div>
 							<div class="back">
-								<a href="#" class="turn-btn">
-									<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
-								</a>
 								<div class="boxed-info">
+									<a href="#" class="turn-btn">
+										<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
+									</a>
 									<h3>Empowered Kids</h3>
 									<hr>
 									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
@@ -202,19 +187,19 @@ get_header('famnetwork'); ?>
 					<div class="info-card flip-container">
 						<div class="flipper">
 							<div class="front">
-								<a href="#" class="turn-btn">
-									<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
-								</a>
 								<div class="boxed-info">
+									<a href="#" class="turn-btn">
+										<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+									</a>
 									<h3>Confident Parents</h3>
 									<hr>
 								</div>
 							</div>
 							<div class="back">
-								<a href="#" class="turn-btn">
-									<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
-								</a>
 								<div class="boxed-info">
+									<a href="#" class="turn-btn">
+										<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
+									</a>
 									<h3>Confident Parents</h3>
 									<hr>
 									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
@@ -227,19 +212,19 @@ get_header('famnetwork'); ?>
 					<div class="info-card flip-container">
 						<div class="flipper">
 							<div class="front">
-								<a href="#" class="turn-btn">
-									<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
-								</a>
 								<div class="boxed-info">
+									<a href="#" class="turn-btn">
+										<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>
+									</a>
 									<h3>Healthy Leaders</h3>
 									<hr />
 								</div>
 							</div>
 							<div class="back">
-								<a href="#" class="turn-btn">
-									<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
-								</a>
 								<div class="boxed-info">
+									<a href="#" class="turn-btn">
+										<svg class="icon icon-minus"><use xlink:href="#icon-minus"></use></svg>
+									</a>
 									<h3>Healthy Leaders</h3>
 									<hr>
 									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
@@ -450,8 +435,8 @@ get_header('famnetwork'); ?>
 				<div role="tabpanel" class="tab-pane group active" id="home">
 					<div class="resource-forty">
 						<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
-							<?php include('svg/icon-leaders.php'); ?>
-							<h3>Healthy Leaders</h3>
+							<?php include('svg/icon-marriage.php'); ?>
+							<h3>Strong Marriages</h3>
 						</a>
 					</div>
 					<div class="resource-sixty">
@@ -477,8 +462,8 @@ get_header('famnetwork'); ?>
 				<div role="tabpanel" class="tab-pane group" id="profile">
 					<div class="resource-forty">
 						<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
-							<?php include('svg/icon-leaders.php'); ?>
-							<h3>Healthy Leaders</h3>
+							<?php include('svg/icon-kids.php'); ?>
+							<h3>Empowered Kids</h3>
 						</a>
 					</div>
 					<div class="resource-sixty">
@@ -504,8 +489,8 @@ get_header('famnetwork'); ?>
 				<div role="tabpanel" class="tab-pane group" id="messages">
 					<div class="resource-forty">
 						<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
-							<?php include('svg/icon-leaders.php'); ?>
-							<h3>Healthy Leaders</h3>
+							<?php include('svg/icon-confident.php'); ?>
+							<h3>Confident Parents</h3>
 						</a>
 					</div>
 					<div class="resource-sixty">
