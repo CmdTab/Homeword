@@ -31,35 +31,13 @@ a {
 	}
 }
 .btn {
-	@include button($orange, #fff);
-	border: 1px solid $orange;
+	@include button($orange, #fff, $orange);
 }
 .clear-btn {
-	@include button(transparent, #fff);
-	border: 1px solid #fff;
-	&:hover {
-		background-color: $purple;
-		color: white;
-		border-color: $purple;
-	}
+	@include button(transparent, #fff, #fff);
 }
 .white-btn {
-	@include button(#fff, $dark-gray);
-	border: 1px solid #fff;
-	&:hover {
-		background-color: $purple;
-		color: white;
-		border-color: $purple;
-	}
-}
-.purple-btn {
-	@include button($purple, #fff);
-	border: 1px solid $purple;
-	&:hover {
-		background-color: $orange;
-		color: #fff;
-		border-color: $orange;
-	}
+	@include button(#fff, $dark-gray, #fff);
 }
 
 h1,h2,h3,h4,h5,h6 {

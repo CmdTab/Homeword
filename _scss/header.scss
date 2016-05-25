@@ -132,14 +132,6 @@
 	width: 80%;
 	top: 6em;
 	border-top: 1px solid $tan;
-
-	/*.btn {
-		display: block;
-		border-radius: 0;
-		padding: 1em;
-		border: 0;
-		border-bottom: 1px solid adjust_hue(saturate(darken(#f7cd23, 14), 2), 1);
-	}*/
 	* {
 		line-height: 1;
 	}
@@ -149,19 +141,7 @@
 	@include bp(50) {
 		position: static;
 		width: 100%;
-		border-bottom: 0.25em solid $blue-back;
-		background: $light-blue;
-		/*.btn {
-			float: right;
-			display: inline-block;
-			margin: 0.5em 1em 0 0;
-			@include button(#f7cd23, #fff);
-		}*/
-	}
-	@include bp(62.5) {
-		/*.btn {
-			margin: 0.5em 0 0;
-		}*/
+		background: $new-blue;
 	}
 	.sub-menu {
 		display: none;
@@ -175,16 +155,15 @@
 	}
 	@include bp(50) {
 		float: right;
-
 		text-align: right;
 	}
 }
 .cart-contents {
-	@include button(#eee, #292929);
+	@include button(transparent, #fff, #fff);
 	text-shadow: none;
 	position: relative;
-	padding: 0.65em 1em 0.65em 2.5em;
 	[data-icon] {
+		display: none;
 		font-size: 1.5em;
 		position: absolute;
 		left: 0.5em;
@@ -200,7 +179,6 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	background: $light-blue;
 	> li {
 		position: relative;
 		display: block;
@@ -208,10 +186,11 @@
 		> a {
 			display: block;
 			padding: 1em;
-			font-family: "adelle",serif;
 			font-size: 1.125em;
 			border-bottom: 1px solid $tan;
+			color: #fff;
 		}
+
 		&.active {
 			background: #fff;
 			border-right: 1px solid $tan;
@@ -280,7 +259,11 @@
 			> a {
 				padding: 0 1.25em;
 				border: 0;
-				border-right: 1px solid $tan;
+			}
+			&:first-child {
+				> a {
+					padding-left: 0;
+				}
 			}
 			&.expand {
 				&:before {
@@ -313,11 +296,6 @@
 		        	}
 		        }
 			}
-		}
-	}
-	@include bp(62.5) {
-		> li {
-
 		}
 	}
 }

@@ -259,7 +259,7 @@
 	}
 }
 .cart-update {
-	@include button(#eee, #292929);
+	@include button(#eee, #292929, #eee);
 	display: block;
 	width: 100%;
 	margin-bottom: 1em;
@@ -273,7 +273,7 @@
 	}
 }
 .checkout-button {
-	@include button(#f7cd23, #fff);
+	@include button(#f7cd23, #fff, #f7cd23);
 	display: block;
 	width: 100%;
 	@include bp(50) {
@@ -486,7 +486,7 @@
 		color: $text;
 	}
 	input[type="submit"] {
-		@include button(#f7cd23, #fff);
+		@include button(#f7cd23, #fff, #f7cd23);
 		margin: 0 1em 1em 0;
 		float: right;
 	}

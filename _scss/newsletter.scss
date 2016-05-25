@@ -61,7 +61,7 @@
 .mc4wp-form {
 	padding-bottom: 1em;
 	input[type="submit"] {
-		@include button(#cacaca, #292929);
+		@include button(#cacaca, #292929, #cacaca);
 		text-shadow: none;
 		display: block;
 		width: 100%;

@@ -1,0 +1,49 @@
+.home-products {
+    background: $new-tan;
+    padding: 3em 2em;
+    h2 {
+        text-align: center;
+        color: $new-blue;
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-top: 0;
+    }
+    .products {
+        li {
+            float: left;
+			width: 48%;
+			margin: 0 4% 1em 0;
+            background: #fff;
+            padding: 1em;
+            border: 1px solid $new-teal;
+			&:nth-child(even) {
+				margin: 0 0 1em;
+			}
+            @include bp(44) {
+    			width: 22%;
+    			margin: 0 4% 1em 0;
+                &:nth-child(even) {
+    				margin: 0 4% 1em 0;
+    			}
+    			&:nth-child(3n) {
+    				margin: 0 4% 1em 0;
+    			}
+                &:nth-child(4n) {
+                    margin-right: 0;
+                }
+    		}
+        }
+        .price {
+            font-size: 0.875em;
+        }
+        .button {
+            background: $new-blue;
+            color: #fff;
+            border-color: $new-blue;
+            &:hover {
+                background: lighten($new-blue, 10%);
+                border-color: lighten($new-blue, 10%);
+            }
+        }
+    }
+}

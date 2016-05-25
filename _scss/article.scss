@@ -157,7 +157,7 @@
 	}
 }
 .powerpress_link_pinw {
-	@include button($radio, #fff);
+	@include button($radio, #fff, $radio);
 }
 .nav-links {
 	padding: 0 2em;

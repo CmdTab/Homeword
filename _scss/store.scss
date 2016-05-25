@@ -84,7 +84,7 @@
 	}
 }
 .add_to_cart_button {
-	@include button(#f7cd23, #fff);
+	@include button(#f7cd23, #fff, #f7cd23);
 	padding: 0.1em 0.75em;
 	font-size: 0.8125em;
 }
@@ -173,7 +173,7 @@
 	border: 1px solid #ccc;
 	padding: 1em 2em;
 	.button {
-		@include button(#f7cd23, #fff);
+		@include button(#f7cd23, #fff, #f7cd23);
 		display: block;
 		width: 100%;
 		clear: both;
@@ -317,7 +317,7 @@
 	}
 }
 .button.product_type_variable {
-	@include button(#f7cd23, #fff);
+	@include button(#f7cd23, #fff, #f7cd23);
 	padding: 0.1em 0.75em;
 	font-size: 0.8125em;
 }
@@ -376,7 +376,7 @@
 	margin: 0.5em 0 1em;
 	padding: 0 0.5em;
 	input[type="button"] {
-		@include button(#aaa, #fff);
+		@include button(#aaa, #fff, #aaa);
 		display: block;
 		width: 25%;
 		float: left;

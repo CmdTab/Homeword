@@ -156,7 +156,7 @@
 		color: $radio;
 	}
 	.button {
-		@include button($radio, #fff);
+		@include button($radio, #fff, $radio);
 	}
 }
 .family-pane {
@@ -177,7 +177,7 @@
 		line-height: 1.6;
 	}
 	.button {
-		@include button($devo, #fff);
+		@include button($devo, #fff, $devo);
 	}
 }
 .church-pane {
@@ -198,7 +198,7 @@
 		line-height: 1.6;
 	}
 	.button {
-		@include button($culture, #fff);
+		@include button($culture, #fff, $culture);
 	}
 }
 .seminars {
@@ -207,7 +207,7 @@
 		font-weight: normal;
 		text-transform: none;
 		margin-bottom: 0.1em;
-		
+
 	}
 	h2 {
 		font-family: "adelle",serif;

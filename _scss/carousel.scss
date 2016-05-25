@@ -235,22 +235,22 @@
 	}
 }
 .carousel-action {
-	@include button(#79bd35, #fff);
+	@include button(#79bd35, #fff, #79bd35);
 	&.blue {
-		@include button($radio, #fff);
+		@include button($radio, #fff, $radio);
 	}
 	&.gray {
-		@include button(#eee, #292929);
+		@include button(#eee, #292929, #eee);
 		text-shadow: none;
 	}
 	&.yellow {
-		@include button(#f7cd23, #fff);
+		@include button(#f7cd23, #fff, #f7cd23);
 	}
 	&.teal {
-		@include button(#10a6a7, #fff);
+		@include button(#10a6a7, #fff, #10a6a7);
 	}
 	&.purple {
-		@include button($church, #fff);
+		@include button($church, #fff, $church);
 	}
 }
 /*.home  {

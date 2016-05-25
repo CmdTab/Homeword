@@ -38,14 +38,14 @@ a {
 	}
 }
 .btn {
-	@include button(#f7cd23, #fff);
+	@include button(#f7cd23, #fff, #f7cd23);
 }
 .btn-gray {
-	@include button(#eee, #292929);
+	@include button(#eee, #292929, #eee);
 	text-shadow: none;
 }
 .btn-blue {
-	@include button($radio, #fff);
+	@include button($radio, #fff, $radio);
 }
 h1,h2,h3,h4,h5,h6 {
 	line-height: 1;
@@ -96,7 +96,11 @@ h1,h2,h3,h4,h5,h6 {
 		margin-bottom: 0;
 		&.first {
 			margin-right: 5%;
+			&.right {
+				float: right;
+			}
 		}
+
 	}
 }
 .halves {
@@ -211,3 +215,5 @@ h1,h2,h3,h4,h5,h6 {
 @import "snippets";
 @import "about";
 @import "pci";
+@import "card";
+@import "home-products";

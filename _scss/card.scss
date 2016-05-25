@@ -1,0 +1,46 @@
+.card {
+    padding: 3em 2em;
+    background: transparentize($blue, 0.5);
+}
+.card-content {
+    img {
+        max-width: 4em;
+    }
+    h2 {
+        color: #fff;
+        margin: 0.5em 0 1em;
+        font-weight: normal;
+        text-transform: uppercase;
+        &:after {
+            content: '';
+            display: block;
+            height: 1px;
+            background: #fff;
+            width: 5em;
+            margin: 1em 0 0;
+        }
+    }
+    p {
+        font-size: 1.1em;
+        color: #fff;
+    }
+    .btn {
+        background: #fff;
+        color: $new-blue;
+        border-color: #fff;
+        padding: 0.35em 1.5em;
+    }
+}
+.card-image {
+    display: none;
+    @include bp(44) {
+        display: block;
+        text-align: center;
+        margin: 1.5em 0 0;
+        img {
+            width: 15em;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+    }
+}
