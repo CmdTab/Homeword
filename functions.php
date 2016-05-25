@@ -67,13 +67,13 @@ function add_var( $items, $args ) {
 	        }
 			$out[] = $item;
 	    }
-    } elseif ( $args->theme_location == 'church' ) {
-    	foreach ( $items as $item ) {
-	        if ( isset ( $item->url ) ) {
-	        	$item->url .= '?cat=church';
-	        }
-			$out[] = $item;
-	    }
+    //} elseif ( $args->theme_location == 'church' ) {
+    	//foreach ( $items as $item ) {
+	   //     if ( isset ( $item->url ) ) {
+	   //     	$item->url .= '?cat=church';
+	   //     }
+		//	$out[] = $item;
+	   // }
 
 	} else {
     	$out = $items;
