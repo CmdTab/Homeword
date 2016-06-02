@@ -22,6 +22,16 @@
 			text-decoration: none;
 		}
 	}
+	.three-list {
+		li {
+			@include bp(50) {
+				padding: 0 1em 0 0;
+				&:last-child {
+					padding: 0;
+				}
+			}
+		}
+	}
 }
 .contact-info {
 	list-style: none;

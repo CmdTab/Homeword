@@ -27,10 +27,23 @@
 	position: relative;
 	img {
 		max-width: 10em;
+		margin: 0 0 0.5em;
+	}
+	span {
+		display: block;
+		font-size: 0.875em;
 	}
 	@include bp(50) {
 		text-align: left;
 		float: left;
+		img {
+			vertical-align: middle;
+			margin: 0 0.5em 0 0;
+		}
+		span {
+			display: inline;
+			vertical-align: middle;
+		}
 	}
 }
 .header-content {
@@ -108,6 +121,7 @@
 	background: none;
 	border: 1px solid $tan;
 	padding: 0.5em;
+	width: 100%;
 }
 .search-submit {
 	position: absolute;
@@ -188,46 +202,46 @@
 			padding: 1em;
 			font-size: 1.125em;
 			border-bottom: 1px solid $tan;
-			color: #fff;
+			color: #1c5a7d;
 		}
 
 		&.active {
 			background: #fff;
-			border-right: 1px solid $tan;
-			border-left: 1px solid $tan;
+			/*border-right: 1px solid $tan;
+			border-left: 1px solid $tan;*/
 			a {
 				border: 0;
 			}
-			&.family-nav {
+			/*&.family-nav {
 				color: $family;
 			}
 			&.church-nav {
 				color: $church;
-			}
+			}*/
 		}
 		&.expand {
 			background: #fff;
-			border-right: 1px solid $tan;
-			border-left: 1px solid $tan;
+			/*border-right: 1px solid $tan;
+			border-left: 1px solid $tan;*/
 			a {
 				border: 0;
 			}
-			&.family-nav a {
+			/*&.family-nav a {
 				color: $family;
 			}
 			&.church-nav a {
 				color: $church;
-			}
+			}*/
 
 		}
 		&.current {
 			background: #fff;
-			border-right: 1px solid $tan;
-			border-left: 1px solid $tan;
+			/*border-right: 1px solid $tan;
+			border-left: 1px solid $tan;*/
 			a {
 				border: 0;
 			}
-			&.family-nav {
+			/*&.family-nav {
 				a {
 					color: $family;
 				}
@@ -242,7 +256,7 @@
 				.current-menu-item a {
 					color: darken($church, 10%);
 				}
-			}
+			}*/
 		}
 	}
 	[data-icon] {
@@ -259,13 +273,13 @@
 			> a {
 				padding: 0 1.25em;
 				border: 0;
+				color: #fff;
 			}
-			&:first-child {
-				> a {
-					padding-left: 0;
-				}
-			}
+
 			&.expand {
+				a {
+					color: $new-blue;
+				}
 				&:before {
 		        	content:'';
 		        	height: 1px;
@@ -298,6 +312,9 @@
 			}
 		}
 	}
+}
+#fam-link {
+	color: $yellow;
 }
 .subnav {
 	display: none;

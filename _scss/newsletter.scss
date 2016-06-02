@@ -30,34 +30,7 @@
 		}
 	}
 }
-.field {
-	margin-bottom: 1em;
-	font-size: 0.8125em;
-	position: relative;
-	label {
-		position: absolute;
-		left: 1em;
-		top: 0.5em;
-		color: #bbb;
-	}
-	input {
-		display: block;
-		width: 100%;
-		padding: 0.75em 0.5em;
-		border: 1px solid #bbb;
-	}
-	&.focus {
-		label {
-			display: none;
-		}
-	}
-	@include bp(44) {
-		float: left;
-		width: 26%;
-		margin-right: 2%;
-		margin-bottom: 0;
-	}
-}
+
 .mc4wp-form {
 	padding-bottom: 1em;
 	input[type="submit"] {
@@ -106,7 +79,7 @@
 	left: 0;
 	z-index: 1000;
 	opacity: 0;
-	background: transparentize($blue-back, 0.1);
+	background: transparentize($new-blue, 0.2);
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -128,7 +101,7 @@
 	-moz-transform: translateX(-50%) translateY(-50%);
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-	background: lighten($blue-back, 10%);
+	background: $new-blue;
 	border-radius: 0.25em;
 	padding: 0 0 1em;
 	@include bp(44) {
@@ -138,11 +111,11 @@
 .close-overlay {
 	color: #fff;
 	padding: 0.25em 1.5em;
-	background: $blue-back;
+	background: $new-blue;
 	border-radius: 0.25em;
 	&:hover {
 		color: #fff;
-		background: darken($blue-back, 5%);
+		background: darken($new-blue, 5%);
 	}
 }
 .modal-show  {
@@ -185,6 +158,71 @@
 			float: left;
 			width: 50%;
 			margin: 0;
+		}
+	}
+}
+.newsletter-modal {
+	padding: 2em;
+	color: #fff;
+	text-align: center;
+	h2 {
+		font-weight: normal;
+		margin: 0;
+		text-transform: uppercase;
+	}
+	.field {
+		margin-bottom: 1em;
+		font-size: 0.8125em;
+		position: relative;
+		label {
+			position: absolute;
+			left: 1em;
+			top: 0.5em;
+			color: #bbb;
+		}
+		input {
+			display: block;
+			width: 100%;
+			padding: 0.75em 0.5em;
+			border: 1px solid darken($new-blue, 10%);
+		}
+		&.focus {
+			label {
+				display: none;
+			}
+		}
+		@include bp(44) {
+			float: left;
+			width: 32%;
+			margin-right: 2%;
+			margin-bottom: 0;
+			&.last {
+				margin-right: 0;
+			}
+		}
+	}
+	ul {
+		margin: 1em 0;
+		font-size: 0.875em;
+		list-style: none;
+		padding: 0;
+		text-align: left;
+	}
+	input[type="submit"] {
+		@include button($yellow, $text, $yellow);
+	}
+	.close-overlay {
+		float: right;
+		margin-top: -1em;
+		@include button(darken($new-blue, 15%), #fff, darken($new-blue, 15%));
+		border-radius: 0;
+		opacity: 0.5;
+	}
+	@include bp(44) {
+		li {
+			float: left;
+			width: 50%;
+			margin: 0 0 0.5em;
 		}
 	}
 }

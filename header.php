@@ -37,7 +37,10 @@ $_SESSION['cat'] = $_GET['cat'];*/
 					<span aria-hidden="true" data-icon="&#x6d;"></span>
 					<span class="assistive-text">Mobile Navigation</span>
 				</a>
-				<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src ="<?php bloginfo('template_directory'); ?>/_i/homeword-logo.png"></a>
+				<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                    <img src ="<?php bloginfo('template_directory'); ?>/_i/homeword-logo.png">
+                    <span>A tagline for you</span>
+                </a>
 				<div class="header-content">
 					<ul class="social ">
 						<li>
@@ -74,17 +77,10 @@ $_SESSION['cat'] = $_GET['cat'];*/
 				<ul class="top-nav">
 					<li class="with-sub family-nav">
 						<a href = "#">
-							Families
+							Free Resources
 							<span aria-hidden="true" data-icon="&#x75;"></span>
 						</a>
 						<?php wp_nav_menu( array( 'theme_location' => 'families', 'menu_class' => 'subnav', 'container' => false) ); ?>
-					</li><!--
-					--><li class="with-sub church-nav">
-						<a href = "#">
-							Church Leaders
-							<span aria-hidden="true" data-icon="&#x75;"></span>
-						</a>
-						<?php wp_nav_menu( array( 'theme_location' => 'church', 'menu_class' => 'subnav', 'container' => false) ); ?>
 					</li><!--
 				--><li class="with-sub seminar-nav">
 						<a href = "#">
@@ -102,7 +98,10 @@ $_SESSION['cat'] = $_GET['cat'];*/
 					</li><!--
 					--><li>
 						<a href = "<?php echo esc_url( home_url( '/' ) ); ?>store">Store</a>
-					</li>
+					</li><!--
+                    --><li>
+                        <a href = "http://famnetwork.homeword.com" id="fam-link">Pastors</a>
+                    </li>
 				</ul>
 				<div class="nav-buttons">
 					<a href = "<?php echo esc_url( home_url( '/' ) ); ?>donate" class="btn">Donate</a>

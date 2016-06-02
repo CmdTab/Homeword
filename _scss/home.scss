@@ -1,0 +1,58 @@
+.ministry-intro {
+    background: $new-back url(_i/intro-back.png) center center no-repeat;
+    background-size: auto 80%;
+    padding: 4em 2em;
+    font-size: 1.25em;
+    text-align: center;
+    color: #1c5a7d;
+    h1 {
+        margin-top: 0;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+.home-testimonies {
+    background: $new-teal;
+    color: #fff;
+
+    text-align: center;
+    font-size: 1.25em;
+    .carousel {
+        max-width: 45em;
+        margin: 0 auto;
+        padding: 2em 2em 3em;
+    }
+    .item {
+        &:before {
+            display: none;
+        }
+    }
+    .carousel-indicators {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        z-index: 15;
+        width: 60%;
+        margin-left: -30%;
+        padding-left: 0;
+        list-style: none;
+        text-align: center;
+    }
+    .carousel-indicators li {
+        display: inline-block;
+        width: 0.8em;
+        height: 0.8em;
+        margin: 0.1em;
+        text-indent: -9999px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: #000 \9;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .carousel-indicators .active {
+        background-color: #fff;
+        border: 2px solid #ffffff;
+    }
+}

@@ -1,8 +1,13 @@
 .card {
-    padding: 3em 2em;
+    padding: 2em 3em;
     background: transparentize($blue, 0.5);
+    background-size: cover;
+    @include bp(44) {
+        padding: 3em 4em;
+    }
 }
 .card-content {
+    font-size: 1.25em;
     img {
         max-width: 4em;
     }
@@ -21,7 +26,6 @@
         }
     }
     p {
-        font-size: 1.1em;
         color: #fff;
     }
     .btn {

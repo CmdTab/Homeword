@@ -53,7 +53,7 @@ function hideLabel() {
 }
 function showModal() {
 	jQuery('.toggle-overlay').click(function() {
-		jQuery(this).next('.modal').toggleClass('modal-show');
+		jQuery('.modal').toggleClass('modal-show');
 		return false;
 	});
 	jQuery('.modal-overlay').click(function() {

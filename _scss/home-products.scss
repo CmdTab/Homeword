@@ -14,11 +14,15 @@
 			width: 48%;
 			margin: 0 4% 1em 0;
             background: #fff;
-            padding: 1em;
+            padding: 1em 1.75em;
             border: 1px solid $new-teal;
 			&:nth-child(even) {
 				margin: 0 0 1em;
 			}
+            img {
+                display: block;
+                margin: 0 auto;
+            }
             @include bp(44) {
     			width: 22%;
     			margin: 0 4% 1em 0;

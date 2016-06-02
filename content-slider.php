@@ -24,6 +24,9 @@
 			if($row['slide_gradient'] === 'dark') {
 				echo ' dark-gradient';
 			}
+			if($row['slide_gradient'] === 'blue') {
+				echo ' blue-gradient';
+			}
 			if($row['slide_gradient'] === 'none') {
 				echo ' no-gradient';
 			}

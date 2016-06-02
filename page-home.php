@@ -30,32 +30,74 @@ get_header(); ?>
 				?>
 				<div class="full-section ministry-intro">
 					<div class="sm-wrap">
-						<h1>This is the introductory section</h1>
-						<p>This is the introductory paragraph that tells about Homeword and what they do.</p>
+						<h1><?php the_field('intro_title'); ?></h1>
+						<?php the_field('intro_paragraph'); ?>
 					</div>
 				</div>
-				<div class="card group">
-					<div class="half first card-content">
-						<img src = "http://placehold.it/100x100">
-						<h2>Daily Newsletter</h2>
-						<p>Lorem ipsum dolor sit amet, ex ius quidam inciderint, ne habeo congue est. At ius porro consequat, officiis constituam quo in.</p>
-						<a href = "#" class="btn">Subscribe</a>
-					</div>
-					<div class="half card-image">
-						<img src = "http://placehold.it/450x450">
-					</div>
-				</div>
-				<div class="card group">
+				<?php
+					if( have_rows('card') ):
+						$x = 1;
+						while ( have_rows('card') ) : the_row();
+							$background = get_sub_field('card_background');
+				?>
+				<div class="card group" <?php if( !empty($background) ): ?>style="background-image: url(<?php echo $background; ?>); "<?php endif; ?>>
+				<?php if($x % 2 == 0): ?>
 					<div class="half first card-image">
-						<img src = "http://placehold.it/450x450">
+						<?php
+							$image = get_sub_field('card_image');
+							if( !empty($image) ):
+						?>
+						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+						<?php endif; ?>
 					</div>
 					<div class="half card-content">
-						<img src = "http://placehold.it/100x100">
-						<h2>Daily Newsletter</h2>
-						<p>Lorem ipsum dolor sit amet, ex ius quidam inciderint, ne habeo congue est. At ius porro consequat, officiis constituam quo in.</p>
-						<a href = "#" class="btn">Subscribe</a>
+						<?php
+							$icon = get_sub_field('card_icon');
+							if( !empty($icon) ):
+						?>
+						<img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>" />
+						<?php endif; ?>
+						<h2><?php the_sub_field('card_title'); ?></h2>
+						<p><?php the_sub_field('card_paragraph'); ?></p>
+						<?php
+							$type = get_sub_field('card_action');
+							if($type == 'button') :
+						?>
+						<a href = "<?php the_sub_field('card_cta_url'); ?>" class="btn"><?php the_sub_field('card_cta_text'); ?></a>
+						<?php else : ?>
+							<a href = "#" class="toggle-overlay btn">Subscribe</a>
+						<?php endif; ?>
 					</div>
-				</div>
+				<?php else: ?>
+					<div class="half first card-content">
+						<?php
+							$icon = get_sub_field('card_icon');
+							if( !empty($icon) ):
+						?>
+						<img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>" />
+						<?php endif; ?>
+						<h2><?php the_sub_field('card_title'); ?></h2>
+						<p><?php the_sub_field('card_paragraph'); ?></p>
+						<?php
+							$type = get_sub_field('card_action');
+							if($type == 'button') :
+						?>
+						<a href = "<?php the_sub_field('card_cta_url'); ?>" class="btn"><?php the_sub_field('card_cta_text'); ?></a>
+						<?php else : ?>
+							<a href = "#" class="toggle-overlay btn">Subscribe</a>
+						<?php endif; ?>
+					</div>
+					<div class="half card-image">
+						<?php
+							$image = get_sub_field('card_image');
+							if( !empty($image) ):
+						?>
+						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+						<?php endif; ?>
+					</div>
+				<?php endif; ?>
+				</div><!--card-->
+				<?php $x++; endwhile; endif; ?>
 				<?php
 					$product_one = get_field('home_one');
 					$product_two = get_field('home_two');
@@ -67,14 +109,39 @@ get_header(); ?>
 					<h2>Store</h2>
 					<?php echo do_shortcode($codeAction); ?>
 				</div>
+				<?php if( have_rows('testimony') ): ?>
 				<div class="home-testimonies">
-					<div id="carousel" class="carousel slide" data-ride="carousel">
+					<div id="carousel-testimonies" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<?php $y = 0; while ( have_rows('testimony') ) : the_row(); ?>
+							<li data-target="#carousel-testimonies" data-slide-to="<?php echo $y; ?>" <?php if($y == 0) : ?>class="active"<?php endif; ?>></li>
+							<?php $y++; endwhile; ?>
+						</ol>
 						<div class="carousel-inner">
+							<?php $z = 0; while ( have_rows('testimony') ) : the_row(); ?>
+							<div class="item <?php if($z == 0) {echo 'active ';} ?>">
+								<?php the_sub_field('testimony_text'); ?>
+								<attr>- <?php the_sub_field('testimony_name'); ?></attr>
+							</div>
+							<?php $z++; endwhile; ?>
 						</div>
 					</div>
 				</div>
+				<?php endif; ?>
 				<?php //get_template_part( 'content', 'newsletter' ); ?>
 
 				<?php //get_template_part( 'content', 'tabs' ); ?>
-
+				<div class="modal newsletter-modal">
+					<h2>Subscribe to our Newsletters</h2>
+					<p>Stay in touch with HomeWord to hear about upcoming events, special offers, and more!</p>
+					<?php
+						if(site_url() == 'http://local-homeword.com') {
+							mc4wp_form(5574);
+						} elseif (site_url() == 'http://stg.homeword.com') {
+							mc4wp_form(7589);
+						}
+					 ?>
+					<a href="#" class="close-overlay">Close</a>
+				</div>
+				<div class="modal-overlay"></div>
 <?php get_footer(); ?>
