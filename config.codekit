@@ -967,13 +967,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_i\/KTA-banner.png": {
+	"\/_i\/kta-banner.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 3454,
-		"inputAbbreviatedPath": "\/_i\/KTA-banner.png",
-		"outputAbbreviatedPath": "\/_i\/KTA-banner.png",
+		"inputAbbreviatedPath": "\/_i\/kta-banner.png",
+		"outputAbbreviatedPath": "\/_i\/kta-banner.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3975,7 +3975,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Josh Rives",
+"lastSavedByUser": "Tristan Swire",
 "manualImportLinks": {
 	"\/_famnetwork\/famnetwork.js": [
 		{
