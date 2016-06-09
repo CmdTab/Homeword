@@ -4,7 +4,7 @@
 }
 .families-content {
 	.entry-footer {
-		border-color: $family;
+		border-color: darken($new-back,10%);
 	}
 	.entry-meta {
 		a {
@@ -48,14 +48,13 @@
 }
 .entry-title {
 	font-size: 2.5em;
-	color: $black;
+	color: $new-teal;
 	margin-bottom: 0.5em;
 	a {
-		color: $black;
+		color: $new-teal;
 	}
 }
 .entry-header {
-	font-family: "adelle",serif;
 	padding: 0 2em;
 }
 .entry-author {
@@ -83,7 +82,6 @@
 .entry-content {
 	padding: 0 2em;
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "lft-etica","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 		font-weight: bold;
 		color: $black;
 		text-transform: uppercase;
@@ -95,11 +93,9 @@
 		font-size: 1em;
 	}
 	em {
-		font-family: "adelle",serif;
 		font-style: italic;
 	}
 	blockquote {
-		font-family: "adelle",serif;
 		font-size: 1.25em;
 		color: lighten($black, 30%);
 		position: relative;
@@ -138,7 +134,6 @@
 	}
 	h4 {
 		margin: 0 0 0.5em;
-		font-family: "adelle",serif;
 	}
 	p {
 		margin: 0;
@@ -215,7 +210,6 @@
 	a {
 		display: block;
 		line-height: 1.4;
-		font-family: "adelle",serif;
 		font-size: 0.8125em;
 	}
 }
@@ -223,8 +217,8 @@
 	.post-navigation {
 		padding: 1em 2em;
 		margin-bottom: 2em;
-		border-top: 2px solid #aaa;
-		border-bottom: 2px solid #aaa;
+		border-top: 2px solid darken($new-back, 10%);
+		border-bottom: 2px solid darken($new-back, 10%);
 		&:after {
 			content:'';
 			display: table;
@@ -236,6 +230,7 @@
 			width: 40%;
 			position: relative;
 			font-weight: bold;
+			color: $new-blue;
 		}
 		a[rel="prev"] {
 			margin-right: 20%;

@@ -6,13 +6,14 @@
 }
 .archive-title {
 	padding: 0 2em;
+	display: none;
 }
 .archive-more {
 	@include button($blue, #fff, $blue);
 }
 .families-content .archive {
 	.entry-excerpt {
-		border-color: $family;
+		border-color: #ddd;
 		&:last-of-type {
 			border: 0;
 		}
@@ -21,7 +22,7 @@
 		@include button($family, #fff, $family);
 	}
 	.entry-title {
-		color: $black;
+		color: $new-blue;
 	}
 }
 .church-content .archive {
@@ -47,7 +48,7 @@
 		font-size: 0.75em;
 	}
 	.entry-title, .entry-title a {
-		color: $black;
+		color: $new-teal;
 	}
 }
 .archive-grouping {
@@ -67,6 +68,11 @@
 .families-content {
 	.archive-grouping {
 		border-color: $family
+	}
+	.entry-meta {
+		a {
+			color: $new-blue;
+		}
 	}
 }
 .church-content {

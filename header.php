@@ -115,5 +115,18 @@ $_SESSION['cat'] = $_GET['cat'];*/
 			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+	<div class="modal newsletter-modal">
+		<h2>Subscribe to our Newsletters</h2>
+		<p>Stay in touch with HomeWord to hear about upcoming events, special offers, and more!</p>
+		<?php
+			if(site_url() == 'http://local-homeword.com') {
+				mc4wp_form(5574);
+			} elseif (site_url() == 'http://stg.homeword.com') {
+				mc4wp_form(7589);
+			}
+		 ?>
+		<a href="#" class="close-overlay">Close</a>
+	</div>
+	<div class="modal-overlay"></div>
 
 	<div id="content" class="site-content wrap">

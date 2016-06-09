@@ -54,7 +54,6 @@
 	h2 {
 		color: #fff;
 		margin: 0;
-		font-family: "adelle",serif;
 		display: inline;
 		font-size: 1.75em;
 	}
@@ -83,10 +82,9 @@
 .start-time {
 	font-weight: bold;
 	font-size: 1.5em;
-	font-family: "adelle",serif;
 	@include bp(44) {
 		font-weight: normal;
-		font: 1em "lft-etica","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font: 1em;
 	}
 }
 .end-info {

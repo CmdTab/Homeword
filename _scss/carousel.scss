@@ -252,7 +252,7 @@
 	}
 }
 .carousel-action {
-	@include button(#79bd35, #fff, #79bd35);
+	@include button($new-teal, #fff, $new-teal);
 	&.blue {
 		@include button($radio, #fff, $radio);
 	}

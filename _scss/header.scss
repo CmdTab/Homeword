@@ -163,7 +163,7 @@
 }
 .nav-buttons {
 	text-align: center;
-	padding: 0.5em 0 0;
+	padding: 0.65em 0 0;
 	.btn {
 		margin-right: 0.5em;
 	}
@@ -235,7 +235,7 @@
 
 		}
 		&.current {
-			background: #fff;
+			background: lighten($new-blue,25%);
 			/*border-right: 1px solid $tan;
 			border-left: 1px solid $tan;*/
 			a {
@@ -275,31 +275,33 @@
 				border: 0;
 				color: #fff;
 			}
-
 			&.expand {
 				a {
 					color: $new-blue;
 				}
+				&.current > a {
+					color: white;
+				}
 				&:before {
-		        	content:'';
-		        	height: 1px;
-		        	width: 15%;
-		        	background: $tan;
-		        	position: absolute;
-		        	bottom: -1px;
-		        	right: -15%;
-		        	z-index: 1000;
-		        }
-		        &:after {
-		        	content:'';
-		        	height: 1px;
-		        	width: 1px;
-		        	background: $blue;
-		        	position: absolute;
-		        	bottom: -1px;
-		        	right: -15%;
-		        	z-index: 1001;
-		        }
+			        	content:'';
+			        	height: 1px;
+			        	width: 15%;
+			        	background: $tan;
+			        	position: absolute;
+			        	bottom: -1px;
+			        	right: -15%;
+			        	z-index: 1000;
+		        	}
+		        	&:after {
+			        	content:'';
+			        	height: 1px;
+			        	width: 1px;
+			        	background: $blue;
+			        	position: absolute;
+			        	bottom: -1px;
+			        	right: -15%;
+			        	z-index: 1001;
+		        	}
 		        &.about-nav {
 		        	&:before {
 		        		width: 100%;
@@ -327,7 +329,6 @@
 	a {
 		display: block;
 		padding: 1em 0;
-		font-family: "adelle",serif;
 	}
 	@include bp(50) {
 		padding: 0.5em 0;

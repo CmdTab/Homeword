@@ -1,12 +1,12 @@
 .sidebar-section {
-	background: $sidebar;
+	background: $new-back;
 	h5 {
 		text-transform: uppercase;
 		color: #aaa;
 	}
 	@include bp(50) {
 		float: left;
-		max-width: 20.5em;
+		max-width: 30em;
 		width: 32.8%;
 	}
 }
@@ -20,19 +20,32 @@
 	a {
 		display: block;
 		padding: 1em;
-		color: #999;
-		font-family: "adelle",serif;
+		color: $new-blue;
 		&:hover {
 			background: lighten($sidebar, 2%);
+		}
+		@include bp(50) {
+			padding: 1em 1em 1em 4em;
 		}
 	}
 	.current-menu-item,
 	.current-page-ancestor {
 		a {
 			color: $blue;
+			font-weight: 700;
+			position: relative;
+		    	margin-left: 0.5em;
 			&:before {
-				content: '\27A4';
-				margin-right: 0.5em;
+				content: '';
+				background-image: url(_i/chevron-right.png);
+				background-size: 11px 16px;
+				width: 11px;
+				background-repeat: no-repeat;
+				height: 16px;
+				display: inline-block;
+				position: absolute;
+				left: 2.75em;
+				top: 1.4em;
 			}
 		}
 	}

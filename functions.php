@@ -561,3 +561,16 @@ function featured_image_in_rss($content)
 add_filter('the_excerpt_rss', 'featured_image_in_rss');
 //Add the filter for RSS feed content
 add_filter('the_content_feed', 'featured_image_in_rss');
+
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Global General Settings',
+		'menu_title'	=> 'Global Settings',
+		'menu_slug' 	=> 'global-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+}

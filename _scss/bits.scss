@@ -75,6 +75,7 @@ img {
 	letter-spacing: 1px;
 	background-color: $back-color;
 	border: 1px solid $border-color;
+	font-weight: 700;
 	&:hover {
 		color: $text-color;
 		background: darken($back-color, 10%);
