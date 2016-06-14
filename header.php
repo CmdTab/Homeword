@@ -39,7 +39,7 @@ $_SESSION['cat'] = $_GET['cat'];*/
 				</a>
 				<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                     <img src ="<?php bloginfo('template_directory'); ?>/_i/homeword-logo.png">
-                    <span>A tagline for you</span>
+                    <span><?php the_field('site_tagline' , 'option'); ?></span>
                 </a>
 				<div class="header-content">
 					<ul class="social ">
@@ -100,7 +100,7 @@ $_SESSION['cat'] = $_GET['cat'];*/
 						<a href = "<?php echo esc_url( home_url( '/' ) ); ?>store">Store</a>
 					</li><!--
                     --><li>
-                        <a href = "http://famnetwork.homeword.com" id="fam-link">Pastors</a>
+                        <a href = "http://famnetwork.homeword.com" id="fam-link" class="btn">Church Leaders</a>
                     </li>
 				</ul>
 				<div class="nav-buttons">

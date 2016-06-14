@@ -163,9 +163,9 @@
 }
 .nav-buttons {
 	text-align: center;
-	padding: 0.65em 0 0;
+	padding: 1.05em 0 0;
 	.btn {
-		margin-right: 0.5em;
+		/*margin-right: 0.5em;*/
 	}
 	@include bp(50) {
 		float: right;
@@ -316,7 +316,20 @@
 	}
 }
 #fam-link {
-	color: $yellow;
+	background-color: lighten($new-blue,30%);
+	border-color: lighten($new-blue,30%);
+	color: white;
+	font-weight: normal;
+	text-transform: none;
+	cursor: pointer;
+	&:hover {
+		background-color: lighten($new-blue, 20%);
+		border-color: lighten($new-blue, 20%);
+	}
+	@include bp(50) {
+		padding: 0.4em 1em;
+		margin-left: 1.25em;
+	}
 }
 .subnav {
 	display: none;
