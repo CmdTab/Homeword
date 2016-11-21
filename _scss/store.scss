@@ -418,3 +418,16 @@
 .product-purchase-note { 
 	padding: 1em;
 }
+.content-section {
+	> .products {
+		.post-10095,
+		.post-10094,
+		.post-10092,
+		.post-10102,
+		.post-10100 {
+			display: none !important;
+			visibility: hidden !important;
+		}
+
+	}
+}

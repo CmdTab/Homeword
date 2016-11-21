@@ -162,9 +162,12 @@
 	}
 }
 .newsletter-modal {
-	padding: 2em;
+	padding: 2em 1em;
 	color: #fff;
 	text-align: center;
+	@include bp(44) {
+		padding: 2em;
+	}
 	h2 {
 		font-weight: normal;
 		margin: 0;
@@ -202,11 +205,14 @@
 		}
 	}
 	ul {
-		margin: 1em 0;
+		margin: 0;
 		font-size: 0.875em;
 		list-style: none;
 		padding: 0;
 		text-align: left;
+		@include bp(44) {
+			margin: 1em 0;
+		}
 	}
 	input[type="submit"] {
 		@include button($yellow, $text, $yellow);
@@ -217,6 +223,13 @@
 		@include button(darken($new-blue, 15%), #fff, darken($new-blue, 15%));
 		border-radius: 0;
 		opacity: 0.5;
+	}
+	p {
+		font-size: 0.875em;
+		margin-bottom: 0.5em;
+	}
+	h4 {
+		margin: 0.5em 0;
 	}
 	@include bp(44) {
 		li {

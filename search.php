@@ -6,7 +6,7 @@
  */
 $cat = isset($_GET['cat']) ? $_GET['cat'] : null;
 get_header(); ?>
-	<div class="general-content group <?php if ($cat != NULL) {echo $cat.'-content';} ?>">
+	<div class="general-content search-page group <?php if ($cat != NULL) {echo $cat.'-content';} ?>">
 		<div class="content-section page">
 
 		<?php if ( have_posts() ) : ?>

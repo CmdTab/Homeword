@@ -40,6 +40,8 @@ function hideLabel() {
 	jQuery( '.search-field' ).blur(function() {
 		if( !jQuery(this).val() ) {
 			jQuery('.search-form').removeClass('focus');
+		} else {
+			jQuery(this).siblings('span').addClass('testing');
 		}
 	});
 	jQuery( '.field input' ).focus(function() {

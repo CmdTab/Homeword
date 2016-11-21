@@ -35,7 +35,7 @@
 								</a>
 							</li>
 							<li>
-								<a href = "http://instagram.com/homewordcenteratapu" target="_blank">
+								<a href = "https://www.instagram.com/homewordatapu/" target="_blank">
 									<span aria-hidden="true" data-icon="&#x69;"></span>
 									<span class="assistive-text">Instagram</span>
 								</a>

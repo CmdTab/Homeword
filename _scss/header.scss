@@ -95,9 +95,9 @@
 	label {
 		span {
 			position: absolute;
-			left: 2.5em;
+			left: 2em;
 			top: 1em;
-			color: $tan;
+			color: $gray-text;
 			font-size: 0.875em;
 		}
 	}
@@ -119,9 +119,9 @@
 }
 .search-field {
 	background: none;
-	border: 1px solid $tan;
+	border: 1px solid $gray-text;
 	padding: 0.5em;
-	width: 100%;
+	/*width: 100%;*/
 }
 .search-submit {
 	position: absolute;
@@ -204,7 +204,6 @@
 			border-bottom: 1px solid $tan;
 			color: #1c5a7d;
 		}
-
 		&.active {
 			background: #fff;
 			/*border-right: 1px solid $tan;
@@ -235,8 +234,8 @@
 
 		}
 		&.current {
-			background: lighten($new-blue,25%);
-			/*border-right: 1px solid $tan;
+			/*background: lighten($new-blue,25%);
+			border-right: 1px solid $tan;
 			border-left: 1px solid $tan;*/
 			a {
 				border: 0;

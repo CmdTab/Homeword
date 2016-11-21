@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19127",
+"creatorBuild": "19142",
 "files": {
 	"\/404.php": {
 		"fileType": 8192,
@@ -1950,20 +1950,53 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
-	"\/_js\/production.js": {
+	"\/_js\/min\/functions-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_js\/production.js",
-		"outputAbbreviatedPath": "\/_js\/min\/production-min.js",
+		"inputAbbreviatedPath": "\/_js\/min\/functions-min.js",
+		"outputAbbreviatedPath": "\/_js\/min\/min\/functions-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/_js\/production.min.js": {
+	"\/_js\/min\/production-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_js\/min\/production-min.js",
+		"outputAbbreviatedPath": "\/_js\/min\/min\/production-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_js\/production-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_js\/production-min.js",
+		"outputAbbreviatedPath": "\/_js\/min\/production-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_js\/production.js": {
 		"fileType": 64,
 		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_js\/production.js",
+		"outputAbbreviatedPath": "\/_js\/production.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_js\/production.min.js": {
+		"fileType": 64,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_js\/production.min.js",
 		"outputAbbreviatedPath": "\/_js\/min\/production.min-min.js",

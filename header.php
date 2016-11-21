@@ -62,7 +62,7 @@ $_SESSION['cat'] = $_GET['cat'];*/
 							</a>
 						</li>
 						<li>
-							<a href = "http://instagram.com/homewordcenteratapu" target="_blank">
+							<a href = "https://www.instagram.com/homewordatapu/" target="_blank">
 								<span aria-hidden="true" data-icon="&#x69;"></span>
 								<span class="assistive-text">Instagram</span>
 							</a>
@@ -118,13 +118,9 @@ $_SESSION['cat'] = $_GET['cat'];*/
 	<div class="modal newsletter-modal">
 		<h2>Subscribe to our Newsletters</h2>
 		<p>Stay in touch with HomeWord to hear about upcoming events, special offers, and more!</p>
-		<?php
-			if(site_url() == 'http://local-homeword.com') {
-				mc4wp_form(5574);
-			} elseif (site_url() == 'http://stg.homeword.com') {
-				mc4wp_form(7589);
-			}
-		 ?>
+		
+		<?php mc4wp_form(10296); ?>
+		
 		<a href="#" class="close-overlay">Close</a>
 	</div>
 	<div class="modal-overlay"></div>

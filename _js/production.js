@@ -636,6 +636,9 @@ jQuery(window).load(function() {
 		sidebarHeight();
 		//cartHeights();
 	}
+    if( jQuery('.search-form > label .search-field').val() ) {
+        jQuery('.search-form').addClass('focus');
+    }
 });
 
 jQuery(window).resize(function() {
