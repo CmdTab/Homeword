@@ -978,13 +978,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_i\/kta-banner.png": {
+	"\/_i\/KTA-banner.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 3454,
-		"inputAbbreviatedPath": "\/_i\/kta-banner.png",
-		"outputAbbreviatedPath": "\/_i\/kta-banner.png",
+		"inputAbbreviatedPath": "\/_i\/KTA-banner.png",
+		"outputAbbreviatedPath": "\/_i\/KTA-banner.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4037,7 +4037,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Tristan Swire",
+"lastSavedByUser": "Josh Rives",
 "manualImportLinks": {
 	"\/_famnetwork\/famnetwork.js": [
 		{
@@ -4076,6 +4076,20 @@
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/_intentional\/jquery.waypoints.js",
 			"position": 3,
+			"type": 0
+			}
+		],
+	"\/_js\/functions.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/libs\/jquery.cookie.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/_js\/libs\/bootstrap.js",
+			"position": 1,
 			"type": 0
 			}
 		]
