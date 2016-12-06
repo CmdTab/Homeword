@@ -504,7 +504,7 @@ function namespace_add_custom_types( $query ) {
 	  return $query;
 	}
 }
-//add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
+add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
 /*Social Shortcode*/
 function socialicon_func( $atts ) {
 	extract( shortcode_atts( array(
@@ -564,7 +564,7 @@ add_filter('the_content_feed', 'featured_image_in_rss');
 
 
 if( function_exists('acf_add_options_page') ) {
-	
+
 	acf_add_options_page(array(
 		'page_title' 	=> 'Global General Settings',
 		'menu_title'	=> 'Global Settings',
@@ -572,5 +572,5 @@ if( function_exists('acf_add_options_page') ) {
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 	));
-	
+
 }
