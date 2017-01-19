@@ -35,7 +35,32 @@ get_header(); ?>
 							<h1>Families</h1>
 							<?php //the_content(); ?>
 						</div>
-						<div class="entry-excerpt devo-excerpt">
+						<div class="entry-excerpt half first">
+
+<?php
+	$args = array( 'post_type' => 'jimsblog', 'posts_per_page' => 1, 'area' => 'families');
+	$loop = new WP_Query( $args );
+	while ( $loop->have_posts() ) : $loop->the_post();
+?>
+							<a href = "<?php the_permalink(); ?>?cat=families">
+								<?php
+									if ( has_post_thumbnail() ) {
+										the_post_thumbnail();
+									} else {
+										echo '<img src ="';
+										echo bloginfo('template_directory');
+										echo '/_i/devo.jpg">';
+									}
+								?>
+							</a>
+							<h5>Daily Devotional</h5>
+							<h3><a href = "<?php the_permalink(); ?>?cat=families"><?php the_title(); ?></a></h3>
+							<div class="metadata">Published <?php the_date(); ?> by <?php the_author(); ?></div>
+							<p><?php the_excerpt(); ?></p>
+							<a href = "<?php the_permalink(); ?>?cat=families" class="read-more">Continue Reading &raquo;</a>
+<?php endwhile; wp_reset_postdata(); ?>
+						</div>
+						<div class="entry-excerpt half">
 
 <?php
 	$args = array( 'post_type' => 'devotionals', 'posts_per_page' => 1, 'area' => 'families');
