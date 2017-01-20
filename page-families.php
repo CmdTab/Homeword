@@ -32,14 +32,20 @@ get_header(); ?>
 				<div class="general-content group families-content">
 					<div class="content-section">
 						<div class="section-intro">
-							<h1>Families</h1>
+							<h1>Free Resources for Families</h1>
 							<?php //the_content(); ?>
 						</div>
-						<div class="entry-excerpt half first">
+
 
 <?php
-	$args = array( 'post_type' => 'jims-blog', 'posts_per_page' => 1, 'area' => 'families');
+
+	$args = array( 'post_type' => 'jims-blog', 'posts_per_page' => 1);
 	$loop = new WP_Query( $args );
+	if( $loop->have_posts() ):
+		$jimsblog = true;
+?>
+					<div class="entry-excerpt half first">
+<?php
 	while ( $loop->have_posts() ) : $loop->the_post();
 ?>
 							<a href = "<?php the_permalink(); ?>?cat=families">
@@ -53,15 +59,19 @@ get_header(); ?>
 									}
 								?>
 							</a>
-							<h5>Daily Devotional</h5>
+							<h5>Jim's Blog</h5>
 							<h3><a href = "<?php the_permalink(); ?>?cat=families"><?php the_title(); ?></a></h3>
 							<div class="metadata">Published <?php the_date(); ?> by <?php the_author(); ?></div>
 							<p><?php the_excerpt(); ?></p>
 							<a href = "<?php the_permalink(); ?>?cat=families" class="read-more">Continue Reading &raquo;</a>
 <?php endwhile; wp_reset_postdata(); ?>
 						</div>
+	<?php endif;
+	if($jimsblog) : ?>
 						<div class="entry-excerpt half">
-
+	<?php else: ?>
+						<div class="entry-excerpt devo-excerpt">
+	<?php endif; ?>
 <?php
 	$args = array( 'post_type' => 'devotionals', 'posts_per_page' => 1, 'area' => 'families');
 	$loop = new WP_Query( $args );
