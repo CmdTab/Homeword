@@ -3129,10 +3129,10 @@
 		"oAP": "\/archive-devotionals.php",
 		"oF": 0
 		},
-	"\/archive-jimsblog.php": {
+	"\/archive-jims-blog.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/archive-jimsblog.php",
+		"oAP": "\/archive-jims-blog.php",
 		"oF": 0
 		},
 	"\/archive.php": {

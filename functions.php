@@ -183,7 +183,7 @@ add_action( 'init', 'create_tax' );
 function create_tax() {
 	register_taxonomy(
 		'area',
-		array('post', 'articles', 'devotionals', 'jimsblog'),
+		array('post', 'articles', 'devotionals', 'jims-blog'),
 		array(
 			'label' => __( 'Area' ),
 			'rewrite' => array( 'slug' => 'area' ),
@@ -246,7 +246,7 @@ function create_post_type() {
 		'taxonomies' => array('category', 'area'),
 		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'comments', 'revisions', 'author')
 	);
-	register_post_type( 'jimsblog', $jimsBlog );
+	register_post_type( 'jims-blog', $jimsBlog );
 	$sliderArgs = array(
 		'label'  => 'Sliders',
 		'labels' => array(
@@ -511,7 +511,7 @@ function wc_reg_author_menus( $register, $name = '' ) {
 function namespace_add_custom_types( $query ) {
   if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
     $query->set( 'post_type', array(
-     'post', 'articles', 'devotionals', 'jimsblog'
+     'post', 'articles', 'devotionals', 'jims-blog'
 		));
 	  return $query;
 	}
@@ -540,7 +540,7 @@ add_shortcode( 'socialicon', 'socialicon_func' );
 add_action( 'pre_get_posts', 'custom_post_author_archive' );*/
 function add_custom_types( $query ) {
   if( is_author() ) {
-    $query->set( 'post_type', array('post', 'devotionals', 'articles', 'nav_menu_item', 'jimsblog'));
+    $query->set( 'post_type', array('post', 'devotionals', 'articles', 'nav_menu_item', 'jims-blog'));
 	  return $query;
 	}
 }
@@ -548,7 +548,7 @@ add_filter( 'pre_get_posts', 'add_custom_types' );
 // Define what post types to search
 function searchAll( $query ) {
 	if ( $query->is_search ) {
-		$query->set( 'post_type', array( 'post', 'page', 'feed', 'articles', 'devotionals', 'jimsblog'));
+		$query->set( 'post_type', array( 'post', 'page', 'feed', 'articles', 'devotionals', 'jims-blog'));
 	}
 	return $query;
 }

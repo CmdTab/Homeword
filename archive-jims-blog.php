@@ -9,16 +9,29 @@
 
 get_header(); ?>
 
-	<?php
-		$displaySlider = get_field('display_slider');
-		if ($displaySlider == 'Yes'){
-			get_template_part( 'content', 'slider' );
-			wp_reset_postdata();
-		}
 
-	?>
 	<div class="general-content group <?php echo $_GET['cat']; ?>-content">
-		<div class="content-section archive">
+
+		<?php
+			$postType = get_post_type();
+			if($postType == 'jims-blog'): ?>
+			<div class="blog-banner">
+				<?php
+
+					$blog_image = get_field('jims_blog_banner_image', 'options');
+
+					if( !empty($blog_image) ): ?>
+
+						<img src="<?php echo $blog_image['url']; ?>" alt="<?php echo $blog_image['alt']; ?>" />
+
+				<?php endif; ?>
+			</div>
+			<?php else : ?>
+
+			<?php endif;
+		?>
+
+		<div class="content-section archive blog-archive">
 
 			<?php if ( have_posts() ) : ?>
 

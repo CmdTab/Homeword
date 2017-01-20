@@ -38,7 +38,7 @@ get_header(); ?>
 						<div class="entry-excerpt half first">
 
 <?php
-	$args = array( 'post_type' => 'jimsblog', 'posts_per_page' => 1, 'area' => 'families');
+	$args = array( 'post_type' => 'jims-blog', 'posts_per_page' => 1, 'area' => 'families');
 	$loop = new WP_Query( $args );
 	while ( $loop->have_posts() ) : $loop->the_post();
 ?>
@@ -139,3 +139,4 @@ get_header(); ?>
 				</div><!--general-content-->
 <?php get_template_part( 'content', 'newsletter' ); ?>
 <?php get_footer(); ?>
+jims-blog
