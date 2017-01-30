@@ -35,16 +35,23 @@
 			</li>
 		</ul>-->
 		<div class="sidebar-content group">
-		<?php
-		if (isset($_GET['cat'])) {
-			if ($_GET['cat'] === 'families') {
-				dynamic_sidebar('Family Widgets');
-			} elseif ($_GET['cat'] === 'church') {
-				dynamic_sidebar('Church Widgets');
-			}
-		} else {
-			dynamic_sidebar('About Widgets');
-		}
-		?>
+			<?php if ( get_post_type( get_the_ID() ) == 'jims-blog' ) { ?>
+				<?php dynamic_sidebar('Jims Widgets'); ?>
+			<?php } else { ?>
+				<?php
+					if (isset($_GET['cat'])) {
+						if ($_GET['cat'] === 'families') {
+							dynamic_sidebar('Family Widgets');
+						} elseif ($_GET['cat'] === 'church') {
+							dynamic_sidebar('Church Widgets');
+						}
+					} else {
+						dynamic_sidebar('About Widgets');
+					}
+				?>
+			<?php } ?>
 		</div>
+
+
+
 	</aside>

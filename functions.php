@@ -119,6 +119,12 @@ function homeword_widgets_init() {
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Jims Widgets', 'homeword' ),
+		'id'            => 'jims-widgets',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+	) );
 }
 add_action( 'widgets_init', 'homeword_widgets_init' );
 
