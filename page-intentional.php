@@ -17,7 +17,7 @@ get_header('intentional'); ?>
 			<div class="intent-store">
 				<div class="wrap group">
 					<a href = "#" data-video="<?php the_field('intent_video'); ?>">
-						<?php 
+						<?php
 							$intent_image = get_field('intent_header');
 							if( !empty($intent_image) ): ?>
 								<img src="<?php echo $intent_image['url']; ?>" alt="<?php echo $intent_image['alt']; ?>" />
@@ -31,7 +31,7 @@ get_header('intentional'); ?>
 								<h2><?php the_field('free_title'); ?></h2>
 								<div class="flipper">
 									<div class="option-main front">
-									<?php 
+									<?php
 										$image = get_field('free_image');
 										if( !empty($image) ): ?>
 											<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
@@ -50,7 +50,7 @@ get_header('intentional'); ?>
 								<h2><?php the_field('indiv_title'); ?></h2>
 								<div class="flipper">
 									<div class="option-main front">
-										<?php 
+										<?php
 										$image = get_field('indiv_image');
 										if( !empty($image) ): ?>
 											<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
@@ -60,7 +60,7 @@ get_header('intentional'); ?>
 										<?php the_field('indiv_details'); ?>
 									</div>
 								</div>
-								
+
 							</div>
 							<div class="pricing">
 								<span>$<?php the_field('dvd_price'); ?></span>
@@ -68,7 +68,7 @@ get_header('intentional'); ?>
 							</div>
 							<a href = "#" class="btn dd-trigger">Options</a>
 							<div class="option-dropdown group">
-								<?php 
+								<?php
 									$args = array(
 												'post__in' => array(get_field('dvd_product'),get_field('workbook_product')),
 												'post_type' => 'product'
@@ -88,7 +88,7 @@ get_header('intentional'); ?>
 								<h2><?php the_field('bundle_title'); ?></h2>
 								<div class="flipper">
 									<div class="option-main front">
-										<?php 
+										<?php
 										$image = get_field('bundle_image');
 										if( !empty($image) ): ?>
 											<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
@@ -104,7 +104,7 @@ get_header('intentional'); ?>
 							</div>
 							<a href = "#" class="btn dd-trigger">Buy Now</a>
 							<div class="option-dropdown group">
-								<?php 
+								<?php
 									$args = array(
 												'post__in' => array(get_field('bundle_product')),
 												'post_type' => 'product'
@@ -127,7 +127,7 @@ get_header('intentional'); ?>
 								<h2><?php the_field('church_title'); ?></h2>
 								<div class="flipper">
 									<div class="option-main front">
-										<?php 
+										<?php
 										$image = get_field('church_image');
 										if( !empty($image) ): ?>
 											<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
@@ -143,7 +143,7 @@ get_header('intentional'); ?>
 							</div>
 							<a href = "#" class="btn dd-trigger">Buy Now</a>
 							<div class="option-dropdown group">
-								<?php 
+								<?php
 									$args = array(
 												'post__in' => array(get_field('church_product')),
 												'post_type' => 'product'
@@ -191,7 +191,7 @@ get_header('intentional'); ?>
 
 						<ul class="video-slider bxslider">
 
-						<?php while( have_rows('video_slider') ): the_row(); 
+						<?php while( have_rows('video_slider') ): the_row();
 
 							// vars
 							$video_image = get_sub_field('video_image');
@@ -249,7 +249,7 @@ get_header('intentional'); ?>
 							<div class="info-card flip-container">
 								<div class="flipper">
 									<div class="front card-height">
-										<?php 
+										<?php
 											$card_image = get_field('card_one_icon');
 											if( !empty($card_image) ): ?>
 												<img src="<?php echo $card_image['url']; ?>" alt="<?php echo $card_image['alt']; ?>" />
@@ -264,7 +264,7 @@ get_header('intentional'); ?>
 										</a>
 									</div>
 									<div class="back card-height">
-										<?php 
+										<?php
 											$back_card_image = get_field('card_one_back_icon');
 											if( !empty($back_card_image) ): ?>
 												<img src="<?php echo $back_card_image['url']; ?>" alt="<?php echo $back_card_image['alt']; ?>" />
@@ -278,16 +278,16 @@ get_header('intentional'); ?>
 											<img src="<?php bloginfo('template_directory'); ?>/_i/redo2.png"  />
 										</a>
 									</div>
-									
+
 								</div>
 							</div>
-							
+
 						</li>
 						<li>
 							<div class="info-card flip-container">
 								<div class="flipper">
 									<div class="front card-height">
-										<?php 
+										<?php
 											$card_image = get_field('card_two_icon');
 											if( !empty($card_image) ): ?>
 												<img src="<?php echo $card_image['url']; ?>" alt="<?php echo $card_image['alt']; ?>" />
@@ -302,7 +302,7 @@ get_header('intentional'); ?>
 										</a>
 									</div>
 									<div class="back card-height">
-										<?php 
+										<?php
 											$back_card_image = get_field('card_two_back_icon');
 											if( !empty($back_card_image) ): ?>
 												<img src="<?php echo $back_card_image['url']; ?>" alt="<?php echo $back_card_image['alt']; ?>" />
@@ -323,7 +323,7 @@ get_header('intentional'); ?>
 							<div class="info-card flip-container">
 								<div class="flipper">
 									<div class="front card-height">
-										<?php 
+										<?php
 											$card_image = get_field('card_three_icon');
 											if( !empty($card_image) ): ?>
 												<img src="<?php echo $card_image['url']; ?>" alt="<?php echo $card_image['alt']; ?>" />
@@ -338,7 +338,7 @@ get_header('intentional'); ?>
 										</a>
 									</div>
 									<div class="back card-height">
-										<?php 
+										<?php
 											$back_card_image = get_field('card_three_back_icon');
 											if( !empty($back_card_image) ): ?>
 												<img src="<?php echo $back_card_image['url']; ?>" alt="<?php echo $back_card_image['alt']; ?>" />
@@ -365,7 +365,7 @@ get_header('intentional'); ?>
 
 						<ul class="quote-slider bxslider">
 
-						<?php while( have_rows('quote_slider') ): the_row(); 
+						<?php while( have_rows('quote_slider') ): the_row();
 
 							// vars
 							$quote_image = get_sub_field('quote_slider_image');
@@ -395,7 +395,7 @@ get_header('intentional'); ?>
 					</header>
 					<ul class="three-list group who-list">
 						<li>
-							<?php 
+							<?php
 								$who_icon = get_field('who_icon_one');
 								if( !empty($who_icon) ): ?>
 									<img src="<?php echo $who_icon['url']; ?>" alt="<?php echo $who_icon['alt']; ?>" />
@@ -404,7 +404,7 @@ get_header('intentional'); ?>
 							<p><?php the_field('who_text_one'); ?></p>
 						</li>
 						<li>
-							<?php 
+							<?php
 								$who_icon_two = get_field('who_icon_two');
 								if( !empty($who_icon_two) ): ?>
 									<img src="<?php echo $who_icon_two['url']; ?>" alt="<?php echo $who_icon_two['alt']; ?>" />
@@ -413,7 +413,7 @@ get_header('intentional'); ?>
 							<p><?php the_field('who_text_two'); ?></p>
 						</li>
 						<li>
-							<?php 
+							<?php
 								$who_icon_three = get_field('who_icon_three');
 								if( !empty($who_icon_three) ): ?>
 									<img src="<?php echo $who_icon_three['url']; ?>" alt="<?php echo $who_icon_three['alt']; ?>" />

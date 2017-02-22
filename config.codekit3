@@ -7,7 +7,7 @@
 		"uuidString": "DFA35266-D265-4D60-B797-5A20E653749D"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25504",
 "files": {
 	"\/404.php": {
 		"ft": 8192,
@@ -3919,6 +3919,12 @@
 		"oAP": "\/woocommerce\/content-tab-single-product.php",
 		"oF": 0
 		},
+	"\/woocommerce\/global\/quantity-input.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/woocommerce\/global\/quantity-input.php",
+		"oF": 0
+		},
 	"\/woocommerce\/loop-shop.php": {
 		"ft": 8192,
 		"oA": 0,
@@ -4031,12 +4037,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/woocommerce\/single-product\/add-to-cart\/bundle.php",
-		"oF": 0
-		},
-	"\/woocommerce\/single-product\/add-to-cart\/quantity.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/woocommerce\/single-product\/add-to-cart\/quantity.php",
 		"oF": 0
 		},
 	"\/woocommerce\/single-product\/add-to-cart\/variable.php": {
@@ -4876,6 +4876,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -5415,6 +5419,10 @@
 		"prefer-const": {
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
 		"prefer-numeric-literals": {
 			"active": 0,

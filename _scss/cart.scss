@@ -432,6 +432,11 @@
 			width: 48%;
 			margin: 0.5em 5%;
 		}
+		.select2-container {
+			width: 55% !important;
+			display: inline-block !important;
+			margin-left: 2.5%;
+		}
 	}
 }
 .billing-form {
@@ -629,7 +634,7 @@ dl.variation {
 	margin: 0.5em 1em;
 }
 .shipping-selection {
-	text-align: center;
+	text-align: left;
 	padding: 0.5em 1.25em;
 	font-weight: bold;
 	background: #efefef;

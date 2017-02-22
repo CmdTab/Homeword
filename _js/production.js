@@ -581,7 +581,7 @@ function hideLabel() {
 }
 function showModal() {
 	jQuery('.toggle-overlay').click(function() {
-		jQuery(this).next('.modal').toggleClass('modal-show');
+		jQuery('.modal').toggleClass('modal-show');
 		return false;
 	});
 	jQuery('.modal-overlay').click(function() {
@@ -619,6 +619,10 @@ function cartCookie() {
 	}
 }
 
+function testScript() {
+	
+}
+
 jQuery(document).ready(function() {
 	var vw = jQuery(window).width();
 	navDropdown();
@@ -629,6 +633,7 @@ jQuery(document).ready(function() {
 	activeNav();
 	removeBorder();
 	cartCookie();
+	testScript();
 });
 jQuery(window).load(function() {
 	var vw = jQuery(window).width();

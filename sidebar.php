@@ -6,17 +6,21 @@
  */
 ?>
 	<aside class="sidebar-section">
-		<?php
-		if (isset($_GET['cat'])) {
-			if ($_GET['cat'] === 'families') {
-				wp_nav_menu( array( 'theme_location' => 'families', 'menu_class' => 'sidebar-nav', 'container' => false) );
-			} elseif ($_GET['cat'] === 'church') {
-				wp_nav_menu( array( 'theme_location' => 'church', 'menu_class' => 'sidebar-nav', 'container' => false) );
-			}
-		} else {
-			wp_nav_menu( array( 'theme_location' => 'about', 'menu_class' => 'sidebar-nav', 'container' => false) );
-		}
-		?>
+		<?php if ( get_post_type( get_the_ID() ) == 'jims-blog' ) {
+				wp_nav_menu( array( 'theme_location' => 'jimsblog', 'menu_class' => 'sidebar-nav', 'container' => false) );
+			} else { ?>
+				<?php
+					if (isset($_GET['cat'])) {
+						if ($_GET['cat'] === 'families') {
+							wp_nav_menu( array( 'theme_location' => 'families', 'menu_class' => 'sidebar-nav', 'container' => false) );
+						} elseif ($_GET['cat'] === 'church') {
+							wp_nav_menu( array( 'theme_location' => 'church', 'menu_class' => 'sidebar-nav', 'container' => false) );
+						}
+					} else {
+						wp_nav_menu( array( 'theme_location' => 'about', 'menu_class' => 'sidebar-nav', 'container' => false) );
+					}
+				?>
+		<?php } ?>
 		<!--<ul class="sidebar-nav">
 			<li class="current-menu-item">
 				<a href = "#">Families Overview</a>

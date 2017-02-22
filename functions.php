@@ -54,6 +54,7 @@ function homeword_setup() {
 		'intentional' => __( 'Intentional Nav', 'homeword' ),
 		'download' => __( 'Download Nav', 'homeword' ),
 		'famnetwork' => __( 'Fam Network Nav', 'homeword' ),
+		'jimsblog' => __( 'Jims Blog', 'homeword' ),
 	) );
 	//Get variable at end of menu
 	add_filter( 'wp_nav_menu_objects', 'add_var', 10, 2 );
@@ -476,7 +477,7 @@ function update_cart_total_cookie() {
 	    setcookie('woocommerce_cart_total', $cart_total, 0, '/');
 	}
 }
-add_action('init', 'update_cart_total_cookie');
+//add_action('init', 'update_cart_total_cookie');
 // Ensure cart contents update when products are added to the cart via AJAX (place the following in functions.php)
 add_filter('add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment');
 

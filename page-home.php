@@ -65,7 +65,7 @@ get_header(); ?>
 						?>
 						<a href = "<?php the_sub_field('card_cta_url'); ?>" class="btn"><?php the_sub_field('card_cta_text'); ?></a>
 						<?php else : ?>
-							<a href = "#" class="toggle-overlay btn">Subscribe</a>
+							<a href = "#" class="toggle-overlay toggle-me btn">Subscribe</a>
 						<?php endif; ?>
 					</div>
 				<?php else: ?>
@@ -84,7 +84,7 @@ get_header(); ?>
 						?>
 						<a href = "<?php the_sub_field('card_cta_url'); ?>" class="btn"><?php the_sub_field('card_cta_text'); ?></a>
 						<?php else : ?>
-							<a href = "#" class="toggle-overlay btn">Subscribe</a>
+							<a href = "#" class="toggle-overlay toggle-me btn">Subscribe</a>
 						<?php endif; ?>
 					</div>
 					<div class="half card-image">
@@ -131,5 +131,5 @@ get_header(); ?>
 				<?php //get_template_part( 'content', 'newsletter' ); ?>
 
 				<?php //get_template_part( 'content', 'tabs' ); ?>
-				
+
 <?php get_footer(); ?>
